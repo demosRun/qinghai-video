@@ -1,0 +1,206 @@
+body, html, .owo, .page-box {
+  padding: 0;
+  margin: 0;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+a {
+  color: #333;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.horizontal-box .one {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  background-size: 100% 100%;
+  background-image: url('../resource/bg.jpg');
+}
+
+.horizontal-box .button {
+  position: absolute;
+  height: 5vh;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  width: auto;
+  margin: auto;
+  z-index: 9;
+}
+
+.horizontal-box video {
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  width: auto;
+  -o-object-position: "110px 110px";
+     object-position: "110px 110px";
+  -o-object-fit: fill;
+     object-fit: fill;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.horizontal-box .title {
+  position: absolute;
+  height: 27vh;
+  left: 17%;
+  right: 0;
+  margin: auto;
+  top: 13%;
+}
+
+.horizontal-box .click-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+}
+
+.horizontal-box .show-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 93%;
+  display: none;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.horizontal-box .share-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  z-index: 22;
+  background-image: url('../resource/share-bg.jpg');
+}
+
+.horizontal-box .share-box .share {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.horizontal-box .share-box .press {
+  position: absolute;
+  z-index: 2;
+  left: 43vw;
+  height: 3vw;
+  bottom: 18vw;
+  -webkit-animation: fade 2000ms infinite;
+          animation: fade 2000ms infinite;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.horizontal-box .button-item {
+  position: absolute;
+  bottom: 18vw;
+  height: 9vw;
+  z-index: 18;
+  display: none;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.horizontal-box .button-2 {
+  left: 85vw;
+}
+
+.horizontal-box .button-3 {
+  right: 36vw;
+}

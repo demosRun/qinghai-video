@@ -1,0 +1,206 @@
+<template lang="pug">
+#horizontal-box.horizontal-box
+  .one
+    img.title(src="@|title.png|")
+    img.button(src="@|button.png|" :tap="playVideo")
+  video(src="@|video.mp4|" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5")
+  .click-box(:tap="showPoup")
+  //- 弹窗显示
+  img.show-box(:tap="showPoup")
+  //- 分享弹窗
+  .share-box
+    img.press(src="@|press.png|")
+    img.share(src="@|share.jpg|")
+  img.button-2.button-item(src="@|button-2.png|" :tap="showShare")
+  img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      poupShow: false
+    },
+    created: function () {
+      var video = document.querySelector('video');
+      enableInlineVideo(video)
+    },
+    playVideo: function () {
+      // 播放音乐
+      if (!this.data.music) {
+        this.data.music = new Audio("@|bg.mp3|")
+        this.data.music.loop = true
+        this.data.music.play()
+      }
+      owo.query('.one')[0].style.opacity = '0'
+      const video = owo.query('video')[0]
+      setTimeout(() => {
+        video.style.opacity = '1'
+        video.play()
+        owo.query('.one')[0].style.display = 'none'
+      }, 500)
+      video.onended = function () {
+        owo.query('.button-2')[0].style.display = 'block'
+        owo.query('.button-3')[0].style.display = 'block'
+        owo.query('.button-2')[0].style.opacity = 1
+        owo.query('.button-3')[0].style.opacity = 1
+      }
+    },
+    showPoup: function () {
+      let imageSrc = null
+      const time = owo.query('video')[0].currentTime
+      if (time > 10 && time < 14) {
+        imageSrc = '@|popup-1.png|'
+      }
+      if (time > 16 && time < 20) {
+        imageSrc = '@|popup-2.png|'
+      }
+      if (time > 22 && time < 26) {
+        imageSrc = '@|popup-3.png|'
+      }
+      if (time > 30 && time < 34) {
+        imageSrc = '@|popup-4.png|'
+      }
+      if (time > 36 && time < 40) {
+        imageSrc = '@|popup-5.png|'
+      }
+      if (time > 48) {
+        imageSrc = '@|popup-6.png|'
+      }
+      if (!imageSrc) {
+        return
+      }
+      const showBox = owo.query('.show-box')[0]
+      showBox.src = imageSrc
+      if (this.data.poupShow) {
+        owo.query('video')[0].play()
+        showBox.style.display = 'none'
+        this.data.poupShow = false
+      } else {
+        this.data.poupShow = true
+        owo.query('video')[0].pause()
+        showBox.style.display = 'block'
+      }
+    },
+    showShare: function () {
+      owo.query('.share-box')[0].style.display = 'block'
+    }
+  }
+</script>
+
+
+<style lang="less">
+.one {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  transition: opacity 0.5s;
+  background-size: 100% 100%;
+  background-image: url('@|bg.jpg|');
+}
+.button {
+  position: absolute;
+  height: 5vh;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  width: auto;
+  margin: auto;
+  z-index: 9;
+}
+video {
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  width: auto;
+  object-position: "110px 110px";
+  object-fit: fill;
+  transition: opacity 0.5s;
+}
+.title {
+  position: absolute;
+  height: 27vh;
+  left: 17%;
+  right: 0;
+  margin: auto;
+  top: 13%;
+}
+.click-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+}
+.show-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 93%;
+  display: none;
+  transform: translate3d(0, 0, 0);
+}
+.share-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  transform: translate3d(0, 0, 0);
+  z-index: 22;
+  background-image: url('@|share-bg.jpg|');
+  .share {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .press {
+    position: absolute;
+    z-index: 2;
+    left: 43vw;
+    height: 3vw;
+    bottom: 18vw;
+    animation: fade 2000ms infinite;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+.button-item {
+  position: absolute;
+  bottom: 18vw;
+  height: 9vw;
+  z-index: 18;
+  display: none;
+  transition: opacity 0.5s;
+  transform: translate3d(0, 0, 0);
+}
+.button-2 {
+  left: 85vw;
+}
+.button-3 {
+  right: 36vw;
+}
+</style>
