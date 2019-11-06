@@ -1,4 +1,4 @@
-// Wed Nov 06 2019 17:16:56 GMT+0800 (GMT+08:00)
+// Wed Nov 06 2019 17:32:46 GMT+0800 (GMT+08:00)
 
 // 存储页面基本信息
 var owo = {
@@ -124,7 +124,9 @@ owo.script = {
       }, 500);
 
       video.ontimeupdate = function () {
-        if (video.currentTime > 48 && !_this2.data.showButtomBar) {
+        console.log(video.currentTime);
+
+        if (video.currentTime > 44 && !_this2.data.showButtomBar) {
           _this2.data.showButtomBar = true;
           owo.query('.button-item-box')[0].style.display = 'block';
           owo.query('.button-item-box')[0].style.opacity = 1;
@@ -135,27 +137,27 @@ owo.script = {
       var imageSrc = null;
       var time = owo.query('video')[0].currentTime;
 
-      if (time > 10 && time < 14) {
+      if (time > 6 && time < 10) {
         imageSrc = './static/resource/popup-1.png';
       }
 
-      if (time > 16 && time < 20) {
+      if (time > 12 && time < 16) {
         imageSrc = './static/resource/popup-2.png';
       }
 
-      if (time > 22 && time < 26) {
+      if (time > 19 && time < 23) {
         imageSrc = './static/resource/popup-3.png';
       }
 
-      if (time > 30 && time < 34) {
+      if (time > 26 && time < 30) {
         imageSrc = './static/resource/popup-4.png';
       }
 
-      if (time > 36 && time < 40) {
+      if (time > 33 && time < 37) {
         imageSrc = './static/resource/popup-5.png';
       }
 
-      if (time > 48) {
+      if (time > 43) {
         imageSrc = './static/resource/popup-6.png';
       }
 

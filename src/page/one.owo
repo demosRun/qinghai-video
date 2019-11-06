@@ -42,7 +42,8 @@
         owo.query('.one')[0].style.display = 'none'
       }, 500)
       video.ontimeupdate = () => {
-        if (video.currentTime > 48 && !this.data.showButtomBar) {
+        console.log(video.currentTime)
+        if (video.currentTime > 44 && !this.data.showButtomBar) {
           this.data.showButtomBar = true
           owo.query('.button-item-box')[0].style.display = 'block'
           owo.query('.button-item-box')[0].style.opacity = 1
@@ -52,22 +53,23 @@
     showPoup: function () {
       let imageSrc = null
       const time = owo.query('video')[0].currentTime
-      if (time > 10 && time < 14) {
+      
+      if (time > 6 && time < 10) {
         imageSrc = '@|popup-1.png|'
       }
-      if (time > 16 && time < 20) {
+      if (time > 12 && time < 16) {
         imageSrc = '@|popup-2.png|'
       }
-      if (time > 22 && time < 26) {
+      if (time > 19 && time < 23) {
         imageSrc = '@|popup-3.png|'
       }
-      if (time > 30 && time < 34) {
+      if (time > 26 && time < 30) {
         imageSrc = '@|popup-4.png|'
       }
-      if (time > 36 && time < 40) {
+      if (time > 33 && time < 37) {
         imageSrc = '@|popup-5.png|'
       }
-      if (time > 48) {
+      if (time > 43) {
         imageSrc = '@|popup-6.png|'
       }
       if (!imageSrc) {
