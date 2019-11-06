@@ -9,13 +9,12 @@ body, html, .owo {
   font: normal 12px/180% "SimSun";
   -webkit-overflow-scrolling: touch;
   position: relative;
+  background-color: #efefef;
 }
 body {
-  background-color: white;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  
 }
 h1, h2, h3, h4, h5, input {
   margin: 0;

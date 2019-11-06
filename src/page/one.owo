@@ -3,22 +3,25 @@
   .one
     img.title(src="@|title.png|")
     img.button(src="@|button.png|" :tap="playVideo")
-  video(src="@|video.mp4|" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5")
+  video(src="@|video.mp4|" style="object-fit: cover;" muted="true" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5")
   .click-box(:tap="showPoup")
   //- 弹窗显示
   img.show-box(:tap="showPoup")
   //- 分享弹窗
-  .share-box
+  .share-box(:tap="showShare")
     img.press(src="@|press.png|")
     img.share(src="@|share.jpg|")
-  img.button-2.button-item(src="@|button-2.png|" :tap="showShare")
-  img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
+  .button-item-box
+    img.button-2.button-item(src="@|button-2.png|" :tap="showShare")
+    img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
 </template>
 
 <script>
   module.exports = {
     data: {
-      poupShow: false
+      poupShow: false,
+      showButtomBar: false,
+      shareShow: false
     },
     created: function () {
       var video = document.querySelector('video');
@@ -38,11 +41,12 @@
         video.play()
         owo.query('.one')[0].style.display = 'none'
       }, 500)
-      video.onended = function () {
-        owo.query('.button-2')[0].style.display = 'block'
-        owo.query('.button-3')[0].style.display = 'block'
-        owo.query('.button-2')[0].style.opacity = 1
-        owo.query('.button-3')[0].style.opacity = 1
+      video.ontimeupdate = () => {
+        if (video.currentTime > 48 && !this.data.showButtomBar) {
+          this.data.showButtomBar = true
+          owo.query('.button-item-box')[0].style.display = 'block'
+          owo.query('.button-item-box')[0].style.opacity = 1
+        }
       }
     },
     showPoup: function () {
@@ -72,7 +76,7 @@
       const showBox = owo.query('.show-box')[0]
       showBox.src = imageSrc
       if (this.data.poupShow) {
-        owo.query('video')[0].play()
+        if (time < 50) owo.query('video')[0].play()
         showBox.style.display = 'none'
         this.data.poupShow = false
       } else {
@@ -82,7 +86,12 @@
       }
     },
     showShare: function () {
-      owo.query('.share-box')[0].style.display = 'block'
+      if (this.data.shareShow) {
+        owo.query('.share-box')[0].style.display = 'none'
+      } else {
+        owo.query('.share-box')[0].style.display = 'block'
+      }
+      this.data.shareShow = !this.data.shareShow
     }
   }
 </script>
@@ -95,18 +104,21 @@
   position: fixed;
   z-index: 10;
   transition: opacity 0.5s;
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
   background-image: url('@|bg.jpg|');
 }
 .button {
   position: absolute;
-  height: 5vh;
+  height: 12%;
   left: 0;
   right: 0;
   bottom: 20%;
   width: auto;
   margin: auto;
   z-index: 9;
+  animation: fade 2000ms infinite;
 }
 video {
   opacity: 0;
@@ -119,17 +131,16 @@ video {
   margin: auto;
   height: 100%;
   width: auto;
-  object-position: "110px 110px";
   object-fit: fill;
   transition: opacity 0.5s;
 }
 .title {
   position: absolute;
-  height: 27vh;
-  left: 17%;
+  height: 46%;
+  left: 15%;
   right: 0;
   margin: auto;
-  top: 13%;
+  top: 17%;
 }
 .click-box {
   width: 100%;
@@ -148,6 +159,7 @@ video {
   margin: auto;
   height: 93%;
   display: none;
+  z-index: 24;
   transform: translate3d(0, 0, 0);
 }
 .share-box {
@@ -159,21 +171,25 @@ video {
   display: none;
   transform: translate3d(0, 0, 0);
   z-index: 22;
-  background-image: url('@|share-bg.jpg|');
+  background-color: rgba(0, 0, 0, 0.5);
   .share {
-    height: 100%;
+    height: 96%;
     width: auto;
-    margin: 0 auto;
+    margin: auto;
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
   }
   .press {
     position: absolute;
     z-index: 2;
-    left: 43vw;
-    height: 3vw;
-    bottom: 18vw;
+    left: 0;
+    right: 0;
+    height: 3%;
+    top: 6%;
+    margin: auto;
     animation: fade 2000ms infinite;
   }
 }
@@ -188,19 +204,20 @@ video {
     opacity: 1.0;
   }
 }
-.button-item {
+.button-item-box {
   position: absolute;
-  bottom: 18vw;
-  height: 9vw;
-  z-index: 18;
+  bottom: 14%;
+  height: 10%;
   display: none;
   transition: opacity 0.5s;
   transform: translate3d(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  z-index: 18;
 }
-.button-2 {
-  left: 85vw;
-}
-.button-3 {
-  right: 36vw;
+.button-item {
+  height: 100%;
+  margin: 0 3%;
 }
 </style>

@@ -1,0 +1,143 @@
+<template>
+  <div class="loading-wrap">
+    <div class="loading-text-wrap">
+      <div class="image-box">
+        <img class="loading-img" src="@|loading.gif|">
+      </div>
+      <div class="progress-num">1%</div>
+    </div>
+    
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      const loadingItem = owo.query('.loading-img')[0]
+      const mum = owo.query('.progress-num')[0]
+      const imgList = [
+        "@|bg.mp3|",
+        "@|bg.jpg|",
+        "@|popup-1.png|",
+        "@|popup-2.png|",
+        "@|popup-3.png|",
+        "@|popup-4.png|",
+        "@|popup-5.png|",
+        "@|popup-6.png|",
+        "@|title.png|"
+      ]
+      this.preloadImages(imgList, (e) => {
+        setTimeout(() => {
+          owo.go('one','' ,'' ,'' ,'' , true)
+        }, 800)
+      }, (num) => {
+        loadingItem.style.left = num + '%'
+        mum.innerText = num + '%'
+      })
+    },
+    preloadImage: function (src, successFn) {
+      setTimeout(() => {
+        var image = new Image()
+        image.src = src
+        image.onload = function () {
+          successFn && successFn(src)
+        }
+        image.onerror = function (error) {
+          successFn && successFn(src)
+        }
+      }, 0)
+    },
+    preloadMusic: function (src, successFn) {
+      const music = new Audio(src)
+      if (music && music.load) music.load()
+      successFn && successFn(src)
+    },
+    preloadImages: function (srcs, doneFn, progressFn) {
+      if (!Array.isArray(srcs)) {
+        console.log('第一个参数只能是一个数组')
+      } else {
+        var allCount = srcs.length
+        var doneCount = 0
+        srcs.forEach((srcItem) => {
+          // 取后缀
+          const fileExtension = srcItem.split('.').pop().toLowerCase()
+          console.log(fileExtension)
+          // 判断是否为图片
+          // 判断浏览器是否支持es6
+          if (![].includes) alert('浏览器版本过低，建议您使用其它浏览器浏览!')
+          if (["png", "jpg", "gif", "jpeg"].includes(fileExtension)) {
+            this.preloadImage(srcItem, function () {
+              doneCount++
+              progressFn && progressFn(Math.ceil(100 * doneCount / allCount))
+              if (doneCount === allCount) {
+                doneFn && doneFn()
+              }
+            })
+          } else if (["mp3"].includes(fileExtension)) {
+            this.preloadMusic(srcItem, function () {
+              doneCount++
+              progressFn && progressFn(Math.ceil(100 * doneCount / allCount))
+              if (doneCount === allCount) {
+                doneFn && doneFn()
+              }
+            })
+          } else {
+            doneCount++
+            progressFn && progressFn(Math.ceil(100 * doneCount / allCount))
+            if (doneCount === allCount) {
+              doneFn && doneFn()
+            }
+          }
+        })
+      }
+    }
+  }
+</script>
+
+
+<style lang="less">
+.loading-wrap {
+  background: #efefef;
+  // background: linear-gradient(to bottom, #80c1ff, #d3b531);
+}
+.loading-text-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 50px;
+  margin: auto;
+  width: 250px;
+  height: 75px;
+  border-bottom: 2px solid green;
+}
+img {
+  padding: 0;
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  position: absolute;
+  transition: left 1s;
+  transform: translate(-60px, 0);
+}
+.progress-num {
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #d0a472;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  height: 50px;
+}
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+.horizontal {
+  left: 50px;
+  bottom: 0px;
+}
+</style>

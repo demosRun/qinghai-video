@@ -1,140 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <title>{TAG_14226_TAG}</title>
-    <!-- 页面的元信息 -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="screen-orientation" content="landscape"/>
-    <meta name="x5-orientation" content="landscape"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    
-      <!-- 页面主样式文件 -->
-      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.main.css">
-      
-    <!-- 附属css文件 -->
-    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-      
-    
-    
-  </head>
-  <body>
-    <!-- 页面区域 -->
-    <!-- 页面[one]-->
-    <div class="horizontal-box owo" id="horizontal-box" template="one"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><video src="./static/resource/video.mp4" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video><div class="click-box" :tap="showPoup"></div><img class="show-box" :tap="showPoup"><div class="share-box"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div>
-    
 
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/iphone-inline-video.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script><!-- 框架script代码 --><script>// 存储页面基本信息
-var owo = {
-  // 手机入口
-  phoneEnter: "loading",
-  // 全局方法变量
-  tool: {},
-  // 框架状态变量
-  state: {}
-};
-/*
-  存储每个页面的函数
-  键名：页面名称
-  键值：方法列表
-*/
+<head>
+  <title>{TAG_14226_TAG}</title>
+  <!-- 页面的元信息 -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
 
-owo.script = {
-  "one": {
-    "data": {
-      "poupShow": false
-    },
-    "created": function created() {
-      var video = document.querySelector('video');
-      enableInlineVideo(video);
-    },
-    "playVideo": function playVideo() {
-      // 播放音乐
-      if (!this.data.music) {
-        this.data.music = new Audio("./static/resource/bg.mp3");
-        this.data.music.loop = true;
-        this.data.music.play();
-      }
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.8i9c20974iv.css">
 
-      owo.query('.one')[0].style.opacity = '0';
-      var video = owo.query('video')[0];
-      setTimeout(function () {
-        video.style.opacity = '1';
-        video.play();
-        owo.query('.one')[0].style.display = 'none';
-      }, 500);
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
 
-      video.onended = function () {
-        owo.query('.button-2')[0].style.display = 'block';
-        owo.query('.button-3')[0].style.display = 'block';
-        owo.query('.button-2')[0].style.opacity = 1;
-        owo.query('.button-3')[0].style.opacity = 1;
-      };
-    },
-    "showPoup": function showPoup() {
-      var imageSrc = null;
-      var time = owo.query('video')[0].currentTime;
 
-      if (time > 10 && time < 14) {
-        imageSrc = './static/resource/popup-1.png';
-      }
 
-      if (time > 16 && time < 20) {
-        imageSrc = './static/resource/popup-2.png';
-      }
+</head>
 
-      if (time > 22 && time < 26) {
-        imageSrc = './static/resource/popup-3.png';
-      }
+<body>
+  <!-- 页面区域 -->
+  <!-- 页面[loading]-->
+  <div class="loading-wrap owo" template="loading" style="display: none;">
+    <div class="loading-text-wrap">
+      <div class="image-box">
+        <img class="loading-img" src="./static/resource/loading.gif">
+      </div>
+      <div class="progress-num">1%</div>
+    </div>
 
-      if (time > 30 && time < 34) {
-        imageSrc = './static/resource/popup-4.png';
-      }
+  </div>
+  <!-- 页面[one]-->
+  <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;">
+    <div class="one">
+      <img class="title" src="./static/resource/title.png">
+      <img class="button" src="./static/resource/button.png" :tap="playVideo">
+    </div>
+    <video src="./static/resource/video.mp4" style="object-fit: cover;" muted="true" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video>
+    <div class="click-box" :tap="showPoup"></div>
+    <img class="show-box" :tap="showPoup">
+    <div class="share-box" :tap="showShare">
+      <img class="press" src="./static/resource/press.png">
+      <img class="share" src="./static/resource/share.jpg">
+    </div>
+    <div class="button-item-box">
+      <img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare">
+      <img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()">
+    </div>
+  </div>
 
-      if (time > 36 && time < 40) {
-        imageSrc = './static/resource/popup-5.png';
-      }
 
-      if (time > 48) {
-        imageSrc = './static/resource/popup-6.png';
-      }
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/iphone-inline-video.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script><!-- 框架script文件 -->
+  <script src="./static/js/owo.main.8i9c20974iv.js" type="text/javascript" charset="UTF-8"></script>
+</body>
 
-      if (!imageSrc) {
-        return;
-      }
-
-      var showBox = owo.query('.show-box')[0];
-      showBox.src = imageSrc;
-
-      if (this.data.poupShow) {
-        owo.query('video')[0].play();
-        showBox.style.display = 'none';
-        this.data.poupShow = false;
-      } else {
-        this.data.poupShow = true;
-        owo.query('video')[0].pause();
-        showBox.style.display = 'block';
-      }
-    },
-    "showShare": function showShare() {
-      owo.query('.share-box')[0].style.display = 'block';
-    }
-  }
-};</script>
-<!-- 框架script文件 -->
-<script src="./static/js/owo.main.js" type="text/javascript" charset="UTF-8"></script>
-  </body>
 </html>

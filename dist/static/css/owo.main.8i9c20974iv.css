@@ -53,6 +53,56 @@ li {
   list-style: none;
 }
 
+.loading-wrap {
+  background: #efefef;
+}
+
+.loading-wrap .loading-text-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 50px;
+  margin: auto;
+  width: 250px;
+  height: 75px;
+  border-bottom: 2px solid green;
+}
+
+.loading-wrap img {
+  padding: 0;
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  position: absolute;
+  -webkit-transition: left 1s;
+  transition: left 1s;
+  -webkit-transform: translate(-60px, 0);
+          transform: translate(-60px, 0);
+}
+
+.loading-wrap .progress-num {
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #d0a472;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  height: 50px;
+}
+
+.loading-wrap .image-box {
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+
+.loading-wrap .horizontal {
+  left: 50px;
+  bottom: 0px;
+}
 .horizontal-box .one {
   width: 100%;
   height: 100%;
@@ -60,19 +110,23 @@ li {
   z-index: 10;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
   background-image: url('../resource/bg.jpg');
 }
 
 .horizontal-box .button {
   position: absolute;
-  height: 5vh;
+  height: 12%;
   left: 0;
   right: 0;
   bottom: 20%;
   width: auto;
   margin: auto;
   z-index: 9;
+  -webkit-animation: fade 2000ms infinite;
+          animation: fade 2000ms infinite;
 }
 
 .horizontal-box video {
@@ -86,8 +140,6 @@ li {
   margin: auto;
   height: 100%;
   width: auto;
-  -o-object-position: "110px 110px";
-     object-position: "110px 110px";
   -o-object-fit: fill;
      object-fit: fill;
   -webkit-transition: opacity 0.5s;
@@ -96,11 +148,11 @@ li {
 
 .horizontal-box .title {
   position: absolute;
-  height: 27vh;
-  left: 17%;
+  height: 46%;
+  left: 15%;
   right: 0;
   margin: auto;
-  top: 13%;
+  top: 17%;
 }
 
 .horizontal-box .click-box {
@@ -121,6 +173,7 @@ li {
   margin: auto;
   height: 93%;
   display: none;
+  z-index: 24;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
@@ -135,24 +188,28 @@ li {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   z-index: 22;
-  background-image: url('../resource/share-bg.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .horizontal-box .share-box .share {
-  height: 100%;
+  height: 96%;
   width: auto;
-  margin: 0 auto;
+  margin: auto;
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .horizontal-box .share-box .press {
   position: absolute;
   z-index: 2;
-  left: 43vw;
-  height: 3vw;
-  bottom: 18vw;
+  left: 0;
+  right: 0;
+  height: 3%;
+  top: 6%;
+  margin: auto;
   -webkit-animation: fade 2000ms infinite;
           animation: fade 2000ms infinite;
 }
@@ -185,22 +242,23 @@ li {
   }
 }
 
-.horizontal-box .button-item {
+.horizontal-box .button-item-box {
   position: absolute;
-  bottom: 18vw;
-  height: 9vw;
-  z-index: 18;
+  bottom: 14%;
+  height: 10%;
   display: none;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+  text-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 18;
 }
 
-.horizontal-box .button-2 {
-  left: 85vw;
-}
-
-.horizontal-box .button-3 {
-  right: 36vw;
+.horizontal-box .button-item {
+  height: 100%;
+  margin: 0 3%;
 }

@@ -54,14 +54,6 @@ module.exports = {
       content: '2',
     },
     {
-      name: 'screen-orientation',
-      content: 'landscape',
-    },
-    {
-      name: 'x5-orientation',
-      content: 'landscape',
-    },
-    {
       name: 'full-screen',
       content: 'yes',
     },
@@ -121,6 +113,10 @@ module.exports = {
   // 页面清单
   pageList: [
     {
+      name: 'loading',
+      src: './src/page/loading.owo'
+    },
+    {
       name: 'one',
       src: './src/page/one.owo'
     }
@@ -151,6 +147,10 @@ module.exports = {
       addVersion: false,
       allAnimate: false
     },
+    route: {
+      // 永远从第一页开始
+      startAtHome: true
+    },
     serverPort: 8000,
     // 静态文件服务
     server: true,
@@ -168,7 +168,7 @@ module.exports = {
     alertLink: false,
     route: {
       // 永远从第一页开始
-      startAtHome: false
+      startAtHome: true
     },
     // 输出配置
     outPut: {
