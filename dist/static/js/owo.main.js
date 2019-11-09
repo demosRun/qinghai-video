@@ -1,194 +1,4 @@
-// Wed Nov 06 2019 17:32:46 GMT+0800 (GMT+08:00)
-
-// 存储页面基本信息
-var owo = {
-  // 手机入口
-  phoneEnter: "loading",
-  // 全局方法变量
-  tool: {},
-  // 框架状态变量
-  state: {}
-};
-/*
-  存储每个页面的函数
-  键名：页面名称
-  键值：方法列表
-*/
-
-owo.script = {
-  "loading": {
-    "created": function created() {
-      var loadingItem = owo.query('.loading-img')[0];
-      var mum = owo.query('.progress-num')[0];
-      var imgList = ["./static/resource/bg.mp3", "./static/resource/bg.jpg", "./static/resource/popup-1.png", "./static/resource/popup-2.png", "./static/resource/popup-3.png", "./static/resource/popup-4.png", "./static/resource/popup-5.png", "./static/resource/popup-6.png", "./static/resource/title.png"];
-      this.preloadImages(imgList, function (e) {
-        setTimeout(function () {
-          owo.go('one', '', '', '', '', true);
-        }, 800);
-      }, function (num) {
-        loadingItem.style.left = num + '%';
-        mum.innerText = num + '%';
-      });
-    },
-    "preloadImage": function preloadImage(src, successFn) {
-      setTimeout(function () {
-        var image = new Image();
-        image.src = src;
-
-        image.onload = function () {
-          successFn && successFn(src);
-        };
-
-        image.onerror = function (error) {
-          successFn && successFn(src);
-        };
-      }, 0);
-    },
-    "preloadMusic": function preloadMusic(src, successFn) {
-      var music = new Audio(src);
-      if (music && music.load) music.load();
-      successFn && successFn(src);
-    },
-    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
-      var _this = this;
-
-      if (!Array.isArray(srcs)) {
-        console.log('第一个参数只能是一个数组');
-      } else {
-        var allCount = srcs.length;
-        var doneCount = 0;
-        srcs.forEach(function (srcItem) {
-          // 取后缀
-          var fileExtension = srcItem.split('.').pop().toLowerCase();
-          console.log(fileExtension); // 判断是否为图片
-          // 判断浏览器是否支持es6
-
-          if (![].includes) alert('浏览器版本过低，建议您使用其它浏览器浏览!');
-
-          if (["png", "jpg", "gif", "jpeg"].includes(fileExtension)) {
-            _this.preloadImage(srcItem, function () {
-              doneCount++;
-              progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-              if (doneCount === allCount) {
-                doneFn && doneFn();
-              }
-            });
-          } else if (["mp3"].includes(fileExtension)) {
-            _this.preloadMusic(srcItem, function () {
-              doneCount++;
-              progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-              if (doneCount === allCount) {
-                doneFn && doneFn();
-              }
-            });
-          } else {
-            doneCount++;
-            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-            if (doneCount === allCount) {
-              doneFn && doneFn();
-            }
-          }
-        });
-      }
-    }
-  },
-  "one": {
-    "data": {
-      "poupShow": false,
-      "showButtomBar": false,
-      "shareShow": false
-    },
-    "created": function created() {
-      var video = document.querySelector('video');
-      enableInlineVideo(video);
-    },
-    "playVideo": function playVideo() {
-      var _this2 = this;
-
-      // 播放音乐
-      if (!this.data.music) {
-        this.data.music = new Audio("./static/resource/bg.mp3");
-        this.data.music.loop = true;
-        this.data.music.play();
-      }
-
-      owo.query('.one')[0].style.opacity = '0';
-      var video = owo.query('video')[0];
-      setTimeout(function () {
-        video.style.opacity = '1';
-        video.play();
-        owo.query('.one')[0].style.display = 'none';
-      }, 500);
-
-      video.ontimeupdate = function () {
-        console.log(video.currentTime);
-
-        if (video.currentTime > 44 && !_this2.data.showButtomBar) {
-          _this2.data.showButtomBar = true;
-          owo.query('.button-item-box')[0].style.display = 'block';
-          owo.query('.button-item-box')[0].style.opacity = 1;
-        }
-      };
-    },
-    "showPoup": function showPoup() {
-      var imageSrc = null;
-      var time = owo.query('video')[0].currentTime;
-
-      if (time > 6 && time < 10) {
-        imageSrc = './static/resource/popup-1.png';
-      }
-
-      if (time > 12 && time < 16) {
-        imageSrc = './static/resource/popup-2.png';
-      }
-
-      if (time > 19 && time < 23) {
-        imageSrc = './static/resource/popup-3.png';
-      }
-
-      if (time > 26 && time < 30) {
-        imageSrc = './static/resource/popup-4.png';
-      }
-
-      if (time > 33 && time < 37) {
-        imageSrc = './static/resource/popup-5.png';
-      }
-
-      if (time > 43) {
-        imageSrc = './static/resource/popup-6.png';
-      }
-
-      if (!imageSrc) {
-        return;
-      }
-
-      var showBox = owo.query('.show-box')[0];
-      showBox.src = imageSrc;
-
-      if (this.data.poupShow) {
-        if (time < 50) owo.query('video')[0].play();
-        showBox.style.display = 'none';
-        this.data.poupShow = false;
-      } else {
-        this.data.poupShow = true;
-        owo.query('video')[0].pause();
-        showBox.style.display = 'block';
-      }
-    },
-    "showShare": function showShare() {
-      if (this.data.shareShow) {
-        owo.query('.share-box')[0].style.display = 'none';
-      } else {
-        owo.query('.share-box')[0].style.display = 'block';
-      }
-
-      this.data.shareShow = !this.data.shareShow;
-    }
-  }
-};
+// Sat Nov 09 2019 23:47:12 GMT+0800 (GMT+08:00)
 
 /* 方法合集 */
 var _owo = {}
@@ -533,6 +343,23 @@ _owo._event_tap = function (tempDom, callBack) {
     startTime = 0;
     isMove = false
   })
+}
+
+
+// 这是用于代码调试的自动刷新代码，他不应该出现在正式上线版本!
+if ("WebSocket" in window) {
+  // 打开一个 web socket
+  if (!window._owo.ws) window._owo.ws = new WebSocket("ws://" + window.location.host)
+  window._owo.ws.onmessage = function (evt) { 
+    if (evt.data == 'reload') {
+      location.reload()
+    }
+  }
+  window._owo.ws.onclose = function() { 
+    console.info('与服务器断开连接')
+  }
+} else {
+  console.error('浏览器不支持WebSocket')
 }
 
 

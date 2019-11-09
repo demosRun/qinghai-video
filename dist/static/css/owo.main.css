@@ -129,8 +129,7 @@ li {
           animation: fade 2000ms infinite;
 }
 
-.horizontal-box video {
-  opacity: 0;
+.horizontal-box .video {
   z-index: 0;
   position: absolute;
   left: 0;
@@ -144,6 +143,15 @@ li {
      object-fit: fill;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  z-index: 9;
+}
+
+.horizontal-box .video canvas {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .horizontal-box .title {
@@ -153,15 +161,6 @@ li {
   right: 0;
   margin: auto;
   top: 17%;
-}
-
-.horizontal-box .click-box {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 9;
-  left: 0;
-  top: 0;
 }
 
 .horizontal-box .show-box {

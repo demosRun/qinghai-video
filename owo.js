@@ -80,6 +80,10 @@ module.exports = {
       name: "iphone-inline-video",
       src: "./src/resource/iphone-inline-video.min.js"
     },
+    {
+      name: "lottie.min",
+      src: "./src/resource/lottie.min.js"
+    },
     // {
     //   name: "swiper.4.5.0",
     //   src: "./src/resource/swiper.4.5.0.min.js"

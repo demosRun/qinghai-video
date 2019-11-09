@@ -3,8 +3,7 @@
   .one
     img.title(src="@|title.png|")
     img.button(src="@|button.png|" :tap="playVideo")
-  video(src="@|video.mp4|" style="object-fit: cover;" muted="true" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5")
-  .click-box(:tap="showPoup")
+  .video(:tap="showPoup")
   //- 弹窗显示
   img.show-box(:tap="showPoup")
   //- 分享弹窗
@@ -19,13 +18,14 @@
 <script>
   module.exports = {
     data: {
+      anim: null,
       poupShow: false,
       showButtomBar: false,
       shareShow: false
     },
     created: function () {
-      var video = document.querySelector('video');
-      enableInlineVideo(video)
+      // var video = document.querySelector('video');
+      // enableInlineVideo(video)
     },
     playVideo: function () {
       // 播放音乐
@@ -35,15 +35,28 @@
         this.data.music.play()
       }
       owo.query('.one')[0].style.opacity = '0'
-      const video = owo.query('video')[0]
+      // 一秒后销毁one不然挡住下面不能点击
       setTimeout(() => {
-        video.style.opacity = '1'
-        video.play()
         owo.query('.one')[0].style.display = 'none'
-      }, 500)
-      video.ontimeupdate = () => {
-        console.log(video.currentTime)
-        if (video.currentTime > 44 && !this.data.showButtomBar) {
+      }, 1000)
+      var animData = {
+        wrapper: owo.query('.video')[0],
+        renderer: "canvas",
+        loop: false,
+        prerender: false,
+        autoplay: true,
+        path: '@|data.json|'
+      };
+      this.data.anim = bodymovin.loadAnimation(animData);
+
+      // const video = owo.query('video')[0]
+      // setTimeout(() => {
+      //   video.style.opacity = '1'
+      //   video.play()
+      //   owo.query('.one')[0].style.display = 'none'
+      // }, 500)
+      this.data.anim.onEnterFrame = (e) => {
+        if (e.currentTime > 1110 && !this.data.showButtomBar) {
           this.data.showButtomBar = true
           owo.query('.button-item-box')[0].style.display = 'block'
           owo.query('.button-item-box')[0].style.opacity = 1
@@ -51,25 +64,25 @@
       }
     },
     showPoup: function () {
-      let imageSrc = null
-      const time = owo.query('video')[0].currentTime
       
-      if (time > 6 && time < 10) {
+      let imageSrc = null
+      const time = this.data.anim.currentFrame
+      if (time > 150 && time < 250) {
         imageSrc = '@|popup-1.png|'
       }
-      if (time > 12 && time < 16) {
+      if (time > 300 && time < 400) {
         imageSrc = '@|popup-2.png|'
       }
-      if (time > 19 && time < 23) {
+      if (time > 500 && time < 580) {
         imageSrc = '@|popup-3.png|'
       }
-      if (time > 26 && time < 30) {
+      if (time > 660 && time < 750) {
         imageSrc = '@|popup-4.png|'
       }
-      if (time > 33 && time < 37) {
+      if (time > 830 && time < 930) {
         imageSrc = '@|popup-5.png|'
       }
-      if (time > 43) {
+      if (time > 1100) {
         imageSrc = '@|popup-6.png|'
       }
       if (!imageSrc) {
@@ -78,12 +91,12 @@
       const showBox = owo.query('.show-box')[0]
       showBox.src = imageSrc
       if (this.data.poupShow) {
-        if (time < 50) owo.query('video')[0].play()
+        if (time < 1100) this.data.anim.play()
         showBox.style.display = 'none'
         this.data.poupShow = false
       } else {
         this.data.poupShow = true
-        owo.query('video')[0].pause()
+        this.data.anim.pause()
         showBox.style.display = 'block'
       }
     },
@@ -122,8 +135,7 @@
   z-index: 9;
   animation: fade 2000ms infinite;
 }
-video {
-  opacity: 0;
+.video {
   z-index: 0;
   position: absolute;
   left: 0;
@@ -135,6 +147,11 @@ video {
   width: auto;
   object-fit: fill;
   transition: opacity 0.5s;
+  z-index: 9;
+  canvas {
+    user-select: none;
+    pointer-events: none;
+  }
 }
 .title {
   position: absolute;
@@ -143,14 +160,6 @@ video {
   right: 0;
   margin: auto;
   top: 17%;
-}
-.click-box {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 9;
-  left: 0;
-  top: 0;
 }
 .show-box {
   position: absolute;
