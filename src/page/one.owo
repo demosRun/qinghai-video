@@ -3,9 +3,13 @@
   .one
     img.title(src="@|title.png|")
     img.button(src="@|button.png|" :tap="playVideo")
-  .video(:tap="showPoup")
+  .video
   //- 弹窗显示
-  img.show-box(:tap="showPoup")
+  .show-box
+    .title-bar 是标题内容
+    img.left(src="@|show.jpg|")
+    .right 青海地处世界第三极，是北半球气候 的敏感区和启动区，是全球生态系统的调节器和稳定器。青海的生态资源总价值18.39万亿元，每年的生态服务价值7300亿元。生态美好，是最大的美好；生态是安全，是最大的安全。
+    .close(:tap="showPoup") 关闭
   //- 分享弹窗
   .share-box(:tap="showShare")
     img.press(src="@|press.png|")
@@ -13,6 +17,11 @@
   .button-item-box
     img.button-2.button-item(src="@|button-2.png|" :tap="showShare")
     img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
+  .next(:tap="next") 继续按钮
+  //- 打卡点
+  .point.point-1.step-1(:tap="showPoup")
+  .point.point-2.step-1(:tap="showPoup")
+  .point.point-3.step-1(:tap="showPoup")
 </template>
 
 <script>
@@ -21,11 +30,22 @@
       anim: null,
       poupShow: false,
       showButtomBar: false,
-      shareShow: false
+      shareShow: false,
+      // 当前第几步了
+      step: 1
     },
     created: function () {
       // var video = document.querySelector('video');
       // enableInlineVideo(video)
+      var animData = {
+        wrapper: owo.query('.video')[0],
+        renderer: "canvas",
+        loop: false,
+        prerender: false,
+        autoplay: false,
+        path: '@|data.json|'
+      };
+      this.data.anim = bodymovin.loadAnimation(animData);
     },
     playVideo: function () {
       // 播放音乐
@@ -39,16 +59,11 @@
       setTimeout(() => {
         owo.query('.one')[0].style.display = 'none'
       }, 1000)
-      var animData = {
-        wrapper: owo.query('.video')[0],
-        renderer: "canvas",
-        loop: false,
-        prerender: false,
-        autoplay: true,
-        path: '@|data.json|'
-      };
-      this.data.anim = bodymovin.loadAnimation(animData);
-
+      
+      // 开始播放
+      console.log(this.data.anim)
+      console.log('开始播放第一段!')
+      this.data.anim.playSegments([100, 350], true)
       // const video = owo.query('video')[0]
       // setTimeout(() => {
       //   video.style.opacity = '1'
@@ -62,36 +77,19 @@
           owo.query('.button-item-box')[0].style.opacity = 1
         }
       }
+      this.data.anim.onComplete = (e) => {
+        if (this.data.step === 1) {
+          owo.query('.step-1').forEach(element => {
+            element.style.display = 'block'
+          });
+        }
+        owo.query('.next')[0].style.display = 'block'
+      }
     },
     showPoup: function () {
-      
-      let imageSrc = null
-      const time = this.data.anim.currentFrame
-      if (time > 150 && time < 250) {
-        imageSrc = '@|popup-1.png|'
-      }
-      if (time > 300 && time < 400) {
-        imageSrc = '@|popup-2.png|'
-      }
-      if (time > 500 && time < 580) {
-        imageSrc = '@|popup-3.png|'
-      }
-      if (time > 660 && time < 750) {
-        imageSrc = '@|popup-4.png|'
-      }
-      if (time > 830 && time < 930) {
-        imageSrc = '@|popup-5.png|'
-      }
-      if (time > 1100) {
-        imageSrc = '@|popup-6.png|'
-      }
-      if (!imageSrc) {
-        return
-      }
       const showBox = owo.query('.show-box')[0]
-      showBox.src = imageSrc
       if (this.data.poupShow) {
-        if (time < 1100) this.data.anim.play()
+        this.data.anim.play()
         showBox.style.display = 'none'
         this.data.poupShow = false
       } else {
@@ -107,6 +105,9 @@
         owo.query('.share-box')[0].style.display = 'block'
       }
       this.data.shareShow = !this.data.shareShow
+    },
+    next: function () {
+      owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
     }
   }
 </script>
@@ -230,5 +231,89 @@
 .button-item {
   height: 100%;
   margin: 0 3%;
+}
+.next {
+  position: fixed;
+  right: 5%;
+  z-index: 11;
+  bottom: 5%;
+  display: none;
+  color: white;
+  z-index: 18;
+  font-size: 30px;
+  background-color: #009fe9;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes fade {
+  from {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1.0;
+  }
+}
+.point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 20;
+  background-color: #FFEB3B;
+  border-radius: 20px;
+  display: none;
+  animation: fade 1000ms infinite;
+  transform: translate3d(0, 0, 0);
+}
+.point-1 {
+  left: 42%;
+  top: 41%;
+}
+.point-2 {
+  top: 80%;
+  left: 20%;
+}
+.point-3 {
+  right: 13%;
+  bottom: 19%;
+}
+.show-box {
+  overflow: hidden;
+  width: 80%;
+  background-color: #1474c6;
+  .title-bar {
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+    color: white;
+  }
+  .left {
+    width: 45%;
+    top: 80px;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    left: 5%;
+  }
+  .right {
+    position: absolute;
+    width: 38%;
+    right: 5%;
+    height: calc(90% - 80px);
+    overflow: auto;
+    top: 80px;
+    bottom: 0;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .close {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: white;
+  }
 }
 </style>

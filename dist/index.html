@@ -40,7 +40,7 @@
     
   </div>
     <!-- 页面[one]-->
-    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><div class="video" :tap="showPoup"></div><img class="show-box" :tap="showPoup"><div class="share-box" :tap="showShare"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div></div>
+    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><div class="video"></div><div class="show-box"><div class="title-bar">是标题内容</div><img class="left" src="./static/resource/show.jpg"><div class="right">青海地处世界第三极，是北半球气候 的敏感区和启动区，是全球生态系统的调节器和稳定器。青海的生态资源总价值18.39万亿元，每年的生态服务价值7300亿元。生态美好，是最大的美好；生态是安全，是最大的安全。</div><div class="close" :tap="showPoup">关闭</div></div><div class="share-box" :tap="showShare"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div><div class="next" :tap="next">继续按钮</div><div class="point point-1 step-1" :tap="showPoup"></div><div class="point point-2 step-1" :tap="showPoup"></div><div class="point point-3 step-1" :tap="showPoup"></div></div>
     
 
     <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
@@ -151,10 +151,21 @@ owo.script = {
       "anim": null,
       "poupShow": false,
       "showButtomBar": false,
-      "shareShow": false
+      "shareShow": false,
+      "step": 1
     },
-    "created": function created() {// var video = document.querySelector('video');
+    "created": function created() {
+      // var video = document.querySelector('video');
       // enableInlineVideo(video)
+      var animData = {
+        wrapper: owo.query('.video')[0],
+        renderer: "canvas",
+        loop: false,
+        prerender: false,
+        autoplay: false,
+        path: './static/resource/data.json'
+      };
+      this.data.anim = bodymovin.loadAnimation(animData);
     },
     "playVideo": function playVideo() {
       var _this2 = this;
@@ -170,16 +181,11 @@ owo.script = {
 
       setTimeout(function () {
         owo.query('.one')[0].style.display = 'none';
-      }, 1000);
-      var animData = {
-        wrapper: owo.query('.video')[0],
-        renderer: "canvas",
-        loop: false,
-        prerender: false,
-        autoplay: true,
-        path: './static/resource/data.json'
-      };
-      this.data.anim = bodymovin.loadAnimation(animData); // const video = owo.query('video')[0]
+      }, 1000); // 开始播放
+
+      console.log(this.data.anim);
+      console.log('开始播放第一段!');
+      this.data.anim.playSegments([100, 350], true); // const video = owo.query('video')[0]
       // setTimeout(() => {
       //   video.style.opacity = '1'
       //   video.play()
@@ -193,44 +199,22 @@ owo.script = {
           owo.query('.button-item-box')[0].style.opacity = 1;
         }
       };
+
+      this.data.anim.onComplete = function (e) {
+        if (_this2.data.step === 1) {
+          owo.query('.step-1').forEach(function (element) {
+            element.style.display = 'block';
+          });
+        }
+
+        owo.query('.next')[0].style.display = 'block';
+      };
     },
     "showPoup": function showPoup() {
-      var imageSrc = null;
-      var time = this.data.anim.currentFrame;
-
-      if (time > 150 && time < 250) {
-        imageSrc = './static/resource/popup-1.png';
-      }
-
-      if (time > 300 && time < 400) {
-        imageSrc = './static/resource/popup-2.png';
-      }
-
-      if (time > 500 && time < 580) {
-        imageSrc = './static/resource/popup-3.png';
-      }
-
-      if (time > 660 && time < 750) {
-        imageSrc = './static/resource/popup-4.png';
-      }
-
-      if (time > 830 && time < 930) {
-        imageSrc = './static/resource/popup-5.png';
-      }
-
-      if (time > 1100) {
-        imageSrc = './static/resource/popup-6.png';
-      }
-
-      if (!imageSrc) {
-        return;
-      }
-
       var showBox = owo.query('.show-box')[0];
-      showBox.src = imageSrc;
 
       if (this.data.poupShow) {
-        if (time < 1100) this.data.anim.play();
+        this.data.anim.play();
         showBox.style.display = 'none';
         this.data.poupShow = false;
       } else {
@@ -247,6 +231,9 @@ owo.script = {
       }
 
       this.data.shareShow = !this.data.shareShow;
+    },
+    "next": function next() {
+      owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
     }
   }
 };</script>

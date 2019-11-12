@@ -261,3 +261,103 @@ li {
   height: 100%;
   margin: 0 3%;
 }
+
+.horizontal-box .next {
+  position: fixed;
+  right: 5%;
+  z-index: 11;
+  bottom: 5%;
+  display: none;
+  color: white;
+  z-index: 18;
+  font-size: 30px;
+  background-color: #009fe9;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.horizontal-box .point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 20;
+  background-color: #FFEB3B;
+  border-radius: 20px;
+  display: none;
+  -webkit-animation: fade 1000ms infinite;
+          animation: fade 1000ms infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.horizontal-box .point-1 {
+  left: 42%;
+  top: 41%;
+}
+
+.horizontal-box .point-2 {
+  top: 80%;
+  left: 20%;
+}
+
+.horizontal-box .point-3 {
+  right: 13%;
+  bottom: 19%;
+}
+
+.horizontal-box .show-box {
+  overflow: hidden;
+  width: 80%;
+  background-color: #1474c6;
+}
+
+.horizontal-box .show-box .title-bar {
+  height: 80px;
+  line-height: 80px;
+  font-size: 25px;
+  color: white;
+}
+
+.horizontal-box .show-box .left {
+  width: 45%;
+  top: 80px;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 5%;
+}
+
+.horizontal-box .show-box .right {
+  position: absolute;
+  width: 38%;
+  right: 5%;
+  height: calc(90% - 80px);
+  overflow: auto;
+  top: 80px;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.horizontal-box .show-box .close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  color: white;
+}
