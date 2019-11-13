@@ -19,23 +19,22 @@
     img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
   .next(:tap="next") 继续按钮
   //- 打卡点
-  .point.point-1.step-1(:tap="showPoup(1)")
-  .point.point-2.step-1(:tap="showPoup(2)")
-  .point.point-3.step-1(:tap="showPoup(3)")
-  .point.point-1.step-2(:tap="showPoup(4)")
-  .point.point-2.step-2(:tap="showPoup(5)")
-  .point.point-3.step-2(:tap="showPoup(6)")
-  .point.point-1.step-3(:tap="showPoup(7)")
-  .point.point-2.step-3(:tap="showPoup(8)")
-  .point.point-3.step-3(:tap="showPoup(9)")
-  .point.point-1.step-4(:tap="showPoup(10)")
-  .point.point-2.step-4(:tap="showPoup(11)")
-  .point.point-3.step-4(:tap="showPoup(12)")
+  .point.point-1.step-1(:tap="showPoup('badge-1')")
+  .point.point-2.step-1(:tap="showPoup('badge-2')")
+  .point.point-3.step-1(:tap="showPoup('badge-3')")
+  .point.point-1.step-2(:tap="showPoup('badge-1')")
+  .point.point-2.step-2(:tap="showPoup('badge-2')")
+  .point.point-3.step-2(:tap="showPoup('badge-3')")
+  .point.point-1.step-3(:tap="showPoup('badge-1')")
+  .point.point-2.step-3(:tap="showPoup('badge-2')")
+  .point.point-3.step-3(:tap="showPoup('badge-3')")
+  .point.point-1.step-4(:tap="showPoup('badge-1')")
+  .point.point-2.step-4(:tap="showPoup('badge-2')")
+  .point.point-3.step-4(:tap="showPoup('badge-3')")
   .badge-bar
     .badge.badge-1
     .badge.badge-2
     .badge.badge-3
-    .badge.badge-4
 </template>
 
 <script>
@@ -79,15 +78,8 @@
       // 开始播放
       console.log(this.data.anim)
       console.log('开始播放第一段!')
-      this.data.anim.playSegments([100, 350], true)
-      // 显示徽章
-      owo.query('.badge-bar')[0].style.display = 'block'
-      // const video = owo.query('video')[0]
-      // setTimeout(() => {
-      //   video.style.opacity = '1'
-      //   video.play()
-      //   owo.query('.one')[0].style.display = 'none'
-      // }, 500)
+      this.data.anim.playSegments([0, 350], true)
+
       this.data.anim.onEnterFrame = (e) => {
         if (e.currentTime > 1110 && !this.data.showButtomBar) {
           this.data.showButtomBar = true
@@ -96,6 +88,12 @@
         }
       }
       this.data.anim.onComplete = (e) => {
+        // 显示徽章
+        const badgeList = owo.query('.badge')
+        for (let ind = 0; ind < badgeList.length; ind++) {
+          badgeList[ind].classList.remove('active')
+        }
+        owo.query('.badge-bar')[0].style.left = '5%'
         console.log('显示.step-' + this.data.step)
         owo.query('.step-' + this.data.step).forEach(element => {
           element.style.display = 'block'
@@ -103,11 +101,11 @@
         owo.query('.next')[0].style.display = 'block'
       }
     },
-    showPoup: function (dingId) {
+    showPoup: function (dingClass) {
       
-      if (dingId) {
+      if (dingClass) {
         this.$target.style.display = 'none'
-        this.data.ding.set(dingId)
+        owo.query('.' + dingClass)[0].classList.add('active')
       }
       const showBox = owo.query('.show-box')[0]
       if (this.data.poupShow) {
@@ -127,45 +125,36 @@
       this.data.shareShow = !this.data.shareShow
     },
     next: function () {
+      let canNext = true
+      const badgeList = owo.query('.badge')
+      for (let ind = 0; ind < badgeList.length; ind++) {
+        if (!badgeList[ind].classList.contains('active')) canNext = false
+      }
+      if (!canNext) {
+        owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
+        return
+      }
       switch (this.data.step) {
         case 1:
-          if (this.data.ding.size < 3) {
-            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
-            return
-          } else {
-            this.data.step = 2
-            this.data.anim.playSegments([350, 500], true)
-          }
+          this.data.step = 2
+          this.data.anim.playSegments([350, 500], true)
           break;
         case 2:
-          if (this.data.ding.size < 6) {
-            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
-            return
-          } else {
-            this.data.step = 3
-            this.data.anim.playSegments([500, 670], true)
-          }
+          this.data.step = 3
+          this.data.anim.playSegments([500, 670], true)
           break;
         case 3:
-          if (this.data.ding.size < 9) {
-            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
-            return
-          } else {
-            this.data.step = 4
-            this.data.anim.playSegments([670, 850], true)
-          }
+          this.data.step = 4
+          this.data.anim.playSegments([670, 850], true)
           break;
         case 4:
-          if (this.data.ding.size < 9) {
-            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
-            return
-          } else {
-            this.data.step = 5
-            this.data.anim.playSegments([850, 1020], true)
-          }
+          this.data.step = 5
+          this.data.anim.playSegments([850, 1020], true)
           break;
       }
-      owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
+      // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
+      // 开车隐藏徽章
+      owo.query('.badge-bar')[0].style.left = '-8%'
     }
   }
 </script>
@@ -376,13 +365,13 @@
 }
 .badge-bar {
   position: fixed;
-  left: 5%;
+  left: -8%;
   height: 90%;
   z-index: 22;
   margin: auto;
   top: 0;
   bottom: 0;
-  display: none;
+  transition: left 1s;
   transform: translate3d(0, 0, 0);
   .badge {
     width: 40px;

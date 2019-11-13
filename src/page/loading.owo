@@ -120,7 +120,7 @@ img {
   width: 90px;
   margin: 0 auto;
   position: absolute;
-  transition: left 1s;
+  transition: left 0.5s;
   transform: translate(-60px, 0);
 }
 .progress-num {

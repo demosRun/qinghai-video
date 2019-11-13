@@ -75,8 +75,8 @@ li {
   width: 90px;
   margin: 0 auto;
   position: absolute;
-  -webkit-transition: left 1s;
-  transition: left 1s;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
   -webkit-transform: translate(-60px, 0);
           transform: translate(-60px, 0);
 }
@@ -364,13 +364,14 @@ li {
 
 .horizontal-box .badge-bar {
   position: fixed;
-  left: 5%;
+  left: -8%;
   height: 90%;
   z-index: 22;
   margin: auto;
   top: 0;
   bottom: 0;
-  display: none;
+  -webkit-transition: left 1s;
+  transition: left 1s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
