@@ -26,7 +26,7 @@
         "@|popup-6.png|",
         "@|title.png|",
       ]
-      for (let ind = 0; ind < 68; ind++) {
+      for (let ind = 0; ind < 34; ind++) {
         imgList.push(`./static/resource/images/img_${ind}.png`)
       }
       this.preloadImages(imgList, (e) => {
