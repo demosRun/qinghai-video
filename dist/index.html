@@ -40,7 +40,7 @@
     
   </div>
     <!-- 页面[one]-->
-    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><div class="video"></div><div class="show-box"><div class="title-bar">是标题内容</div><img class="left" src="./static/resource/show.jpg"><div class="right">青海地处世界第三极，是北半球气候 的敏感区和启动区，是全球生态系统的调节器和稳定器。青海的生态资源总价值18.39万亿元，每年的生态服务价值7300亿元。生态美好，是最大的美好；生态是安全，是最大的安全。</div><div class="close" :tap="showPoup">关闭</div></div><div class="share-box" :tap="showShare"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div><div class="next" :tap="next">继续按钮</div><div class="point point-1 step-1" :tap="showPoup"></div><div class="point point-2 step-1" :tap="showPoup"></div><div class="point point-3 step-1" :tap="showPoup"></div></div>
+    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><div class="video"></div><div class="show-box"><div class="title-bar">是标题内容</div><img class="left" src="./static/resource/show.jpg"><div class="right">青海地处世界第三极，是北半球气候 的敏感区和启动区，是全球生态系统的调节器和稳定器。青海的生态资源总价值18.39万亿元，每年的生态服务价值7300亿元。生态美好，是最大的美好；生态是安全，是最大的安全。</div><div class="close" :tap="showPoup">关闭</div></div><div class="share-box" :tap="showShare"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div><div class="next" :tap="next">继续按钮</div><div class="point point-1 step-1" :tap="showPoup(1)"></div><div class="point point-2 step-1" :tap="showPoup(2)"></div><div class="point point-3 step-1" :tap="showPoup(3)"></div><div class="point point-1 step-2" :tap="showPoup(4)"></div><div class="point point-2 step-2" :tap="showPoup(5)"></div><div class="point point-3 step-2" :tap="showPoup(6)"></div><div class="point point-1 step-3" :tap="showPoup(7)"></div><div class="point point-2 step-3" :tap="showPoup(8)"></div><div class="point point-3 step-3" :tap="showPoup(9)"></div><div class="point point-1 step-4" :tap="showPoup(10)"></div><div class="point point-2 step-4" :tap="showPoup(11)"></div><div class="point point-3 step-4" :tap="showPoup(12)"></div><div class="badge-bar"><div class="badge badge-1"></div><div class="badge badge-2"></div><div class="badge badge-3"></div><div class="badge badge-4"></div></div></div>
     
 
     <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
@@ -152,11 +152,13 @@ owo.script = {
       "poupShow": false,
       "showButtomBar": false,
       "shareShow": false,
-      "step": 1
+      "step": 1,
+      "ding": null
     },
     "created": function created() {
       // var video = document.querySelector('video');
       // enableInlineVideo(video)
+      this.data.ding = new Map();
       var animData = {
         wrapper: owo.query('.video')[0],
         renderer: "canvas",
@@ -185,7 +187,9 @@ owo.script = {
 
       console.log(this.data.anim);
       console.log('开始播放第一段!');
-      this.data.anim.playSegments([100, 350], true); // const video = owo.query('video')[0]
+      this.data.anim.playSegments([100, 350], true); // 显示徽章
+
+      owo.query('.badge-bar')[0].style.display = 'block'; // const video = owo.query('video')[0]
       // setTimeout(() => {
       //   video.style.opacity = '1'
       //   video.play()
@@ -201,25 +205,26 @@ owo.script = {
       };
 
       this.data.anim.onComplete = function (e) {
-        if (_this2.data.step === 1) {
-          owo.query('.step-1').forEach(function (element) {
-            element.style.display = 'block';
-          });
-        }
-
+        console.log('显示.step-' + _this2.data.step);
+        owo.query('.step-' + _this2.data.step).forEach(function (element) {
+          element.style.display = 'block';
+        });
         owo.query('.next')[0].style.display = 'block';
       };
     },
-    "showPoup": function showPoup() {
+    "showPoup": function showPoup(dingId) {
+      if (dingId) {
+        this.$target.style.display = 'none';
+        this.data.ding.set(dingId);
+      }
+
       var showBox = owo.query('.show-box')[0];
 
       if (this.data.poupShow) {
-        this.data.anim.play();
         showBox.style.display = 'none';
         this.data.poupShow = false;
       } else {
         this.data.poupShow = true;
-        this.data.anim.pause();
         showBox.style.display = 'block';
       }
     },
@@ -233,7 +238,53 @@ owo.script = {
       this.data.shareShow = !this.data.shareShow;
     },
     "next": function next() {
-      owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
+      switch (this.data.step) {
+        case 1:
+          if (this.data.ding.size < 3) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
+            return;
+          } else {
+            this.data.step = 2;
+            this.data.anim.playSegments([350, 500], true);
+          }
+
+          break;
+
+        case 2:
+          if (this.data.ding.size < 6) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
+            return;
+          } else {
+            this.data.step = 3;
+            this.data.anim.playSegments([500, 670], true);
+          }
+
+          break;
+
+        case 3:
+          if (this.data.ding.size < 9) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
+            return;
+          } else {
+            this.data.step = 4;
+            this.data.anim.playSegments([670, 850], true);
+          }
+
+          break;
+
+        case 4:
+          if (this.data.ding.size < 9) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
+            return;
+          } else {
+            this.data.step = 5;
+            this.data.anim.playSegments([850, 1020], true);
+          }
+
+          break;
+      }
+
+      owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active');
     }
   }
 };</script>

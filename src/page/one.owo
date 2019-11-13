@@ -19,9 +19,23 @@
     img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
   .next(:tap="next") 继续按钮
   //- 打卡点
-  .point.point-1.step-1(:tap="showPoup")
-  .point.point-2.step-1(:tap="showPoup")
-  .point.point-3.step-1(:tap="showPoup")
+  .point.point-1.step-1(:tap="showPoup(1)")
+  .point.point-2.step-1(:tap="showPoup(2)")
+  .point.point-3.step-1(:tap="showPoup(3)")
+  .point.point-1.step-2(:tap="showPoup(4)")
+  .point.point-2.step-2(:tap="showPoup(5)")
+  .point.point-3.step-2(:tap="showPoup(6)")
+  .point.point-1.step-3(:tap="showPoup(7)")
+  .point.point-2.step-3(:tap="showPoup(8)")
+  .point.point-3.step-3(:tap="showPoup(9)")
+  .point.point-1.step-4(:tap="showPoup(10)")
+  .point.point-2.step-4(:tap="showPoup(11)")
+  .point.point-3.step-4(:tap="showPoup(12)")
+  .badge-bar
+    .badge.badge-1
+    .badge.badge-2
+    .badge.badge-3
+    .badge.badge-4
 </template>
 
 <script>
@@ -32,11 +46,13 @@
       showButtomBar: false,
       shareShow: false,
       // 当前第几步了
-      step: 1
+      step: 1,
+      ding: null
     },
     created: function () {
       // var video = document.querySelector('video');
       // enableInlineVideo(video)
+      this.data.ding = new Map()
       var animData = {
         wrapper: owo.query('.video')[0],
         renderer: "canvas",
@@ -64,6 +80,8 @@
       console.log(this.data.anim)
       console.log('开始播放第一段!')
       this.data.anim.playSegments([100, 350], true)
+      // 显示徽章
+      owo.query('.badge-bar')[0].style.display = 'block'
       // const video = owo.query('video')[0]
       // setTimeout(() => {
       //   video.style.opacity = '1'
@@ -78,23 +96,25 @@
         }
       }
       this.data.anim.onComplete = (e) => {
-        if (this.data.step === 1) {
-          owo.query('.step-1').forEach(element => {
-            element.style.display = 'block'
-          });
-        }
+        console.log('显示.step-' + this.data.step)
+        owo.query('.step-' + this.data.step).forEach(element => {
+          element.style.display = 'block'
+        })
         owo.query('.next')[0].style.display = 'block'
       }
     },
-    showPoup: function () {
+    showPoup: function (dingId) {
+      
+      if (dingId) {
+        this.$target.style.display = 'none'
+        this.data.ding.set(dingId)
+      }
       const showBox = owo.query('.show-box')[0]
       if (this.data.poupShow) {
-        this.data.anim.play()
         showBox.style.display = 'none'
         this.data.poupShow = false
       } else {
         this.data.poupShow = true
-        this.data.anim.pause()
         showBox.style.display = 'block'
       }
     },
@@ -107,7 +127,45 @@
       this.data.shareShow = !this.data.shareShow
     },
     next: function () {
-      owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
+      switch (this.data.step) {
+        case 1:
+          if (this.data.ding.size < 3) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
+            return
+          } else {
+            this.data.step = 2
+            this.data.anim.playSegments([350, 500], true)
+          }
+          break;
+        case 2:
+          if (this.data.ding.size < 6) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
+            return
+          } else {
+            this.data.step = 3
+            this.data.anim.playSegments([500, 670], true)
+          }
+          break;
+        case 3:
+          if (this.data.ding.size < 9) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
+            return
+          } else {
+            this.data.step = 4
+            this.data.anim.playSegments([670, 850], true)
+          }
+          break;
+        case 4:
+          if (this.data.ding.size < 9) {
+            owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
+            return
+          } else {
+            this.data.step = 5
+            this.data.anim.playSegments([850, 1020], true)
+          }
+          break;
+      }
+      owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
     }
   }
 </script>
@@ -316,4 +374,26 @@
     color: white;
   }
 }
+.badge-bar {
+  position: fixed;
+  left: 5%;
+  height: 90%;
+  z-index: 22;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  display: none;
+  transform: translate3d(0, 0, 0);
+  .badge {
+    width: 40px;
+    height: 40px;
+    background-color: bisque;
+    margin: 10px 0;
+    border-radius: 20px;
+  }
+  .active {
+    background-color: #009fe9;
+  }
+}
+
 </style>

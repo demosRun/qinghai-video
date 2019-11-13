@@ -62,7 +62,10 @@ window.onresize = () => {
   getScale()
 }
 
-window.orientation = getScale
+window.onorientationchange = function (e) {
+  alert('建议锁定屏幕后浏览!')
+  location.reload()
+}
 
 // 阻止微信拖动
 document.body.addEventListener('touchmove', function (e) {
