@@ -49,12 +49,14 @@
       ding: null
     },
     created: function () {
+      owo.tool.animate('fadeInDown', owo.query('.title')[0], 100)
+      owo.tool.animate('fadeIn', owo.query('.button')[0], 1500);
       // var video = document.querySelector('video');
       // enableInlineVideo(video)
       this.data.ding = new Map()
       var animData = {
         wrapper: owo.query('.video')[0],
-        renderer: "canvas",
+        renderer: "html",
         loop: false,
         prerender: false,
         autoplay: false,
@@ -78,7 +80,7 @@
       // 开始播放
       console.log(this.data.anim)
       console.log('开始播放第一段!')
-      this.data.anim.playSegments([0, 350], true)
+      this.data.anim.playSegments([0, 450], true)
 
       this.data.anim.onEnterFrame = (e) => {
         if (e.currentTime > 1110 && !this.data.showButtomBar) {
@@ -88,16 +90,21 @@
         }
       }
       this.data.anim.onComplete = (e) => {
-        // 显示徽章
-        const badgeList = owo.query('.badge')
-        for (let ind = 0; ind < badgeList.length; ind++) {
-          badgeList[ind].classList.remove('active')
+        
+        const pointList = owo.query('.step-' + this.data.step)
+        if (pointList.length > 0) {
+          // 显示徽章
+          const badgeList = owo.query('.badge')
+          for (let ind = 0; ind < badgeList.length; ind++) {
+            badgeList[ind].classList.remove('active')
+          }
+          owo.query('.badge-bar')[0].style.left = '5%'
+          console.log('显示.step-' + this.data.step)
+          owo.query('.step-' + this.data.step).forEach(element => {
+            element.style.display = 'block'
+          })
         }
-        owo.query('.badge-bar')[0].style.left = '5%'
-        console.log('显示.step-' + this.data.step)
-        owo.query('.step-' + this.data.step).forEach(element => {
-          element.style.display = 'block'
-        })
+        
         owo.query('.next')[0].style.display = 'block'
       }
     },
@@ -137,19 +144,23 @@
       switch (this.data.step) {
         case 1:
           this.data.step = 2
-          this.data.anim.playSegments([350, 500], true)
+          this.data.anim.playSegments([450, 540], true)
           break;
         case 2:
           this.data.step = 3
-          this.data.anim.playSegments([500, 670], true)
+          this.data.anim.playSegments([540, 620], true)
           break;
         case 3:
           this.data.step = 4
-          this.data.anim.playSegments([670, 850], true)
+          this.data.anim.playSegments([620, 720], true)
           break;
         case 4:
           this.data.step = 5
-          this.data.anim.playSegments([850, 1020], true)
+          this.data.anim.playSegments([720, 830], true)
+          break;
+        case 4:
+          this.data.step = 5
+          this.data.anim.playSegments([830, 970], true)
           break;
       }
       // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
@@ -181,7 +192,7 @@
   width: auto;
   margin: auto;
   z-index: 9;
-  animation: fade 2000ms infinite;
+  // animation: fade 2000ms infinite;
 }
 .video {
   z-index: 0;

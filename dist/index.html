@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
       
     
-    
+    <link rel="stylesheet" href="./static/css/owo.animate.css">
   </head>
   <body>
     <!-- 页面区域 -->
@@ -44,7 +44,6 @@
     
 
     <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/iphone-inline-video.js" type="text/javascript"  charset="UTF-8"></script>
     <script src="./static/js/lottie.min.js" type="text/javascript"  charset="UTF-8"></script>
     <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script><!-- 框架script代码 --><script>// 存储页面基本信息
 var owo = {
@@ -66,34 +65,31 @@ owo.script = {
     "created": function created() {
       var loadingItem = owo.query('.loading-img')[0];
       var mum = owo.query('.progress-num')[0];
-      var imgList = ["./static/resource/bg.mp3", "./static/resource/bg.jpg", "./static/resource/popup-1.png", "./static/resource/popup-2.png", "./static/resource/popup-3.png", "./static/resource/popup-4.png", "./static/resource/popup-5.png", "./static/resource/popup-6.png", "./static/resource/title.png"];
-
-      for (var ind = 0; ind < 34; ind++) {
-        imgList.push("./static/resource/images/img_" + ind + ".png");
-      }
+      var imgList = ["./static/resource/bg.mp3", "./static/resource/bg.jpg", "./static/resource/popup-1.png", "./static/resource/popup-2.png", "./static/resource/popup-3.png", "./static/resource/popup-4.png", "./static/resource/popup-5.png", "./static/resource/popup-6.png", "./static/resource/title.png"]; // for (let ind = 0; ind < 288; ind++) {
+      //   imgList.push(`./static/resource/images/img_${ind}.png`)
+      // }
 
       this.preloadImages(imgList, function (e) {
         setTimeout(function () {
           owo.go('one', '', '', '', '', true);
-        }, 800);
+        }, 0);
       }, function (num) {
         loadingItem.style.left = num + '%';
         mum.innerText = num + '%';
       });
     },
     "preloadImage": function preloadImage(src, successFn) {
-      setTimeout(function () {
-        var image = new Image();
-        image.src = src;
+      var image = new Image();
 
-        image.onload = function () {
-          successFn && successFn(src);
-        };
+      image.onload = function () {
+        successFn && successFn(src);
+      };
 
-        image.onerror = function (error) {
-          successFn && successFn(src);
-        };
-      }, 0);
+      image.onerror = function (error) {
+        successFn && successFn(src);
+      };
+
+      image.src = src;
     },
     "preloadMusic": function preloadMusic(src, successFn) {
       var music = new Audio(src);
@@ -110,8 +106,8 @@ owo.script = {
         var doneCount = 0;
         srcs.forEach(function (srcItem) {
           // 取后缀
-          var fileExtension = srcItem.split('.').pop().toLowerCase();
-          console.log(fileExtension); // 判断是否为图片
+          var fileExtension = srcItem.split('.').pop().toLowerCase(); // console.log(fileExtension)
+          // 判断是否为图片
           // 判断浏览器是否支持es6
 
           if (![].includes) alert('浏览器版本过低，建议您使用其它浏览器浏览!');
@@ -156,12 +152,14 @@ owo.script = {
       "ding": null
     },
     "created": function created() {
-      // var video = document.querySelector('video');
+      owo.tool.animate('fadeInDown', owo.query('.title')[0], 100);
+      owo.tool.animate('fadeIn', owo.query('.button')[0], 1500); // var video = document.querySelector('video');
       // enableInlineVideo(video)
+
       this.data.ding = new Map();
       var animData = {
         wrapper: owo.query('.video')[0],
-        renderer: "canvas",
+        renderer: "html",
         loop: false,
         prerender: false,
         autoplay: false,
@@ -187,7 +185,7 @@ owo.script = {
 
       console.log(this.data.anim);
       console.log('开始播放第一段!');
-      this.data.anim.playSegments([0, 350], true);
+      this.data.anim.playSegments([0, 450], true);
 
       this.data.anim.onEnterFrame = function (e) {
         if (e.currentTime > 1110 && !_this2.data.showButtomBar) {
@@ -198,18 +196,23 @@ owo.script = {
       };
 
       this.data.anim.onComplete = function (e) {
-        // 显示徽章
-        var badgeList = owo.query('.badge');
+        var pointList = owo.query('.step-' + _this2.data.step);
 
-        for (var ind = 0; ind < badgeList.length; ind++) {
-          badgeList[ind].classList.remove('active');
+        if (pointList.length > 0) {
+          // 显示徽章
+          var badgeList = owo.query('.badge');
+
+          for (var ind = 0; ind < badgeList.length; ind++) {
+            badgeList[ind].classList.remove('active');
+          }
+
+          owo.query('.badge-bar')[0].style.left = '5%';
+          console.log('显示.step-' + _this2.data.step);
+          owo.query('.step-' + _this2.data.step).forEach(function (element) {
+            element.style.display = 'block';
+          });
         }
 
-        owo.query('.badge-bar')[0].style.left = '5%';
-        console.log('显示.step-' + _this2.data.step);
-        owo.query('.step-' + _this2.data.step).forEach(function (element) {
-          element.style.display = 'block';
-        });
         owo.query('.next')[0].style.display = 'block';
       };
     },
@@ -254,22 +257,27 @@ owo.script = {
       switch (this.data.step) {
         case 1:
           this.data.step = 2;
-          this.data.anim.playSegments([350, 500], true);
+          this.data.anim.playSegments([450, 540], true);
           break;
 
         case 2:
           this.data.step = 3;
-          this.data.anim.playSegments([500, 670], true);
+          this.data.anim.playSegments([540, 620], true);
           break;
 
         case 3:
           this.data.step = 4;
-          this.data.anim.playSegments([670, 850], true);
+          this.data.anim.playSegments([620, 720], true);
           break;
 
         case 4:
           this.data.step = 5;
-          this.data.anim.playSegments([850, 1020], true);
+          this.data.anim.playSegments([720, 830], true);
+          break;
+
+        case 4:
+          this.data.step = 5;
+          this.data.anim.playSegments([830, 970], true);
           break;
       } // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
       // 开车隐藏徽章

@@ -1,4 +1,4 @@
-// Thu Nov 14 2019 00:11:32 GMT+0800 (GMT+08:00)
+// Fri Nov 15 2019 00:11:36 GMT+0800 (GMT+08:00)
 
 /* 方法合集 */
 var _owo = {}
@@ -218,6 +218,27 @@ _owo.ready = (function() {               //这个函数返回whenReady()函数
 
 
 /**
+ * 赋予节点动画效果
+ * @param  {string} name 动画效果名称
+ * @param  {dom} dom 节点
+ */
+owo.tool.animate = function (name, dom, delay) {
+  dom.classList.add(name)
+  dom.classList.add('owo-animated')
+  if (delay) {
+    dom.style.animationDelay = delay + 'ms'
+  }
+  // 待优化可以单独提出绑定方法
+  dom.addEventListener('animationend', animateEnd)
+  function animateEnd () {
+    // 待优化 感觉不需要这样
+    dom.classList.remove(name)
+    dom.classList.remove('owo-animated')
+    if (delay) {
+      dom.style.animationDelay = ''
+    }
+  }
+}/**
  * 显示toast提示 不支持ie8
  * @param  {number} text       显示的文字
  * @param  {number} fontSize   字体大小

@@ -125,8 +125,6 @@ li {
   width: auto;
   margin: auto;
   z-index: 9;
-  -webkit-animation: fade 2000ms infinite;
-          animation: fade 2000ms infinite;
 }
 
 .horizontal-box .video {

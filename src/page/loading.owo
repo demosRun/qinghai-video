@@ -26,29 +26,27 @@
         "@|popup-6.png|",
         "@|title.png|",
       ]
-      for (let ind = 0; ind < 34; ind++) {
-        imgList.push(`./static/resource/images/img_${ind}.png`)
-      }
+      // for (let ind = 0; ind < 288; ind++) {
+      //   imgList.push(`./static/resource/images/img_${ind}.png`)
+      // }
       this.preloadImages(imgList, (e) => {
         setTimeout(() => {
           owo.go('one','' ,'' ,'' ,'' , true)
-        }, 800)
+        }, 0)
       }, (num) => {
         loadingItem.style.left = num + '%'
         mum.innerText = num + '%'
       })
     },
     preloadImage: function (src, successFn) {
-      setTimeout(() => {
-        var image = new Image()
-        image.src = src
-        image.onload = function () {
-          successFn && successFn(src)
-        }
-        image.onerror = function (error) {
-          successFn && successFn(src)
-        }
-      }, 0)
+      var image = new Image()
+      image.onload = function () {
+        successFn && successFn(src)
+      }
+      image.onerror = function (error) {
+        successFn && successFn(src)
+      }
+      image.src = src
     },
     preloadMusic: function (src, successFn) {
       const music = new Audio(src)
@@ -64,7 +62,7 @@
         srcs.forEach((srcItem) => {
           // 取后缀
           const fileExtension = srcItem.split('.').pop().toLowerCase()
-          console.log(fileExtension)
+          // console.log(fileExtension)
           // 判断是否为图片
           // 判断浏览器是否支持es6
           if (![].includes) alert('浏览器版本过低，建议您使用其它浏览器浏览!')
