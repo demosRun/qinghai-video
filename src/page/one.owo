@@ -5,11 +5,8 @@
     img.button(src="@|button.png|" :tap="playVideo")
   .video
   //- 弹窗显示
-  .show-box
-    .title-bar 是标题内容
-    img.left(src="@|show.jpg|")
-    .right 青海地处世界第三极，是北半球气候 的敏感区和启动区，是全球生态系统的调节器和稳定器。青海的生态资源总价值18.39万亿元，每年的生态服务价值7300亿元。生态美好，是最大的美好；生态是安全，是最大的安全。
-    .close(:tap="showPoup") 关闭
+  .show-box(:tap="showPoup")
+    img.show-image(src="@|show.jpg|")
   //- 分享弹窗
   .share-box(:tap="showShare")
     img.press(src="@|press.png|")
@@ -17,24 +14,28 @@
   .button-item-box
     img.button-2.button-item(src="@|button-2.png|" :tap="showShare")
     img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
-  .next(:tap="next") 继续按钮
+  img.next(:tap="next" src="@|next.png|")
+  .main-text
   //- 打卡点
   .point.point-1.step-1(:tap="showPoup('badge-1')")
-  .point.point-2.step-1(:tap="showPoup('badge-2')")
-  .point.point-3.step-1(:tap="showPoup('badge-3')")
-  .point.point-1.step-2(:tap="showPoup('badge-1')")
   .point.point-2.step-2(:tap="showPoup('badge-2')")
-  .point.point-3.step-2(:tap="showPoup('badge-3')")
-  .point.point-1.step-3(:tap="showPoup('badge-1')")
-  .point.point-2.step-3(:tap="showPoup('badge-2')")
   .point.point-3.step-3(:tap="showPoup('badge-3')")
-  .point.point-1.step-4(:tap="showPoup('badge-1')")
-  .point.point-2.step-4(:tap="showPoup('badge-2')")
-  .point.point-3.step-4(:tap="showPoup('badge-3')")
+  .point.point-4.step-4(:tap="showPoup('badge-1')" style="left: 46%;top: 41%;")
+  .point.point-5.step-5(:tap="showPoup('badge-2')" style="left: 51%;top: 34%;")
+  .point.point-6.step-6(:tap="showPoup('badge-3')" style="left: 43%;top: 77%;")
+  .point.point-7.step-7(:tap="showPoup('badge-1')" style="left: 44%;top: 41%;")
+  .point.point-8.step-8(:tap="showPoup('badge-2')" style="left: 36%;top: 73%;")
+  .point.point-9.step-9(:tap="showPoup('badge-3')" style="left: 61%;top: 62%;")
+  .point.point-10.step-10(:tap="showPoup('badge-1')" style="left: 41%;top: 41%;")
+  .point.point-11.step-11(:tap="showPoup('badge-2')" style="left: 50%;top: 66%;")
+  .point.point-12.step-12(:tap="showPoup('badge-3')" style="left: 60%;top: 64%;")
+  .point.point-13.step-13(:tap="showPoup('badge-1')" style="left: 47%;top: 47%;")
+  .point.point-14.step-14(:tap="showPoup('badge-2')" style="left: 43%;top: 64%;")
   .badge-bar
-    .badge.badge-1
-    .badge.badge-2
-    .badge.badge-3
+    img.badge.badge-1(src="@|badge-1.png|")
+    img.badge.badge-2(src="@|badge-2.png|")
+    img.badge.badge-3(src="@|badge-3.png|")
+  
 </template>
 
 <script>
@@ -46,23 +47,31 @@
       shareShow: false,
       // 当前第几步了
       step: 1,
-      ding: null
+      ding: null,
+      canNext: false
     },
     created: function () {
-      owo.tool.animate('fadeInDown', owo.query('.title')[0], 100)
-      owo.tool.animate('fadeIn', owo.query('.button')[0], 1500);
       // var video = document.querySelector('video');
       // enableInlineVideo(video)
       this.data.ding = new Map()
       var animData = {
-        wrapper: owo.query('.video')[0],
-        renderer: "html",
+        container: owo.query('.video')[0],
+        renderer: 'canvas',
         loop: false,
-        prerender: false,
         autoplay: false,
+        setSubframe: false,
         path: '@|data.json|'
       };
       this.data.anim = bodymovin.loadAnimation(animData);
+      this.data.anim.setSubframe(false)
+      owo.tool.animate('fadeInDown', owo.query('.title')[0], 7100)
+      owo.tool.animate('fadeIn', owo.query('.button')[0], 8500);
+      setTimeout(() => {
+        owo.query('.main-text')[0].style.width = '353px'
+        setTimeout(() => {
+          owo.query('.main-text')[0].style.display = 'none'
+        }, 7000)
+      }, 0)
     },
     playVideo: function () {
       // 播放音乐
@@ -78,41 +87,35 @@
       }, 1000)
       
       // 开始播放
-      console.log(this.data.anim)
+      // console.log(this.data.anim)
       console.log('开始播放第一段!')
-      this.data.anim.playSegments([0, 450], true)
-
-      this.data.anim.onEnterFrame = (e) => {
-        if (e.currentTime > 1110 && !this.data.showButtomBar) {
-          this.data.showButtomBar = true
-          owo.query('.button-item-box')[0].style.display = 'block'
-          owo.query('.button-item-box')[0].style.opacity = 1
-        }
-      }
+      this.data.anim.playSegments([307, 560], true)
+      owo.query('.show-box .show-image')[0].src = '@|show-1.png|'
       this.data.anim.onComplete = (e) => {
-        
+        // console.log(e)
+        this.data.canNext = false
         const pointList = owo.query('.step-' + this.data.step)
         if (pointList.length > 0) {
-          // 显示徽章
-          const badgeList = owo.query('.badge')
-          for (let ind = 0; ind < badgeList.length; ind++) {
-            badgeList[ind].classList.remove('active')
-          }
-          owo.query('.badge-bar')[0].style.left = '5%'
+          owo.query('.badge-bar')[0].style.left = '8%'
           console.log('显示.step-' + this.data.step)
           owo.query('.step-' + this.data.step).forEach(element => {
             element.style.display = 'block'
           })
         }
-        
+        if ((this.data.step > 14) && !this.data.showButtomBar) {
+          this.data.showButtomBar = true
+          owo.query('.button-item-box')[0].style.display = 'block'
+          owo.query('.button-item-box')[0].style.opacity = 1
+          return
+        }
         owo.query('.next')[0].style.display = 'block'
       }
     },
     showPoup: function (dingClass) {
-      
       if (dingClass) {
         this.$target.style.display = 'none'
         owo.query('.' + dingClass)[0].classList.add('active')
+        this.data.canNext = true
       }
       const showBox = owo.query('.show-box')[0]
       if (this.data.poupShow) {
@@ -131,36 +134,117 @@
       }
       this.data.shareShow = !this.data.shareShow
     },
-    next: function () {
-      let canNext = true
+    clearBadge: function (index) {
+      // 清理徽章
       const badgeList = owo.query('.badge')
       for (let ind = 0; ind < badgeList.length; ind++) {
-        if (!badgeList[ind].classList.contains('active')) canNext = false
+        index++
+        console.log(badgeList[ind].classList)
+        badgeList[ind].classList.remove('active')
+        // ```
+        // @|badge-1.png|
+        // @|badge-2.png|
+        // @|badge-3.png|
+        // @|badge-4.png|
+        // @|badge-5.png|
+        // @|badge-6.png|
+        // @|badge-7.png|
+        // @|badge-8.png|
+        // @|badge-9.png|
+        // @|badge-10.png|
+        // @|badge-11.png|
+        // @|badge-12.png|
+        // @|badge-13.png|
+        // @|badge-14.png|
+        // ```
+        if (index === 15) {
+          badgeList[ind].style.display = 'none'
+        } else {
+          badgeList[ind].src = `./static/resource/badge-${index}.png`
+        }
       }
-      if (!canNext) {
+    },
+    next: function () {
+      if (!this.data.canNext) {
         owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
         return
       }
+      owo.query('.next')[0].style.display = 'none'
+      const start = 307
+      // alert(this.data.step)
       switch (this.data.step) {
         case 1:
           this.data.step = 2
-          this.data.anim.playSegments([450, 540], true)
+          owo.query('.show-box .show-image')[0].src = '@|show-2.png|'
+          this.data.anim.playSegments([560, 660], true)
           break;
         case 2:
           this.data.step = 3
-          this.data.anim.playSegments([540, 620], true)
+          owo.query('.show-box .show-image')[0].src = '@|show-3.png|'
+          this.data.anim.playSegments([660, 760], true)
           break;
         case 3:
           this.data.step = 4
-          this.data.anim.playSegments([620, 720], true)
+          owo.query('.show-box .show-image')[0].src = '@|show-4.png|'
+          this.data.anim.playSegments([750, 867], true)
+          this.clearBadge(3)
           break;
         case 4:
           this.data.step = 5
-          this.data.anim.playSegments([720, 830], true)
+          owo.query('.show-box .show-image')[0].src = '@|show-5.png|'
+          this.data.anim.playSegments([867, 730 + start], true)
           break;
-        case 4:
-          this.data.step = 5
-          this.data.anim.playSegments([830, 970], true)
+        case 5:
+          this.data.step = 6
+          owo.query('.show-box .show-image')[0].src = '@|show-6.png|'
+          this.data.anim.playSegments([730 + start, 860 + start], true)
+          break;
+        case 6:
+          this.data.step = 7
+          owo.query('.show-box .show-image')[0].src = '@|show-7.png|'
+          this.data.anim.playSegments([860 + start, 960 + start], true)
+          this.clearBadge(6)
+          break;
+        case 7:
+          this.data.step = 8
+          owo.query('.show-box .show-image')[0].src = '@|show-8.png|'
+          this.data.anim.playSegments([960 + start, 1060 + start], true)
+          break;
+        case 8:
+          this.data.step = 9
+          owo.query('.show-box .show-image')[0].src = '@|show-9.png|'
+          this.data.anim.playSegments([1060 + start, 1170 + start], true)
+          break;
+        case 9:
+          this.data.step = 10
+          owo.query('.show-box .show-image')[0].src = '@|show-10.png|'
+          this.data.anim.playSegments([1170 + start, 1280 + start], true)
+          this.clearBadge(9)
+          break;
+        case 10:
+          this.data.step = 11
+          owo.query('.show-box .show-image')[0].src = '@|show-11.png|'
+          this.data.anim.playSegments([1280 + start, 1460 + start], true)
+          break;
+        case 11:
+          this.data.step = 12
+          owo.query('.show-box .show-image')[0].src = '@|show-12.png|'
+          this.data.anim.playSegments([1460 + start, 1630 + start], true)
+          break;
+        case 12:
+          this.data.step = 13
+          owo.query('.show-box .show-image')[0].src = '@|show-13.png|'
+          this.data.anim.playSegments([1630 + start, 1760 + start], true)
+          this.clearBadge(12)
+          break;
+        case 13:
+          this.data.step = 14
+          owo.query('.show-box .show-image')[0].src = '@|show-14.png|'
+          this.data.anim.playSegments([1760 + start, 1927 + start], true)
+          break;
+        case 14:
+          this.data.step = 15
+          this.data.anim.playSegments([1927 + start, 2500 + start], true)
           break;
       }
       // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
@@ -181,6 +265,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
+  transform: translate3d(0, 0, 0);
   background-image: url('@|bg.jpg|');
 }
 .button {
@@ -207,6 +292,7 @@
   object-fit: fill;
   transition: opacity 0.5s;
   z-index: 9;
+  transform: translateZ(0);
   canvas {
     user-select: none;
     pointer-events: none;
@@ -231,6 +317,16 @@
   display: none;
   z-index: 24;
   transform: translate3d(0, 0, 0);
+  .show-image {
+    height: 90%;
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 .share-box {
   position: absolute;
@@ -292,14 +388,14 @@
 }
 .next {
   position: fixed;
-  right: 5%;
+  right: 10%;
   z-index: 11;
   bottom: 5%;
   display: none;
   color: white;
   z-index: 18;
   font-size: 30px;
-  background-color: #009fe9;
+  height: 60px;
   transform: translate3d(0, 0, 0);
 }
 @keyframes fade {
@@ -315,8 +411,8 @@
 }
 .point {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   z-index: 20;
   background-color: #FFEB3B;
   border-radius: 20px;
@@ -325,21 +421,22 @@
   transform: translate3d(0, 0, 0);
 }
 .point-1 {
-  left: 42%;
+  left: 48%;
   top: 41%;
 }
 .point-2 {
-  top: 80%;
-  left: 20%;
+  top: 40%;
+  left: 40%;
 }
 .point-3 {
-  right: 13%;
-  bottom: 19%;
+  right: 44%;
+  bottom: 26%;
 }
 .show-box {
   overflow: hidden;
-  width: 80%;
-  background-color: #1474c6;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   .title-bar {
     height: 80px;
     line-height: 80px;
@@ -376,7 +473,7 @@
 }
 .badge-bar {
   position: fixed;
-  left: -8%;
+  left: -10%;
   height: 90%;
   z-index: 22;
   margin: auto;
@@ -385,15 +482,42 @@
   transition: left 1s;
   transform: translate3d(0, 0, 0);
   .badge {
-    width: 40px;
-    height: 40px;
-    background-color: bisque;
-    margin: 10px 0;
+    width: 60px;
+    height: 60px;
+    margin: 30px 0;
+    display: block;
     border-radius: 20px;
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%); 
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); 
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
+    _filter:none;
   }
   .active {
-    background-color: #009fe9;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    _-webkit-filter: none;
+    _ filter: none;
   }
 }
-
+.main-text {
+  width: 0px;
+  height: 274px;
+  background-image: url('@|main-text.png|');
+  position: fixed;
+  z-index: 11;
+  background-size: 353px 274px;
+  left: 20%;
+  top: 0;
+  bottom: 0;
+  transition: width 6s linear;
+  margin: auto;
+  transform: translate3d(0, 0, 0);
+  background-position: right;
+}
 </style>

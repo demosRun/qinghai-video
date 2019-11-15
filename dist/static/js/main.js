@@ -71,3 +71,7 @@ window.onorientationchange = function (e) {
 document.body.addEventListener('touchmove', function (e) {
   e.preventDefault() // 阻止默认的处理方式(阻止下拉滑动的效果)
 }, {passive: false})
+
+const u = navigator.userAgent;
+      const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+      const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);

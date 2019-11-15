@@ -16,19 +16,15 @@
       const loadingItem = owo.query('.loading-img')[0]
       const mum = owo.query('.progress-num')[0]
       const imgList = [
+        "@|main-text.png|",
         "@|bg.mp3|",
         "@|bg.jpg|",
-        "@|popup-1.png|",
-        "@|popup-2.png|",
-        "@|popup-3.png|",
-        "@|popup-4.png|",
-        "@|popup-5.png|",
-        "@|popup-6.png|",
         "@|title.png|",
+        `./static/resource/images/img_288.png`
       ]
-      // for (let ind = 0; ind < 288; ind++) {
-      //   imgList.push(`./static/resource/images/img_${ind}.png`)
-      // }
+      for (let ind = 289; ind > 0; ind--) {
+        imgList.push(`./static/resource/images/img_${ind}.png`)
+      }
       this.preloadImages(imgList, (e) => {
         setTimeout(() => {
           owo.go('one','' ,'' ,'' ,'' , true)
