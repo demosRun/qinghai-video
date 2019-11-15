@@ -40,7 +40,9 @@
     
   </div>
     <!-- 页面[one]-->
-    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><video src="./static/resource/video.mp4" style="object-fit: cover;" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video><div class="show-box" :tap="showPoup"><img class="show-image" src="./static/resource/show-1.png"></div><div class="share-box" :tap="showShare"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="showShare"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div><div class="main-text"></div><div class="point point-1 step-1" :tap="showPoup('badge-1')"></div><div class="point point-2 step-2" :tap="showPoup('badge-2')"></div><div class="point point-3 step-3" :tap="showPoup('badge-3')"></div><div class="point point-4 step-4" :tap="showPoup('badge-1')" style="left: 46%;top: 41%;"></div><div class="point point-5 step-5" :tap="showPoup('badge-2')" style="left: 51%;top: 34%;"></div><div class="point point-6 step-6" :tap="showPoup('badge-3')" style="left: 43%;top: 77%;"></div><div class="point point-7 step-7" :tap="showPoup('badge-1')" style="left: 44%;top: 41%;"></div><div class="point point-8 step-8" :tap="showPoup('badge-2')" style="left: 36%;top: 73%;"></div><div class="point point-9 step-9" :tap="showPoup('badge-3')" style="left: 61%;top: 62%;"></div><div class="point point-10 step-10" :tap="showPoup('badge-1')" style="left: 41%;top: 41%;"></div><div class="point point-11 step-11" :tap="showPoup('badge-2')" style="left: 50%;top: 66%;"></div><div class="point point-12 step-12" :tap="showPoup('badge-3')" style="left: 60%;top: 64%;"></div><div class="point point-13 step-13" :tap="showPoup('badge-1')" style="left: 47%;top: 47%;"></div><div class="point point-14 step-14" :tap="showPoup('badge-2')" style="left: 43%;top: 64%;"></div><div class="badge-bar"><img class="badge badge-1" src="./static/resource/badge-1.png"><img class="badge badge-2" src="./static/resource/badge-2.png"><img class="badge badge-3" src="./static/resource/badge-3.png"></div></div>
+    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><video src="./static/resource/video.mp4" style="object-fit: cover;" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video><div class="show-box" :tap="showPoup"><img class="show-image" src="./static/resource/show-1.png"></div><canvas class="canv"></canvas><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="owo.go('three','' ,'' ,'' ,'' , true)"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div><div class="main-text"></div><div class="main-text-2">准备好了吗?和我们一起出发!</div><div class="point point-1 step-1" :tap="showPoup('badge-1')"></div><div class="point point-2 step-2" :tap="showPoup('badge-2')"></div><div class="point point-3 step-3" :tap="showPoup('badge-3')"></div><div class="point point-4 step-4" :tap="showPoup('badge-1')" style="left: 46%;top: 41%;"></div><div class="point point-5 step-5" :tap="showPoup('badge-2')" style="left: 51%;top: 34%;"></div><div class="point point-6 step-6" :tap="showPoup('badge-3')" style="left: 43%;top: 77%;"></div><div class="point point-7 step-7" :tap="showPoup('badge-1')" style="left: 44%;top: 41%;"></div><div class="point point-8 step-8" :tap="showPoup('badge-2')" style="left: 36%;top: 73%;"></div><div class="point point-9 step-9" :tap="showPoup('badge-3')" style="left: 61%;top: 62%;"></div><div class="point point-10 step-10" :tap="showPoup('badge-1')" style="left: 41%;top: 41%;"></div><div class="point point-11 step-11" :tap="showPoup('badge-2')" style="left: 50%;top: 66%;"></div><div class="point point-12 step-12" :tap="showPoup('badge-3')" style="left: 60%;top: 64%;"></div><div class="point point-13 step-13" :tap="showPoup('badge-1')" style="left: 47%;top: 47%;"></div><div class="point point-14 step-14" :tap="showPoup('badge-2')" style="left: 43%;top: 64%;"></div><div class="badge-bar"><img class="badge badge-1" src="./static/resource/badge-1.png"><img class="badge badge-2" src="./static/resource/badge-2.png"><img class="badge badge-3" src="./static/resource/badge-3.png"></div></div>
+    <!-- 页面[three]-->
+    <div class="share-box horizontal-box2 owo" id="horizontal-box2" :tap="showShare" template="three" style="display: none;"><div class="share-img"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div></div>
     
 
     <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
@@ -71,7 +73,6 @@ owo.script = {
       // }
 
       this.preloadImages(imgList, function (e) {
-        owo.tool.toast('准备好了吗?和我们一起出发!', null, null, document.getElementById('horizontal-box'));
         setTimeout(function () {
           owo.go('one', '', '', '', '', true);
         }, 600);
@@ -169,26 +170,72 @@ owo.script = {
       // this.data.anim = bodymovin.loadAnimation(animData);
       // this.data.anim.setSubframe(false)
 
-      owo.tool.animate('fadeInDown', owo.query('.title')[0], 8100);
-      owo.tool.animate('fadeIn', owo.query('.button')[0], 9500);
+      owo.tool.animate('fadeInDown', owo.query('.title')[0], 10600);
+      owo.tool.animate('fadeIn', owo.query('.button')[0], 12000);
+      owo.tool.animate('fadeIn', owo.query('.main-text-2')[0], 8000);
+      setTimeout(function () {
+        owo.query('.main-text-2')[0].style.display = 'none';
+      }, 9800);
       setTimeout(function () {
         owo.query('.main-text')[0].style.width = '353px';
         setTimeout(function () {
           owo.query('.main-text')[0].style.display = 'none';
           owo.query('.main-text')[0].style.width = '0';
         }, 7000);
-      }, 1000); // var video = document.querySelector('video');
-      // enableInlineVideo(video)
+      }, 100);
+      var video = document.querySelector('video');
+      enableInlineVideo(video); // 绘制canvas
+
+      var canv = owo.query('canvas')[0];
+      var screen = owo.tool.getScreenInfo();
+      var clientHeight = screen.clientHeight > screen.clientWidth ? screen.clientWidth : screen.clientHeight; // 设置计数
+
+      this.set(); // 获取计数
+
+      $.ajax({
+        url: 'http://19diaocha.people.cn/20190605/json.php?type=618',
+        dataType: 'jsonp',
+        success: function success(res) {
+          var personCount = 123624;
+
+          if (res[0]) {
+            personCount = res[0].bnum;
+          }
+
+          canv.width = clientHeight * 0.8 * 1.779 * 2;
+          canv.height = clientHeight * 0.8 * 2;
+          canv.style.width = clientHeight * 0.8 * 1.779 + 'px';
+          canv.style.height = clientHeight * 0.8 + 'px';
+          var ctx = canv.getContext("2d");
+          var bgImg = new Image();
+          bgImg.src = './static/resource/share.jpg';
+          ctx.drawImage(bgImg, 0, 0, canv.width, canv.height);
+          ctx.fillStyle = "#0000ff";
+          ctx.font = "30px Verdana";
+          ctx.fillText(personCount, clientHeight * 0.45, clientHeight * 0.86);
+          document.getElementsByClassName('share')[0].src = canv.toDataURL("image/png");
+        }
+      });
+    },
+    "set": function set() {
+      $.ajax({
+        url: 'http://littlepoll1.people.com.cn/button/index.php/cip/button/618/61008?',
+        dataType: 'jsonp',
+        jsonp: 'jsonCallback',
+        success: function success(res) {
+          console.log(res);
+        }
+      });
     },
     "playVideo": function playVideo() {
       var _this2 = this;
 
       // 播放音乐
-      // if (!this.data.music) {
-      //   this.data.music = new Audio("./static/resource/bg.mp3")
-      //   this.data.music.loop = true
-      //   this.data.music.play()
-      // }
+      if (!this.data.music) {
+        this.data.music = new Audio("./static/resource/bg.mp3");
+        this.data.music.loop = true; // this.data.music.play()
+      }
+
       owo.query('.one')[0].style.opacity = '0'; // 一秒后销毁one不然挡住下面不能点击
 
       setTimeout(function () {
@@ -232,6 +279,8 @@ owo.script = {
         if (video.currentTime > _this2.data.stopPoint) {
           _this2.data.canNext = false;
           video.pause();
+
+          _this2.data.music.play();
 
           if (pointList.length > 0) {
             owo.query('.badge-bar')[0].style.left = '8%';
@@ -279,35 +328,38 @@ owo.script = {
       this.data.shareShow = !this.data.shareShow;
     },
     "clearBadge": function clearBadge(index) {
-      // 清理徽章
-      var badgeList = owo.query('.badge');
+      // 两秒后再清理，防止被用户看到
+      setTimeout(function () {
+        // 清理徽章
+        var badgeList = owo.query('.badge');
 
-      for (var ind = 0; ind < badgeList.length; ind++) {
-        index++;
-        console.log(badgeList[ind].classList);
-        badgeList[ind].classList.remove('active'); // ```
-        // ./static/resource/badge-1.png
-        // ./static/resource/badge-2.png
-        // ./static/resource/badge-3.png
-        // ./static/resource/badge-4.png
-        // ./static/resource/badge-5.png
-        // ./static/resource/badge-6.png
-        // ./static/resource/badge-7.png
-        // ./static/resource/badge-8.png
-        // ./static/resource/badge-9.png
-        // ./static/resource/badge-10.png
-        // ./static/resource/badge-11.png
-        // ./static/resource/badge-12.png
-        // ./static/resource/badge-13.png
-        // ./static/resource/badge-14.png
-        // ```
+        for (var ind = 0; ind < badgeList.length; ind++) {
+          index++; // console.log(badgeList[ind].classList)
 
-        if (index === 15) {
-          badgeList[ind].style.display = 'none';
-        } else {
-          badgeList[ind].src = "./static/resource/badge-" + index + ".png";
+          badgeList[ind].classList.remove('active'); // ```
+          // ./static/resource/badge-1.png
+          // ./static/resource/badge-2.png
+          // ./static/resource/badge-3.png
+          // ./static/resource/badge-4.png
+          // ./static/resource/badge-5.png
+          // ./static/resource/badge-6.png
+          // ./static/resource/badge-7.png
+          // ./static/resource/badge-8.png
+          // ./static/resource/badge-9.png
+          // ./static/resource/badge-10.png
+          // ./static/resource/badge-11.png
+          // ./static/resource/badge-12.png
+          // ./static/resource/badge-13.png
+          // ./static/resource/badge-14.png
+          // ```
+
+          if (index === 15) {
+            badgeList[ind].style.display = 'none';
+          } else {
+            badgeList[ind].src = "./static/resource/badge-" + index + ".png";
+          }
         }
-      }
+      }, 1500);
     },
     "next": function next() {
       var video = owo.query('video')[0];
@@ -325,6 +377,7 @@ owo.script = {
           this.data.step = 2;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-2.png';
           this.data.stopPoint = 14.4;
+          this.data.music.pause();
           video.play(); // this.data.anim.playSegments([560, 660], true)
 
           break;
@@ -333,6 +386,7 @@ owo.script = {
           this.data.step = 3;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-3.png';
           this.data.stopPoint = 17.6;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -340,6 +394,7 @@ owo.script = {
           this.data.step = 4;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-4.png';
           this.data.stopPoint = 22.4;
+          this.data.music.pause();
           video.play();
           this.clearBadge(3);
           break;
@@ -348,6 +403,7 @@ owo.script = {
           this.data.step = 5;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-5.png';
           this.data.stopPoint = 28.2;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -355,6 +411,7 @@ owo.script = {
           this.data.step = 6;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-6.png';
           this.data.stopPoint = 34;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -362,6 +419,7 @@ owo.script = {
           this.data.step = 7;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-7.png';
           this.data.stopPoint = 38.4;
+          this.data.music.pause();
           video.play();
           this.clearBadge(6);
           break;
@@ -370,6 +428,7 @@ owo.script = {
           this.data.step = 8;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-8.png';
           this.data.stopPoint = 42;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -377,13 +436,15 @@ owo.script = {
           this.data.step = 9;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-9.png';
           this.data.stopPoint = 47;
+          this.data.music.pause();
           video.play();
           break;
 
         case 9:
           this.data.step = 10;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-10.png';
-          this.data.stopPoint = 53;
+          this.data.stopPoint = 52;
+          this.data.music.pause();
           video.play();
           this.clearBadge(9);
           break;
@@ -392,6 +453,7 @@ owo.script = {
           this.data.step = 11;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-11.png';
           this.data.stopPoint = 59.4;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -399,6 +461,7 @@ owo.script = {
           this.data.step = 12;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-12.png';
           this.data.stopPoint = 64;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -406,6 +469,7 @@ owo.script = {
           this.data.step = 13;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-13.png';
           this.data.stopPoint = 70;
+          this.data.music.pause();
           video.play();
           this.clearBadge(12);
           break;
@@ -414,6 +478,7 @@ owo.script = {
           this.data.step = 14;
           owo.query('.show-box .show-image')[0].src = './static/resource/show-14.png';
           this.data.stopPoint = 77;
+          this.data.music.pause();
           video.play();
           break;
 
@@ -421,13 +486,28 @@ owo.script = {
           this.data.step = 15;
           this.data.stopPoint = 98;
           owo.query('.badge-bar')[0].style.display = 'none';
+          this.data.music.pause();
           video.play();
           break;
       } // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
       // 开车隐藏徽章
 
 
-      owo.query('.badge-bar')[0].style.left = '-10%';
+      setTimeout(function () {
+        owo.query('.badge-bar')[0].style.left = '-10%';
+      }, 500);
+    }
+  },
+  "three": {
+    "created": function created() {
+      var ratio = owo.tool.getScreenInfo().ratio;
+      var clientHeight = owo.tool.getScreenInfo().clientHeight;
+
+      if (ratio > 0.6) {
+        console.log(ratio);
+        owo.query('.press')[0].style.top = 0.438 * clientHeight / clientHeight / 4 * 100 + 'vw';
+        this.$el.classList.add('mini');
+      }
     }
   }
 };</script>

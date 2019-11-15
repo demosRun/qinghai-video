@@ -1,0 +1,54 @@
+<template lang="pug">
+.share-box#horizontal-box2.horizontal-box2(:tap="showShare")
+  .share-img
+    img.press(src="@|press.png|")
+    img.share(src="@|share.jpg|")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      const ratio = owo.tool.getScreenInfo().ratio
+      const clientHeight = owo.tool.getScreenInfo().clientHeight
+      if (ratio > 0.6) {
+        console.log(ratio)
+        owo.query('.press')[0].style.top = (0.438 * clientHeight / clientHeight/ 4) * 100 + 'vw'
+        this.$el.classList.add('mini')
+      }
+    }
+  }
+</script>
+
+<style lang="less">
+.share-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  transform: translate3d(0, 0, 0);
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  .share {
+    height: 100%;
+    width: auto;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .press {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    height: 3%;
+    top: 4%;
+    margin: auto;
+    animation: fade 2000ms infinite;
+  }
+}
+</style>

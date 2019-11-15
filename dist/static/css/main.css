@@ -69,3 +69,12 @@ video {
   color: black !important;
   padding: 4px 14px !important;
 }
+
+
+.mini  .share {
+  width: 100vh;
+  height: auto;
+}
+.mini  .press {
+  top: 5vh;
+}

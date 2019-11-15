@@ -25,7 +25,7 @@
       //   imgList.push(`./static/resource/images/img_${ind}.png`)
       // }
       this.preloadImages(imgList, (e) => {
-        owo.tool.toast('准备好了吗?和我们一起出发!', null, null, document.getElementById('horizontal-box'))
+        
         setTimeout(() => {
           owo.go('one','' ,'' ,'' ,'' , true)
         }, 600)

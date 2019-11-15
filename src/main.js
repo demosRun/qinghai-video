@@ -42,9 +42,45 @@ function getScale () {
   }, 0)
 }
 
+function getScale2 () {
+  var designW = 1500
+  var designH = 750
+  var wh = window.innerHeight
+  var ww = window.innerWidth
+  console.log('重新计算位置!')
+  setTimeout(() => {
+    var horizontalBox = document.getElementById('horizontal-box2')
+    if (ww < wh) {
+      console.log('竖屏')
+      if ((ww / wh) < (designW / designH)) {
+        wh = ww * (designW/ designH)
+      } else {
+        ww = wh * (designH / designW)
+      }
+      horizontalBox.style.height = ww + 'px'
+      horizontalBox.style.width = wh + 'px'
+      horizontalBox.classList.add('horizontal')
+      horizontalBox.style.left = 'calc(50% - ' + wh / 2 + 'px)'
+      horizontalBox.style.top = 'calc(50% - ' + ww / 2 + 'px)'
+      document.getElementsByClassName('loading-text-wrap')[0].classList.add('horizontal')
+      
+      
+      isHorizontal = true
+    } else {
+      // 清除竖屏设置
+      document.getElementsByClassName('loading-text-wrap')[0].classList.remove('horizontal')
+      horizontalBox.classList.remove('horizontal')
+      horizontalBox.style.left = 'calc(50% - ' + ww / 2 + 'px)'
+      horizontalBox.style.top = 'calc(50% - ' + wh / 2 + 'px)'
+    }
+    // horizontalBox.style.display = 'block'
+    document.body.style.display = 'block'
+  }, 0)
+}
+
 
 getScale()
-
+getScale2()
 let timer = null
 window.onresize = () => {
   // console.log(timer)
@@ -59,6 +95,7 @@ window.onresize = () => {
   // document.style.height = '1000px'
   // owo.query('video')[0].style.left = '200px'
   getScale()
+  getScale2()
 }
 
 // window.onorientationchange = function (e) {

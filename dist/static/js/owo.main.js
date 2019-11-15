@@ -1,4 +1,4 @@
-// Fri Nov 15 2019 19:44:02 GMT+0800 (GMT+08:00)
+// Fri Nov 15 2019 23:11:38 GMT+0800 (GMT+08:00)
 
 /* 方法合集 */
 var _owo = {}
@@ -237,6 +237,20 @@ owo.tool.animate = function (name, dom, delay) {
     if (delay) {
       dom.style.animationDelay = ''
     }
+  }
+}/**
+ * 获取屏幕信息
+ * @return {object} 屏幕信息
+ */
+
+owo.tool.getScreenInfo = function () {
+  // 有可能不兼容ie
+  return {
+    clientWidth: window.innerWidth,
+    clientHeight: window.innerHeight,
+    ratio: window.innerWidth / window.innerHeight,
+    // 缩放比例
+    devicePixelRatio: window.devicePixelRatio || 1
   }
 }/**
  * 显示toast提示 不支持ie8
