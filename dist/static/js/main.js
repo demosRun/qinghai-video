@@ -21,7 +21,6 @@ function getScale () {
       } else {
         ww = wh * (designH / designW)
       }
-      console.log(ww, wh)
       horizontalBox.style.height = ww + 'px'
       horizontalBox.style.width = wh + 'px'
       horizontalBox.classList.add('horizontal')
@@ -62,10 +61,10 @@ window.onresize = () => {
   getScale()
 }
 
-window.onorientationchange = function (e) {
-  alert('建议锁定屏幕后浏览!')
-  location.reload()
-}
+// window.onorientationchange = function (e) {
+//   alert('建议锁定屏幕后浏览!')
+//   location.reload()
+// }
 
 // 阻止微信拖动
 document.body.addEventListener('touchmove', function (e) {
@@ -73,5 +72,5 @@ document.body.addEventListener('touchmove', function (e) {
 }, {passive: false})
 
 const u = navigator.userAgent;
-      const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-      const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+  const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+  const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);

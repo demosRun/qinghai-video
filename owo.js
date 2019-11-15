@@ -80,10 +80,10 @@ module.exports = {
       name: "jquery1.11.0",
       src: "http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"
     },
-    // {
-    //   name: "iphone-inline-video",
-    //   src: "./src/resource/iphone-inline-video.min.js"
-    // },
+    {
+      name: "iphone-inline-video",
+      src: "./src/resource/iphone-inline-video.min.js"
+    },
     {
       name: "lottie.min",
       src: "./src/resource/lottie.min.js"

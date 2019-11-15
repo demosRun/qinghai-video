@@ -62,3 +62,10 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 video {
   object-fit: fill;
 }
+
+.toast {
+  background-color: rgba(206, 215, 194, 0.8) !important;
+  border-radius: 9px !important;
+  color: black !important;
+  padding: 4px 14px !important;
+}

@@ -3,10 +3,10 @@
   .one
     img.title(src="@|title.png|")
     img.button(src="@|button.png|" :tap="playVideo")
-  .video
+  video(src="@|video.mp4|" style="object-fit: cover;" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5")
   //- 弹窗显示
   .show-box(:tap="showPoup")
-    img.show-image(src="@|show.jpg|")
+    img.show-image(src="@|show-1.png|")
   //- 分享弹窗
   .share-box(:tap="showShare")
     img.press(src="@|press.png|")
@@ -14,7 +14,7 @@
   .button-item-box
     img.button-2.button-item(src="@|button-2.png|" :tap="showShare")
     img.button-3.button-item(src="@|button-3.png|" :tap="location.reload()")
-  img.next(:tap="next" src="@|next.png|")
+  //- img.next(:tap="next" src="@|next.png|")
   .main-text
   //- 打卡点
   .point.point-1.step-1(:tap="showPoup('badge-1')")
@@ -48,38 +48,42 @@
       // 当前第几步了
       step: 1,
       ding: null,
-      canNext: false
+      canNext: false,
+      stopPoint: 9.8
     },
     created: function () {
       // var video = document.querySelector('video');
       // enableInlineVideo(video)
       this.data.ding = new Map()
-      var animData = {
-        container: owo.query('.video')[0],
-        renderer: 'canvas',
-        loop: false,
-        autoplay: false,
-        setSubframe: false,
-        path: '@|data.json|'
-      };
-      this.data.anim = bodymovin.loadAnimation(animData);
-      this.data.anim.setSubframe(false)
-      owo.tool.animate('fadeInDown', owo.query('.title')[0], 7100)
-      owo.tool.animate('fadeIn', owo.query('.button')[0], 8500);
+      // var animData = {
+      //   container: owo.query('.video')[0],
+      //   renderer: 'canvas',
+      //   loop: false,
+      //   autoplay: false,
+      //   setSubframe: false,
+      //   path: '@|data.json|'
+      // };
+      // this.data.anim = bodymovin.loadAnimation(animData);
+      // this.data.anim.setSubframe(false)
+      owo.tool.animate('fadeInDown', owo.query('.title')[0], 8100)
+      owo.tool.animate('fadeIn', owo.query('.button')[0], 9500);
       setTimeout(() => {
         owo.query('.main-text')[0].style.width = '353px'
         setTimeout(() => {
           owo.query('.main-text')[0].style.display = 'none'
+          owo.query('.main-text')[0].style.width = '0'
         }, 7000)
-      }, 0)
+      }, 1000)
+      // var video = document.querySelector('video');
+      // enableInlineVideo(video)
     },
     playVideo: function () {
       // 播放音乐
-      if (!this.data.music) {
-        this.data.music = new Audio("@|bg.mp3|")
-        this.data.music.loop = true
-        this.data.music.play()
-      }
+      // if (!this.data.music) {
+      //   this.data.music = new Audio("@|bg.mp3|")
+      //   this.data.music.loop = true
+      //   this.data.music.play()
+      // }
       owo.query('.one')[0].style.opacity = '0'
       // 一秒后销毁one不然挡住下面不能点击
       setTimeout(() => {
@@ -88,27 +92,55 @@
       
       // 开始播放
       // console.log(this.data.anim)
-      console.log('开始播放第一段!')
-      this.data.anim.playSegments([307, 560], true)
-      owo.query('.show-box .show-image')[0].src = '@|show-1.png|'
-      this.data.anim.onComplete = (e) => {
-        // console.log(e)
-        this.data.canNext = false
-        const pointList = owo.query('.step-' + this.data.step)
-        if (pointList.length > 0) {
-          owo.query('.badge-bar')[0].style.left = '8%'
-          console.log('显示.step-' + this.data.step)
-          owo.query('.step-' + this.data.step).forEach(element => {
-            element.style.display = 'block'
-          })
+      // console.log('开始播放第一段!')
+      // this.data.anim.playSegments([307, 560], true)
+      // owo.query('.show-box .show-image')[0].src = '@|show-1.png|'
+      // this.data.anim.onComplete = (e) => {
+      //   // console.log(e)
+      //   this.data.canNext = false
+      //   const pointList = owo.query('.step-' + this.data.step)
+      //   if (pointList.length > 0) {
+      //     owo.query('.badge-bar')[0].style.left = '8%'
+      //     console.log('显示.step-' + this.data.step)
+      //     owo.query('.step-' + this.data.step).forEach(element => {
+      //       element.style.display = 'block'
+      //     })
+      //   }
+      //   if ((this.data.step > 14) && !this.data.showButtomBar) {
+      //     this.data.showButtomBar = true
+      //     owo.query('.button-item-box')[0].style.display = 'block'
+      //     owo.query('.button-item-box')[0].style.opacity = 1
+      //     return
+      //   }
+      //   owo.query('.next')[0].style.display = 'block'
+      // }
+      const video = owo.query('video')[0]
+      setTimeout(() => {
+        video.style.opacity = '1'
+        video.play()
+        owo.query('.one')[0].style.display = 'none'
+      }, 500)
+      const pointList = owo.query('.step-' + this.data.step)
+      video.ontimeupdate = () => {
+        console.log(video.currentTime)
+        if ((video.currentTime > this.data.stopPoint)) {
+          this.data.canNext = false
+          video.pause()
+          if (pointList.length > 0) {
+            owo.query('.badge-bar')[0].style.left = '8%'
+            console.log('显示.step-' + this.data.step)
+            owo.query('.step-' + this.data.step).forEach(element => {
+              element.style.display = 'block'
+            })
+          }
+          if ((this.data.step > 14) && !this.data.showButtomBar) {
+            this.data.showButtomBar = true
+            owo.query('.button-item-box')[0].style.display = 'block'
+            owo.query('.button-item-box')[0].style.opacity = 1
+            return
+          }
+          // owo.query('.next')[0].style.display = 'block'
         }
-        if ((this.data.step > 14) && !this.data.showButtomBar) {
-          this.data.showButtomBar = true
-          owo.query('.button-item-box')[0].style.display = 'block'
-          owo.query('.button-item-box')[0].style.opacity = 1
-          return
-        }
-        owo.query('.next')[0].style.display = 'block'
       }
     },
     showPoup: function (dingClass) {
@@ -119,6 +151,7 @@
       }
       const showBox = owo.query('.show-box')[0]
       if (this.data.poupShow) {
+        this.next()
         showBox.style.display = 'none'
         this.data.poupShow = false
       } else {
@@ -165,91 +198,108 @@
       }
     },
     next: function () {
+      const video = owo.query('video')[0]
       if (!this.data.canNext) {
         owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'))
         return
       }
-      owo.query('.next')[0].style.display = 'none'
+      // owo.query('.next')[0].style.display = 'none'
       const start = 307
       // alert(this.data.step)
       switch (this.data.step) {
         case 1:
           this.data.step = 2
           owo.query('.show-box .show-image')[0].src = '@|show-2.png|'
-          this.data.anim.playSegments([560, 660], true)
+          this.data.stopPoint = 14.4
+          video.play()
+          // this.data.anim.playSegments([560, 660], true)
           break;
         case 2:
           this.data.step = 3
           owo.query('.show-box .show-image')[0].src = '@|show-3.png|'
-          this.data.anim.playSegments([660, 760], true)
+          this.data.stopPoint = 17.6
+          video.play()
           break;
         case 3:
           this.data.step = 4
           owo.query('.show-box .show-image')[0].src = '@|show-4.png|'
-          this.data.anim.playSegments([750, 867], true)
+          this.data.stopPoint = 22.4
+          video.play()
           this.clearBadge(3)
           break;
         case 4:
           this.data.step = 5
           owo.query('.show-box .show-image')[0].src = '@|show-5.png|'
-          this.data.anim.playSegments([867, 730 + start], true)
+          this.data.stopPoint = 28.2
+          video.play()
           break;
         case 5:
           this.data.step = 6
           owo.query('.show-box .show-image')[0].src = '@|show-6.png|'
-          this.data.anim.playSegments([730 + start, 860 + start], true)
+          this.data.stopPoint = 34
+          video.play()
           break;
         case 6:
           this.data.step = 7
           owo.query('.show-box .show-image')[0].src = '@|show-7.png|'
-          this.data.anim.playSegments([860 + start, 960 + start], true)
+          this.data.stopPoint = 38.4
+          video.play()
           this.clearBadge(6)
           break;
         case 7:
           this.data.step = 8
           owo.query('.show-box .show-image')[0].src = '@|show-8.png|'
-          this.data.anim.playSegments([960 + start, 1060 + start], true)
+          this.data.stopPoint = 42
+          video.play()
           break;
         case 8:
           this.data.step = 9
           owo.query('.show-box .show-image')[0].src = '@|show-9.png|'
-          this.data.anim.playSegments([1060 + start, 1170 + start], true)
+          this.data.stopPoint = 47
+          video.play()
           break;
         case 9:
           this.data.step = 10
           owo.query('.show-box .show-image')[0].src = '@|show-10.png|'
-          this.data.anim.playSegments([1170 + start, 1280 + start], true)
+          this.data.stopPoint = 53
+          video.play()
           this.clearBadge(9)
           break;
         case 10:
           this.data.step = 11
           owo.query('.show-box .show-image')[0].src = '@|show-11.png|'
-          this.data.anim.playSegments([1280 + start, 1460 + start], true)
+          this.data.stopPoint = 59.4
+          video.play()
           break;
         case 11:
           this.data.step = 12
           owo.query('.show-box .show-image')[0].src = '@|show-12.png|'
-          this.data.anim.playSegments([1460 + start, 1630 + start], true)
+          this.data.stopPoint = 64
+          video.play()
           break;
         case 12:
           this.data.step = 13
           owo.query('.show-box .show-image')[0].src = '@|show-13.png|'
-          this.data.anim.playSegments([1630 + start, 1760 + start], true)
+          this.data.stopPoint = 70
+          video.play()
           this.clearBadge(12)
           break;
         case 13:
           this.data.step = 14
           owo.query('.show-box .show-image')[0].src = '@|show-14.png|'
-          this.data.anim.playSegments([1760 + start, 1927 + start], true)
+          this.data.stopPoint = 77
+          video.play()
           break;
         case 14:
           this.data.step = 15
-          this.data.anim.playSegments([1927 + start, 2500 + start], true)
+          this.data.stopPoint = 98
+          owo.query('.badge-bar')[0].style.display = 'none'
+          video.play()
           break;
       }
       // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
       // 开车隐藏徽章
-      owo.query('.badge-bar')[0].style.left = '-8%'
+      owo.query('.badge-bar')[0].style.left = '-10%'
     }
   }
 </script>
@@ -336,7 +386,7 @@
   top: 0;
   display: none;
   transform: translate3d(0, 0, 0);
-  z-index: 22;
+  z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
   .share {
     height: 96%;

@@ -1,49 +1,56 @@
-[2019-11-15T15:28:51.112] [INFO] default - --------------------------- 开始编译 ---------------------------
-[2019-11-15T15:28:51.114] [INFO] default - 程序运行目录: D:\work\青海视频
-[2019-11-15T15:28:51.114] [INFO] default - 首次启动!
-[2019-11-15T15:28:51.114] [INFO] default - 生成版本号: 143aw1rnsr0c
-[2019-11-15T15:28:51.812] [INFO] default - 清理资源文件夹: D:\work\青海视频\dist\static
-[2019-11-15T15:28:51.813] [INFO] default - 文件夹不存在: D:\work\青海视频\dist\static
-[2019-11-15T15:28:51.814] [INFO] default - 创建文件夹: D:\work\青海视频\dist\static
-[2019-11-15T15:28:51.814] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
-[2019-11-15T15:28:51.814] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
-[2019-11-15T15:28:51.814] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
-[2019-11-15T15:28:51.817] [INFO] default - 开始处理模块: loading
-[2019-11-15T15:28:51.854] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
-[2019-11-15T15:28:51.982] [DEBUG] default - 页面loading处理用时: 166 毫秒!
-[2019-11-15T15:28:51.982] [INFO] default - 开始处理模块: one
-[2019-11-15T15:28:53.243] [DEBUG] default - 缓存模板: one./src/page/one.owo
-[2019-11-15T15:28:53.265] [DEBUG] default - 发现 keyframes 规则: fade
-[2019-11-15T15:28:53.265] [DEBUG] default - 发现 keyframes 规则: fade
-[2019-11-15T15:28:53.265] [DEBUG] default - 页面one处理用时: 1283 毫秒!
-[2019-11-15T15:28:53.267] [INFO] default - 文件夹不存在: D:/work/青海视频/dist/static/resource
-[2019-11-15T15:28:53.267] [INFO] default - 创建文件夹: D:/work/青海视频/dist/static/resource
-[2019-11-15T15:28:53.268] [DEBUG] default - 处理资源:  [ 'D:/work/青海视频/src/resource/bg.jpg',
-  'D:/work/青海视频/src/resource/main-text.png',
-  'D:/work/青海视频/src/resource/badge-1.png' ]
-[2019-11-15T15:28:53.269] [DEBUG] default - 资源目录:  D:/work/青海视频/dist/static/resource
-[2019-11-15T15:28:53.270] [DEBUG] default - css中的资源处理完毕!
-[2019-11-15T15:28:54.797] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
-[2019-11-15T15:28:54.843] [INFO] default - 文件夹不存在: D:\work\青海视频\dist\static\css
-[2019-11-15T15:28:54.844] [INFO] default - 创建文件夹: D:\work\青海视频\dist\static\css
-[2019-11-15T15:28:54.844] [INFO] default - 开始处理附属css中的资源
-[2019-11-15T15:28:54.844] [INFO] default - 附属css中的资源处理完毕!
-[2019-11-15T15:28:54.844] [INFO] default - 处理字体: {}
-[2019-11-15T15:28:56.666] [INFO] default - 使用postcss处理完毕! 用时: 1869 毫秒
-[2019-11-15T15:28:56.666] [INFO] default - 正在处理script!
-[2019-11-15T15:28:56.667] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
-[2019-11-15T15:28:56.667] [INFO] default - 读取文件: D:/work/青海视频/src/resource/bg.mp3
-[2019-11-15T15:28:56.667] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
-[2019-11-15T15:28:56.667] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/popup-1.png
-[2019-11-15T15:28:56.667] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/popup-2.png
-[2019-11-15T15:28:56.667] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/popup-3.png
-[2019-11-15T15:28:56.667] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/popup-4.png
-[2019-11-15T15:28:56.667] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/popup-5.png
-[2019-11-15T15:28:56.667] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/popup-6.png
-[2019-11-15T15:28:56.668] [INFO] default - 读取文件: D:/work/青海视频/src/resource/data.json
-[2019-11-15T15:28:56.668] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
-[2019-11-15T15:28:56.668] [DEBUG] default - 处理资源:  [ 'D:/work/青海视频/src/resource/title.png',
+[2019-11-15T18:47:53.334] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T18:47:53.336] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T18:47:53.337] [INFO] default - 首次启动!
+[2019-11-15T18:47:53.337] [INFO] default - 生成版本号: ozq0xml8jgg
+[2019-11-15T18:47:53.364] [INFO] default - 清理资源文件夹: D:\work\青海视频\dist\static
+[2019-11-15T18:47:53.364] [INFO] default - 文件夹不存在: D:\work\青海视频\dist\static
+[2019-11-15T18:47:53.364] [INFO] default - 创建文件夹: D:\work\青海视频\dist\static
+[2019-11-15T18:47:53.364] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T18:47:53.365] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T18:47:53.365] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T18:47:53.366] [INFO] default - 开始处理模块: loading
+[2019-11-15T18:47:53.391] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T18:47:53.437] [DEBUG] default - 页面loading处理用时: 72 毫秒!
+[2019-11-15T18:47:53.437] [INFO] default - 开始处理模块: one
+[2019-11-15T18:47:53.888] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T18:47:53.908] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:47:53.909] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:47:53.909] [DEBUG] default - 页面one处理用时: 472 毫秒!
+[2019-11-15T18:47:53.910] [INFO] default - 文件夹不存在: D:/work/青海视频/dist/static/resource
+[2019-11-15T18:47:53.911] [INFO] default - 创建文件夹: D:/work/青海视频/dist/static/resource
+[2019-11-15T18:47:53.912] [DEBUG] default - 处理资源:  [ 'D:/work/青海视频/src/resource/bg.jpg',
+  'D:/work/青海视频/src/resource/main-text.png' ]
+[2019-11-15T18:47:53.913] [DEBUG] default - 资源目录:  D:/work/青海视频/dist/static/resource
+[2019-11-15T18:47:53.914] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T18:47:54.580] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T18:47:54.642] [INFO] default - 文件夹不存在: D:\work\青海视频\dist\static\css
+[2019-11-15T18:47:54.643] [INFO] default - 创建文件夹: D:\work\青海视频\dist\static\css
+[2019-11-15T18:47:54.643] [INFO] default - 开始处理附属css中的资源
+[2019-11-15T18:47:54.644] [INFO] default - 附属css中的资源处理完毕!
+[2019-11-15T18:47:54.644] [INFO] default - 处理字体: {}
+[2019-11-15T18:47:54.884] [INFO] default - 使用postcss处理完毕! 用时: 304 毫秒
+[2019-11-15T18:47:54.887] [INFO] default - 正在处理script!
+[2019-11-15T18:47:54.888] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:47:54.888] [INFO] default - 读取文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:47:54.888] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:47:54.889] [INFO] default - 读取文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:47:54.889] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:47:54.890] [ERROR] default - 找不到资源文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T18:47:54.891] [DEBUG] default - 处理资源:  [ 'D:/work/青海视频/src/resource/title.png',
   'D:/work/青海视频/src/resource/show-1.png',
+  'D:/work/青海视频/src/resource/badge-1.png',
+  'D:/work/青海视频/src/resource/badge-2.png',
+  'D:/work/青海视频/src/resource/badge-3.png',
+  'D:/work/青海视频/src/resource/badge-4.png',
+  'D:/work/青海视频/src/resource/badge-5.png',
+  'D:/work/青海视频/src/resource/badge-6.png',
+  'D:/work/青海视频/src/resource/badge-7.png',
+  'D:/work/青海视频/src/resource/badge-8.png',
+  'D:/work/青海视频/src/resource/badge-9.png',
+  'D:/work/青海视频/src/resource/badge-10.png',
+  'D:/work/青海视频/src/resource/badge-11.png',
+  'D:/work/青海视频/src/resource/badge-12.png',
+  'D:/work/青海视频/src/resource/badge-13.png',
   'D:/work/青海视频/src/resource/show-2.png',
   'D:/work/青海视频/src/resource/show-3.png',
   'D:/work/青海视频/src/resource/show-4.png',
@@ -57,49 +64,1697 @@
   'D:/work/青海视频/src/resource/show-12.png',
   'D:/work/青海视频/src/resource/show-13.png',
   'D:/work/青海视频/src/resource/show-14.png' ]
-[2019-11-15T15:28:56.669] [DEBUG] default - 资源目录:  D:/work/青海视频/dist/static/resource
-[2019-11-15T15:28:56.671] [DEBUG] default - 选择将js合并到html中!
-[2019-11-15T15:29:00.977] [INFO] default - 工程中包含多个页面!
-[2019-11-15T15:29:00.979] [INFO] default - js中的资源处理完毕!
-[2019-11-15T15:29:00.980] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
-[2019-11-15T15:29:00.980] [DEBUG] default - 外部脚本数量: 3
-[2019-11-15T15:29:00.980] [DEBUG] default - 处理脚本: jquery1.11.0
-[2019-11-15T15:29:00.980] [DEBUG] default - 网络脚本: jquery1.11.0
-[2019-11-15T15:29:00.980] [DEBUG] default - 处理脚本: lottie.min
-[2019-11-15T15:29:00.980] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
-[2019-11-15T15:29:00.980] [DEBUG] default - 处理脚本: main
-[2019-11-15T15:29:00.980] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
-[2019-11-15T15:29:00.981] [DEBUG] default - 输出scriptData
-[2019-11-15T15:29:00.982] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
-[2019-11-15T15:29:00.982] [DEBUG] default - 准备输出html!
-[2019-11-15T15:29:00.982] [INFO] default - 读取文件: D:/work/青海视频/src/resource/loading.gif
-[2019-11-15T15:29:00.982] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
-[2019-11-15T15:29:00.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
-[2019-11-15T15:29:00.983] [DEBUG] default - 处理资源:  [ 'D:/work/青海视频/src/resource/button.png',
-  'D:/work/青海视频/src/resource/show.jpg',
+[2019-11-15T18:47:54.891] [DEBUG] default - 资源目录:  D:/work/青海视频/dist/static/resource
+[2019-11-15T18:47:54.893] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T18:47:55.713] [INFO] default - 工程中包含多个页面!
+[2019-11-15T18:47:55.715] [INFO] default - js中的资源处理完毕!
+[2019-11-15T18:47:55.715] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T18:47:55.716] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T18:47:55.716] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T18:47:55.716] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T18:47:55.716] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T18:47:55.716] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:47:55.716] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T18:47:55.716] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:47:55.716] [DEBUG] default - 处理脚本: main
+[2019-11-15T18:47:55.716] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T18:47:55.716] [DEBUG] default - 输出scriptData
+[2019-11-15T18:47:55.717] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T18:47:55.718] [DEBUG] default - 准备输出html!
+[2019-11-15T18:47:55.718] [INFO] default - 读取文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:47:55.718] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:47:55.718] [INFO] default - 读取文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:47:55.719] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:47:55.719] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:47:55.719] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:47:55.719] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:47:55.719] [DEBUG] default - 处理资源:  [ 'D:/work/青海视频/src/resource/button.png',
   'D:/work/青海视频/src/resource/press.png',
   'D:/work/青海视频/src/resource/share.jpg',
   'D:/work/青海视频/src/resource/button-2.png',
-  'D:/work/青海视频/src/resource/button-3.png',
-  'D:/work/青海视频/src/resource/next.png' ]
-[2019-11-15T15:29:00.983] [DEBUG] default - 资源目录:  D:/work/青海视频/dist/static/resource
-[2019-11-15T15:29:00.986] [INFO] default - 文件夹不存在: D:\work\青海视频\dist\static\js
-[2019-11-15T15:29:00.986] [INFO] default - 创建文件夹: D:\work\青海视频\dist\static\js
-[2019-11-15T15:29:00.986] [DEBUG] default - 页面中不包含切换动画!
-[2019-11-15T15:29:00.987] [INFO] default - 编译结束!
-[2019-11-15T15:29:00.988] [INFO] default - 发送页面需要刷新命令!
-[2019-11-15T15:29:01.006] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
-[2019-11-15T15:29:01.006] [INFO] default - animation文件写出成功!
-[2019-11-15T15:29:01.006] [INFO] default - 主要逻辑文件写出成功!
-[2019-11-15T15:29:01.006] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
-[2019-11-15T15:29:01.217] [INFO] default - 读取成功: D:\work\青海视频\src\main.css
-[2019-11-15T15:29:01.351] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
-[2019-11-15T15:29:01.421] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\main.css
-[2019-11-15T15:29:01.428] [INFO] default - 读取成功: D:/work/青海视频/src/resource/loading.gif
-[2019-11-15T15:29:01.443] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/loading.gif
-[2019-11-15T15:29:01.572] [INFO] default - 读取成功: D:/work/青海视频/src/resource/bg.mp3
-[2019-11-15T15:29:01.572] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
-[2019-11-15T15:29:01.575] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
-[2019-11-15T15:29:01.575] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/bg.mp3
-[2019-11-15T15:29:01.647] [INFO] default - 读取成功: D:/work/青海视频/src/resource/data.json
-[2019-11-15T15:29:01.653] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/data.json
+  'D:/work/青海视频/src/resource/button-3.png' ]
+[2019-11-15T18:47:55.719] [DEBUG] default - 资源目录:  D:/work/青海视频/dist/static/resource
+[2019-11-15T18:47:55.724] [INFO] default - 文件夹不存在: D:\work\青海视频\dist\static\js
+[2019-11-15T18:47:55.724] [INFO] default - 创建文件夹: D:\work\青海视频\dist\static\js
+[2019-11-15T18:47:55.725] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T18:47:55.727] [INFO] default - 编译结束!
+[2019-11-15T18:47:55.729] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T18:47:55.765] [INFO] default - animation文件写出成功!
+[2019-11-15T18:47:55.765] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T18:47:55.765] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T18:47:55.765] [INFO] default - 读取成功: D:\work\青海视频\src\main.css
+[2019-11-15T18:47:55.768] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:47:55.769] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T18:47:55.807] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\main.css
+[2019-11-15T18:47:55.857] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T18:47:55.858] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T18:47:55.862] [INFO] default - 读取成功: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:47:55.877] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/loading.gif
+[2019-11-15T18:47:56.016] [INFO] default - 读取成功: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:47:56.017] [INFO] default - 读取成功: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:47:56.017] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/data.json
+[2019-11-15T18:47:56.017] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:47:56.018] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T18:47:56.023] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/bg.mp3
+[2019-11-15T18:47:59.479] [INFO] default - 读取成功: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:47:59.506] [INFO] default - 写入文件: D:/work/青海视频/dist/static/resource/video.mp4
+[2019-11-15T18:49:58.670] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:49:58.670] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T18:49:58.670] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T18:49:58.670] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:49:58.670] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T18:49:58.670] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T18:49:58.671] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T18:49:58.671] [INFO] default - 开始处理模块: loading
+[2019-11-15T18:49:58.677] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T18:49:58.682] [DEBUG] default - 页面loading处理用时: 11 毫秒!
+[2019-11-15T18:49:58.682] [INFO] default - 开始处理模块: one
+[2019-11-15T18:49:58.722] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T18:49:58.741] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:49:58.741] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:49:58.742] [DEBUG] default - 页面one处理用时: 60 毫秒!
+[2019-11-15T18:49:58.743] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:49:58.743] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:49:58.743] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T18:49:58.744] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T18:49:58.753] [INFO] default - 处理字体: {}
+[2019-11-15T18:49:58.755] [INFO] default - 使用postcss处理完毕! 用时: 11 毫秒
+[2019-11-15T18:49:58.755] [INFO] default - 正在处理script!
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T18:49:58.756] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T18:49:58.757] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T18:49:58.758] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T18:49:58.758] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T18:49:58.758] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T18:49:58.758] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T18:49:58.759] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T18:49:58.759] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T18:49:58.761] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T18:49:58.855] [INFO] default - 工程中包含多个页面!
+[2019-11-15T18:49:58.856] [INFO] default - js中的资源处理完毕!
+[2019-11-15T18:49:58.856] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T18:49:58.856] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T18:49:58.856] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T18:49:58.856] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T18:49:58.856] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T18:49:58.856] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:49:58.856] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T18:49:58.856] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:49:58.856] [DEBUG] default - 处理脚本: main
+[2019-11-15T18:49:58.857] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T18:49:58.857] [DEBUG] default - 输出scriptData
+[2019-11-15T18:49:58.858] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T18:49:58.858] [DEBUG] default - 准备输出html!
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:49:58.858] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:49:58.859] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T18:49:58.860] [INFO] default - 编译结束!
+[2019-11-15T18:49:58.861] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T18:49:58.885] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T18:49:58.887] [INFO] default - animation文件写出成功!
+[2019-11-15T18:49:58.887] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T18:49:58.887] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:49:58.887] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T18:49:58.889] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T18:49:58.890] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T18:49:58.965] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:49:58.967] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T18:50:29.127] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:50:29.127] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T18:50:29.127] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T18:50:29.127] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:50:29.127] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T18:50:29.127] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T18:50:29.127] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T18:50:29.127] [INFO] default - 开始处理模块: loading
+[2019-11-15T18:50:29.132] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T18:50:29.137] [DEBUG] default - 页面loading处理用时: 10 毫秒!
+[2019-11-15T18:50:29.137] [INFO] default - 开始处理模块: one
+[2019-11-15T18:50:29.173] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T18:50:29.191] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:50:29.191] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:50:29.192] [DEBUG] default - 页面one处理用时: 55 毫秒!
+[2019-11-15T18:50:29.193] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:50:29.193] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:50:29.193] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T18:50:29.193] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T18:50:29.201] [INFO] default - 处理字体: {}
+[2019-11-15T18:50:29.203] [INFO] default - 使用postcss处理完毕! 用时: 10 毫秒
+[2019-11-15T18:50:29.203] [INFO] default - 正在处理script!
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T18:50:29.203] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T18:50:29.204] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T18:50:29.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T18:50:29.207] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T18:50:29.303] [INFO] default - 工程中包含多个页面!
+[2019-11-15T18:50:29.304] [INFO] default - js中的资源处理完毕!
+[2019-11-15T18:50:29.304] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T18:50:29.304] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T18:50:29.304] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T18:50:29.304] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T18:50:29.304] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T18:50:29.304] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:50:29.304] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T18:50:29.304] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:50:29.304] [DEBUG] default - 处理脚本: main
+[2019-11-15T18:50:29.304] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T18:50:29.305] [DEBUG] default - 输出scriptData
+[2019-11-15T18:50:29.306] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T18:50:29.306] [DEBUG] default - 准备输出html!
+[2019-11-15T18:50:29.306] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:50:29.306] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:50:29.306] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:50:29.307] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:50:29.308] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T18:50:29.309] [INFO] default - 编译结束!
+[2019-11-15T18:50:29.316] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T18:50:29.317] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T18:50:29.317] [INFO] default - animation文件写出成功!
+[2019-11-15T18:50:29.317] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:50:29.317] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T18:50:29.317] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T18:50:29.318] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T18:50:29.318] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T18:50:29.319] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:50:29.322] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T18:51:05.400] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:51:05.400] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T18:51:05.400] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T18:51:05.400] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:51:05.400] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T18:51:05.400] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T18:51:05.400] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T18:51:05.400] [INFO] default - 开始处理模块: loading
+[2019-11-15T18:51:05.405] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T18:51:05.409] [DEBUG] default - 页面loading处理用时: 9 毫秒!
+[2019-11-15T18:51:05.409] [INFO] default - 开始处理模块: one
+[2019-11-15T18:51:05.442] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T18:51:05.461] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:51:05.461] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:51:05.462] [DEBUG] default - 页面one处理用时: 53 毫秒!
+[2019-11-15T18:51:05.462] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:51:05.462] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:51:05.462] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T18:51:05.462] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T18:51:05.472] [INFO] default - 处理字体: {}
+[2019-11-15T18:51:05.473] [INFO] default - 使用postcss处理完毕! 用时: 11 毫秒
+[2019-11-15T18:51:05.473] [INFO] default - 正在处理script!
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T18:51:05.473] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T18:51:05.474] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T18:51:05.477] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T18:51:05.558] [INFO] default - 工程中包含多个页面!
+[2019-11-15T18:51:05.559] [INFO] default - js中的资源处理完毕!
+[2019-11-15T18:51:05.560] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T18:51:05.560] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T18:51:05.560] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T18:51:05.560] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T18:51:05.560] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T18:51:05.560] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:51:05.560] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T18:51:05.560] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:51:05.560] [DEBUG] default - 处理脚本: main
+[2019-11-15T18:51:05.560] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T18:51:05.560] [DEBUG] default - 输出scriptData
+[2019-11-15T18:51:05.561] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T18:51:05.561] [DEBUG] default - 准备输出html!
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:51:05.561] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:51:05.563] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T18:51:05.563] [INFO] default - 编译结束!
+[2019-11-15T18:51:05.564] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T18:51:05.565] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T18:51:05.566] [INFO] default - animation文件写出成功!
+[2019-11-15T18:51:05.566] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T18:51:05.566] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:51:05.566] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T18:51:05.566] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T18:51:05.566] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T18:51:05.574] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:51:05.579] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T18:51:30.860] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:51:30.860] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T18:51:30.860] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T18:51:30.860] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:51:30.860] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T18:51:30.860] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T18:51:30.860] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T18:51:30.861] [INFO] default - 开始处理模块: loading
+[2019-11-15T18:51:30.865] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T18:51:30.881] [DEBUG] default - 页面loading处理用时: 20 毫秒!
+[2019-11-15T18:51:30.881] [INFO] default - 开始处理模块: one
+[2019-11-15T18:51:30.928] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T18:51:30.969] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:51:30.969] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:51:30.970] [DEBUG] default - 页面one处理用时: 89 毫秒!
+[2019-11-15T18:51:30.970] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:51:30.970] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:51:30.970] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T18:51:30.970] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T18:51:30.981] [INFO] default - 处理字体: {}
+[2019-11-15T18:51:30.983] [INFO] default - 使用postcss处理完毕! 用时: 13 毫秒
+[2019-11-15T18:51:30.983] [INFO] default - 正在处理script!
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:51:30.983] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T18:51:30.984] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T18:51:30.985] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T18:51:30.986] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T18:51:30.986] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T18:51:30.986] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T18:51:30.986] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T18:51:30.989] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T18:51:31.067] [INFO] default - 工程中包含多个页面!
+[2019-11-15T18:51:31.067] [INFO] default - js中的资源处理完毕!
+[2019-11-15T18:51:31.068] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T18:51:31.068] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T18:51:31.068] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T18:51:31.068] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T18:51:31.068] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T18:51:31.068] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:51:31.068] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T18:51:31.068] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:51:31.068] [DEBUG] default - 处理脚本: main
+[2019-11-15T18:51:31.068] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T18:51:31.069] [DEBUG] default - 输出scriptData
+[2019-11-15T18:51:31.069] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T18:51:31.070] [DEBUG] default - 准备输出html!
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:51:31.070] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:51:31.071] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T18:51:31.071] [INFO] default - 编译结束!
+[2019-11-15T18:51:31.072] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T18:51:31.072] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:51:31.072] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T18:51:31.072] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T18:51:31.072] [INFO] default - animation文件写出成功!
+[2019-11-15T18:51:31.072] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T18:51:31.073] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T18:51:31.073] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T18:51:31.074] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:51:31.075] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T18:55:33.769] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:55:33.769] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T18:55:33.769] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T18:55:33.769] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T18:55:33.769] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T18:55:33.769] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T18:55:33.769] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T18:55:33.769] [INFO] default - 开始处理模块: loading
+[2019-11-15T18:55:33.775] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T18:55:33.780] [DEBUG] default - 页面loading处理用时: 11 毫秒!
+[2019-11-15T18:55:33.780] [INFO] default - 开始处理模块: one
+[2019-11-15T18:55:33.815] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T18:55:33.833] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:55:33.833] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T18:55:33.834] [DEBUG] default - 页面one处理用时: 54 毫秒!
+[2019-11-15T18:55:33.835] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:55:33.835] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:55:33.835] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T18:55:33.835] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T18:55:33.844] [INFO] default - 处理字体: {}
+[2019-11-15T18:55:33.845] [INFO] default - 使用postcss处理完毕! 用时: 10 毫秒
+[2019-11-15T18:55:33.845] [INFO] default - 正在处理script!
+[2019-11-15T18:55:33.845] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T18:55:33.845] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:55:33.845] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T18:55:33.845] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:55:33.845] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T18:55:33.846] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T18:55:33.847] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T18:55:33.849] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T18:55:33.916] [INFO] default - 工程中包含多个页面!
+[2019-11-15T18:55:33.917] [INFO] default - js中的资源处理完毕!
+[2019-11-15T18:55:33.917] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T18:55:33.917] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T18:55:33.917] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T18:55:33.917] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T18:55:33.917] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T18:55:33.917] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:55:33.917] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T18:55:33.917] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:55:33.918] [DEBUG] default - 处理脚本: main
+[2019-11-15T18:55:33.918] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T18:55:33.918] [DEBUG] default - 输出scriptData
+[2019-11-15T18:55:33.918] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T18:55:33.918] [DEBUG] default - 准备输出html!
+[2019-11-15T18:55:33.918] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T18:55:33.918] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T18:55:33.918] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T18:55:33.919] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T18:55:33.921] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T18:55:33.921] [INFO] default - 编译结束!
+[2019-11-15T18:55:33.922] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T18:55:33.923] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T18:55:33.923] [INFO] default - animation文件写出成功!
+[2019-11-15T18:55:33.923] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T18:55:33.923] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T18:55:33.923] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T18:55:33.924] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T18:55:33.924] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T18:55:33.936] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T18:55:33.937] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:10:47.014] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:10:47.014] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:10:47.014] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:10:47.014] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:10:47.014] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:10:47.014] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:10:47.015] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:10:47.015] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:10:47.021] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:10:47.030] [DEBUG] default - 页面loading处理用时: 15 毫秒!
+[2019-11-15T19:10:47.030] [INFO] default - 开始处理模块: one
+[2019-11-15T19:10:47.078] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:10:47.101] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:10:47.101] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:10:47.101] [DEBUG] default - 页面one处理用时: 71 毫秒!
+[2019-11-15T19:10:47.102] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:10:47.102] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:10:47.102] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:10:47.102] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:10:47.112] [INFO] default - 处理字体: {}
+[2019-11-15T19:10:47.113] [INFO] default - 使用postcss处理完毕! 用时: 11 毫秒
+[2019-11-15T19:10:47.113] [INFO] default - 正在处理script!
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:10:47.114] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:10:47.115] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:10:47.115] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:10:47.115] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:10:47.115] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:10:47.116] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:10:47.119] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:10:47.203] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:10:47.204] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:10:47.204] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:10:47.204] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:10:47.204] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:10:47.204] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:10:47.204] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:10:47.204] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:10:47.204] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:10:47.204] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:10:47.204] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:10:47.204] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:10:47.204] [DEBUG] default - 输出scriptData
+[2019-11-15T19:10:47.205] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:10:47.205] [DEBUG] default - 准备输出html!
+[2019-11-15T19:10:47.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:10:47.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:10:47.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:10:47.205] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:10:47.206] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:10:47.206] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:10:47.206] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:10:47.207] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:10:47.207] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:10:47.207] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:10:47.207] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:10:47.207] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:10:47.208] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:10:47.209] [INFO] default - 编译结束!
+[2019-11-15T19:10:47.211] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:10:47.226] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:10:47.226] [INFO] default - animation文件写出成功!
+[2019-11-15T19:10:47.227] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:10:47.227] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:10:47.227] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:10:47.227] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:10:47.227] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:10:47.232] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:10:47.233] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:17:17.724] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:17:17.725] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:17:17.725] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:17:17.725] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:17:17.725] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:17:17.725] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:17:17.725] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:17:17.725] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:17:17.730] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:17:17.734] [DEBUG] default - 页面loading处理用时: 9 毫秒!
+[2019-11-15T19:17:17.734] [INFO] default - 开始处理模块: one
+[2019-11-15T19:17:17.767] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:17:17.788] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:17:17.788] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:17:17.788] [DEBUG] default - 页面one处理用时: 54 毫秒!
+[2019-11-15T19:17:17.789] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:17:17.789] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:17:17.789] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:17:17.789] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:17:17.800] [INFO] default - 处理字体: {}
+[2019-11-15T19:17:17.801] [INFO] default - 使用postcss处理完毕! 用时: 12 毫秒
+[2019-11-15T19:17:17.801] [INFO] default - 正在处理script!
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:17:17.802] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:17:17.803] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:17:17.806] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:17:17.874] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:17:17.875] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:17:17.875] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:17:17.875] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:17:17.875] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:17:17.875] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:17:17.875] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:17:17.875] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:17:17.875] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:17:17.875] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:17:17.875] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:17:17.875] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:17:17.875] [DEBUG] default - 输出scriptData
+[2019-11-15T19:17:17.876] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:17:17.876] [DEBUG] default - 准备输出html!
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:17:17.876] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:17:17.877] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:17:17.877] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:17:17.877] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:17:17.878] [INFO] default - 编译结束!
+[2019-11-15T19:17:17.879] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:17:17.880] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:17:17.880] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:17:17.880] [INFO] default - animation文件写出成功!
+[2019-11-15T19:17:17.881] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:17:17.881] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:17:17.884] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:17:17.884] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:17:17.887] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:17:17.890] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:19:25.540] [INFO] default - file change: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:19:25.540] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:19:25.540] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:19:25.540] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:19:25.540] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:19:25.540] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:19:25.540] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:19:25.540] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:19:25.544] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:19:25.547] [DEBUG] default - 页面loading处理用时: 7 毫秒!
+[2019-11-15T19:19:25.547] [INFO] default - 开始处理模块: one
+[2019-11-15T19:19:25.574] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:19:25.592] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:19:25.592] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:19:25.592] [DEBUG] default - 页面one处理用时: 45 毫秒!
+[2019-11-15T19:19:25.593] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:19:25.593] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:19:25.593] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:19:25.593] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:19:25.601] [INFO] default - 处理字体: {}
+[2019-11-15T19:19:25.602] [INFO] default - 使用postcss处理完毕! 用时: 9 毫秒
+[2019-11-15T19:19:25.602] [INFO] default - 正在处理script!
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:19:25.603] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:19:25.604] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:19:25.604] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:19:25.604] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:19:25.604] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:19:25.604] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:19:25.605] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:19:25.644] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:19:25.645] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:19:25.645] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:19:25.645] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:19:25.645] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:19:25.645] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:19:25.646] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:19:25.646] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:19:25.646] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:19:25.646] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:19:25.646] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:19:25.646] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:19:25.646] [DEBUG] default - 输出scriptData
+[2019-11-15T19:19:25.646] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:19:25.646] [DEBUG] default - 准备输出html!
+[2019-11-15T19:19:25.646] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:19:25.646] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:19:25.647] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:19:25.648] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:19:25.649] [INFO] default - 编译结束!
+[2019-11-15T19:19:25.650] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:19:25.670] [INFO] default - animation文件写出成功!
+[2019-11-15T19:19:25.671] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:19:25.671] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:19:25.673] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:19:25.673] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:19:25.683] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:19:25.683] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:19:25.704] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:19:25.705] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:19:43.380] [INFO] default - file change: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:19:43.380] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:19:43.380] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:19:43.381] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:19:43.381] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:19:43.381] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:19:43.381] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:19:43.381] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:19:43.386] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:19:43.390] [DEBUG] default - 页面loading处理用时: 9 毫秒!
+[2019-11-15T19:19:43.390] [INFO] default - 开始处理模块: one
+[2019-11-15T19:19:43.419] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:19:43.441] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:19:43.441] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:19:43.441] [DEBUG] default - 页面one处理用时: 51 毫秒!
+[2019-11-15T19:19:43.442] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:19:43.442] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:19:43.442] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:19:43.442] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:19:43.457] [INFO] default - 处理字体: {}
+[2019-11-15T19:19:43.458] [INFO] default - 使用postcss处理完毕! 用时: 16 毫秒
+[2019-11-15T19:19:43.458] [INFO] default - 正在处理script!
+[2019-11-15T19:19:43.458] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:19:43.458] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:19:43.459] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:19:43.460] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:19:43.462] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:19:43.546] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:19:43.546] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:19:43.547] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:19:43.547] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:19:43.547] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:19:43.547] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:19:43.547] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:19:43.547] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:19:43.547] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:19:43.547] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:19:43.547] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:19:43.547] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:19:43.547] [DEBUG] default - 输出scriptData
+[2019-11-15T19:19:43.548] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:19:43.549] [DEBUG] default - 准备输出html!
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:19:43.549] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:19:43.550] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:19:43.550] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:19:43.550] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:19:43.551] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:19:43.552] [INFO] default - 编译结束!
+[2019-11-15T19:19:43.553] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:19:43.554] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:19:43.554] [INFO] default - animation文件写出成功!
+[2019-11-15T19:19:43.554] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:19:43.554] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:19:43.554] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:19:43.554] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:19:43.554] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:19:43.555] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:19:43.556] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:19:51.139] [INFO] default - file change: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:19:51.139] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:19:51.139] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:19:51.139] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:19:51.139] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:19:51.140] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:19:51.140] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:19:51.140] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:19:51.142] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:19:51.145] [DEBUG] default - 页面loading处理用时: 5 毫秒!
+[2019-11-15T19:19:51.145] [INFO] default - 开始处理模块: one
+[2019-11-15T19:19:51.171] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:19:51.190] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:19:51.190] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:19:51.191] [DEBUG] default - 页面one处理用时: 46 毫秒!
+[2019-11-15T19:19:51.192] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:19:51.192] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:19:51.192] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:19:51.192] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:19:51.200] [INFO] default - 处理字体: {}
+[2019-11-15T19:19:51.200] [INFO] default - 使用postcss处理完毕! 用时: 8 毫秒
+[2019-11-15T19:19:51.200] [INFO] default - 正在处理script!
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:19:51.201] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:19:51.202] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:19:51.204] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:19:51.246] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:19:51.247] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:19:51.247] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:19:51.247] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:19:51.247] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:19:51.247] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:19:51.247] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:19:51.247] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:19:51.247] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:19:51.247] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:19:51.247] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:19:51.247] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:19:51.247] [DEBUG] default - 输出scriptData
+[2019-11-15T19:19:51.248] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:19:51.248] [DEBUG] default - 准备输出html!
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:19:51.248] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:19:51.249] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:19:51.250] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:19:51.250] [INFO] default - 编译结束!
+[2019-11-15T19:19:51.251] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:19:51.266] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:19:51.266] [INFO] default - animation文件写出成功!
+[2019-11-15T19:19:51.266] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:19:51.275] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:19:51.275] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:19:51.286] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:19:51.286] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:19:51.350] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:19:51.351] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:23:05.767] [INFO] default - file change: D:\work\青海视频\src\main.css
+[2019-11-15T19:23:05.767] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:23:05.767] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:23:05.767] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\main.css
+[2019-11-15T19:23:05.767] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:23:05.768] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:23:05.768] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:23:05.768] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:23:05.773] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:23:05.778] [DEBUG] default - 页面loading处理用时: 10 毫秒!
+[2019-11-15T19:23:05.778] [INFO] default - 开始处理模块: one
+[2019-11-15T19:23:05.811] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:23:05.828] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:23:05.828] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:23:05.828] [DEBUG] default - 页面one处理用时: 50 毫秒!
+[2019-11-15T19:23:05.829] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:23:05.829] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:23:05.829] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:23:05.829] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:23:05.838] [INFO] default - 开始处理附属css中的资源
+[2019-11-15T19:23:05.839] [INFO] default - 附属css中的资源处理完毕!
+[2019-11-15T19:23:05.839] [INFO] default - 处理字体: {}
+[2019-11-15T19:23:05.840] [INFO] default - 使用postcss处理完毕! 用时: 11 毫秒
+[2019-11-15T19:23:05.840] [INFO] default - 正在处理script!
+[2019-11-15T19:23:05.840] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:23:05.840] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:23:05.841] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:23:05.842] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:23:05.843] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:23:05.845] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:23:05.909] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:23:05.910] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:23:05.910] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:23:05.910] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:23:05.910] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:23:05.910] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:23:05.910] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:23:05.910] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:23:05.910] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:23:05.910] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:23:05.910] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:23:05.910] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:23:05.910] [DEBUG] default - 输出scriptData
+[2019-11-15T19:23:05.911] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:23:05.911] [DEBUG] default - 准备输出html!
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:23:05.911] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:23:05.912] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:23:05.912] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:23:05.912] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:23:05.912] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:23:05.912] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:23:05.913] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:23:05.914] [INFO] default - 编译结束!
+[2019-11-15T19:23:05.915] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:23:05.915] [INFO] default - 读取成功: D:\work\青海视频\src\main.css
+[2019-11-15T19:23:05.915] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:23:05.915] [INFO] default - animation文件写出成功!
+[2019-11-15T19:23:05.915] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:23:05.915] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:23:05.915] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:23:05.918] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:23:05.918] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:23:05.918] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\main.css
+[2019-11-15T19:23:05.921] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:23:05.922] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:23:51.171] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:23:51.171] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:23:51.171] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:23:51.171] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:23:51.171] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:23:51.171] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:23:51.171] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:23:51.172] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:23:51.176] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:23:51.179] [DEBUG] default - 页面loading处理用时: 7 毫秒!
+[2019-11-15T19:23:51.180] [INFO] default - 开始处理模块: one
+[2019-11-15T19:23:51.206] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:23:51.224] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:23:51.224] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:23:51.224] [DEBUG] default - 页面one处理用时: 44 毫秒!
+[2019-11-15T19:23:51.225] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:23:51.225] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:23:51.225] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:23:51.225] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:23:51.233] [INFO] default - 处理字体: {}
+[2019-11-15T19:23:51.234] [INFO] default - 使用postcss处理完毕! 用时: 9 毫秒
+[2019-11-15T19:23:51.234] [INFO] default - 正在处理script!
+[2019-11-15T19:23:51.234] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:23:51.234] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:23:51.235] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:23:51.236] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:23:51.236] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:23:51.236] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:23:51.238] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:23:51.278] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:23:51.279] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:23:51.279] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:23:51.279] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:23:51.279] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:23:51.279] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:23:51.279] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:23:51.279] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:23:51.279] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:23:51.279] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:23:51.279] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:23:51.279] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:23:51.280] [DEBUG] default - 输出scriptData
+[2019-11-15T19:23:51.280] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:23:51.280] [DEBUG] default - 准备输出html!
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:23:51.280] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:23:51.281] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:23:51.281] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:23:51.282] [INFO] default - 编译结束!
+[2019-11-15T19:23:51.282] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:23:51.306] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:23:51.306] [INFO] default - animation文件写出成功!
+[2019-11-15T19:23:51.306] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:23:51.306] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:23:51.306] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:23:51.310] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:23:51.310] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:23:51.393] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:23:51.394] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:24:21.517] [INFO] default - file change: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:24:21.517] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:24:21.517] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:24:21.517] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:24:21.517] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:24:21.517] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:24:21.517] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:24:21.517] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:24:21.522] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:24:21.525] [DEBUG] default - 页面loading处理用时: 8 毫秒!
+[2019-11-15T19:24:21.525] [INFO] default - 开始处理模块: one
+[2019-11-15T19:24:21.557] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:24:21.576] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:21.576] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:21.576] [DEBUG] default - 页面one处理用时: 51 毫秒!
+[2019-11-15T19:24:21.577] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:21.577] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:21.577] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:24:21.577] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:24:21.585] [INFO] default - 处理字体: {}
+[2019-11-15T19:24:21.587] [INFO] default - 使用postcss处理完毕! 用时: 10 毫秒
+[2019-11-15T19:24:21.587] [INFO] default - 正在处理script!
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:24:21.587] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:24:21.588] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:24:21.590] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:24:21.656] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:24:21.657] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:24:21.657] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:24:21.657] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:24:21.657] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:24:21.657] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:24:21.657] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:24:21.657] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:21.657] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:24:21.657] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:21.657] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:24:21.657] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:21.657] [DEBUG] default - 输出scriptData
+[2019-11-15T19:24:21.657] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:24:21.658] [DEBUG] default - 准备输出html!
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:21.658] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:21.659] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:24:21.659] [INFO] default - 编译结束!
+[2019-11-15T19:24:21.660] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:24:21.660] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:21.660] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:21.661] [INFO] default - animation文件写出成功!
+[2019-11-15T19:24:21.661] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:24:21.661] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:24:21.661] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:24:21.661] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:24:21.662] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:21.663] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:24:34.102] [INFO] default - file change: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:24:34.102] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:24:34.102] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:24:34.102] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:24:34.102] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:24:34.102] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:24:34.102] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:24:34.103] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:24:34.107] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:24:34.112] [DEBUG] default - 页面loading处理用时: 9 毫秒!
+[2019-11-15T19:24:34.113] [INFO] default - 开始处理模块: one
+[2019-11-15T19:24:34.140] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:24:34.155] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:34.155] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:34.155] [DEBUG] default - 页面one处理用时: 42 毫秒!
+[2019-11-15T19:24:34.156] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:34.156] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:34.156] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:24:34.156] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:24:34.162] [INFO] default - 处理字体: {}
+[2019-11-15T19:24:34.164] [INFO] default - 使用postcss处理完毕! 用时: 8 毫秒
+[2019-11-15T19:24:34.164] [INFO] default - 正在处理script!
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:24:34.165] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:24:34.166] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:24:34.168] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:24:34.207] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:24:34.208] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:24:34.208] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:24:34.208] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:24:34.209] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:24:34.209] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:24:34.209] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:24:34.209] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:34.209] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:24:34.209] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:34.209] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:24:34.209] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:34.209] [DEBUG] default - 输出scriptData
+[2019-11-15T19:24:34.210] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:24:34.210] [DEBUG] default - 准备输出html!
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:34.211] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:34.212] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:24:34.212] [INFO] default - 编译结束!
+[2019-11-15T19:24:34.213] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:24:34.228] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:24:34.229] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:24:34.229] [INFO] default - animation文件写出成功!
+[2019-11-15T19:24:34.229] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:34.229] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:34.239] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:24:34.241] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:24:34.344] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:34.345] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:24:46.836] [INFO] default - file change: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:24:46.836] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:24:46.836] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:24:46.836] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\loading.owo
+[2019-11-15T19:24:46.836] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:24:46.836] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:24:46.836] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:24:46.836] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:24:46.842] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:24:46.846] [DEBUG] default - 页面loading处理用时: 10 毫秒!
+[2019-11-15T19:24:46.846] [INFO] default - 开始处理模块: one
+[2019-11-15T19:24:46.891] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:24:46.907] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:46.907] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:46.908] [DEBUG] default - 页面one处理用时: 62 毫秒!
+[2019-11-15T19:24:46.908] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:46.908] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:46.908] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:24:46.908] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:24:46.921] [INFO] default - 处理字体: {}
+[2019-11-15T19:24:46.922] [INFO] default - 使用postcss处理完毕! 用时: 14 毫秒
+[2019-11-15T19:24:46.922] [INFO] default - 正在处理script!
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:24:46.922] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:24:46.923] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:24:46.925] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:24:47.036] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:24:47.037] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:24:47.038] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:24:47.038] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:24:47.038] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:24:47.038] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:24:47.038] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:24:47.038] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:47.038] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:24:47.038] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:47.038] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:24:47.038] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:47.038] [DEBUG] default - 输出scriptData
+[2019-11-15T19:24:47.039] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:24:47.039] [DEBUG] default - 准备输出html!
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:24:47.039] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:24:47.040] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:47.040] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:47.040] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:47.040] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:24:47.041] [INFO] default - 编译结束!
+[2019-11-15T19:24:47.041] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:24:47.042] [INFO] default - animation文件写出成功!
+[2019-11-15T19:24:47.042] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:47.042] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:47.042] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:24:47.042] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:24:47.043] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:24:47.043] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:24:47.044] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:47.044] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:24:50.334] [INFO] default - file change: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:24:50.334] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:24:50.334] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:24:50.334] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\page\one.owo
+[2019-11-15T19:24:50.334] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:24:50.335] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:24:50.335] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:24:50.335] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:24:50.340] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:24:50.342] [DEBUG] default - 页面loading处理用时: 7 毫秒!
+[2019-11-15T19:24:50.342] [INFO] default - 开始处理模块: one
+[2019-11-15T19:24:50.374] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:24:50.387] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:50.387] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:24:50.389] [DEBUG] default - 页面one处理用时: 47 毫秒!
+[2019-11-15T19:24:50.389] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:50.390] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:50.390] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:24:50.390] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:24:50.399] [INFO] default - 处理字体: {}
+[2019-11-15T19:24:50.400] [INFO] default - 使用postcss处理完毕! 用时: 10 毫秒
+[2019-11-15T19:24:50.401] [INFO] default - 正在处理script!
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:50.401] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:24:50.402] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:24:50.404] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:24:50.484] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:24:50.485] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:24:50.485] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:24:50.485] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:24:50.485] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:24:50.485] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:24:50.485] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:24:50.485] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:50.485] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:24:50.485] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:50.485] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:24:50.485] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:50.485] [DEBUG] default - 输出scriptData
+[2019-11-15T19:24:50.486] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:24:50.486] [DEBUG] default - 准备输出html!
+[2019-11-15T19:24:50.486] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:24:50.486] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:24:50.486] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:24:50.486] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:24:50.486] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:24:50.486] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:24:50.487] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:24:50.487] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:24:50.487] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:24:50.487] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:24:50.487] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:24:50.487] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:24:50.488] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:24:50.489] [INFO] default - 编译结束!
+[2019-11-15T19:24:50.490] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:24:50.491] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:24:50.491] [INFO] default - animation文件写出成功!
+[2019-11-15T19:24:50.491] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:24:50.491] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:24:50.491] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:24:50.492] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:24:50.492] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:24:50.498] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:24:50.500] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js
+[2019-11-15T19:27:06.385] [INFO] default - file change: D:\work\青海视频\src\main.css
+[2019-11-15T19:27:06.386] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-15T19:27:06.386] [INFO] default - 程序运行目录: D:\work\青海视频
+[2019-11-15T19:27:06.386] [INFO] default - 刷新模式,变化目录: D:\work\青海视频\src\main.css
+[2019-11-15T19:27:06.386] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-11-15T19:27:06.386] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-15T19:27:06.386] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-15T19:27:06.386] [INFO] default - 开始处理模块: loading
+[2019-11-15T19:27:06.389] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-15T19:27:06.391] [DEBUG] default - 页面loading处理用时: 5 毫秒!
+[2019-11-15T19:27:06.391] [INFO] default - 开始处理模块: one
+[2019-11-15T19:27:06.420] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-15T19:27:06.439] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:27:06.439] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-15T19:27:06.440] [DEBUG] default - 页面one处理用时: 49 毫秒!
+[2019-11-15T19:27:06.440] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:27:06.440] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:27:06.440] [DEBUG] default - css中的资源处理完毕!
+[2019-11-15T19:27:06.440] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-15T19:27:06.447] [INFO] default - 开始处理附属css中的资源
+[2019-11-15T19:27:06.447] [INFO] default - 附属css中的资源处理完毕!
+[2019-11-15T19:27:06.447] [INFO] default - 处理字体: {}
+[2019-11-15T19:27:06.449] [INFO] default - 使用postcss处理完毕! 用时: 9 毫秒
+[2019-11-15T19:27:06.449] [INFO] default - 正在处理script!
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/main-text.png
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.jpg
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/data.json
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/bg.mp3
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:27:06.449] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-4.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-5.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-6.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-7.png
+[2019-11-15T19:27:06.450] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-8.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-9.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-10.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-11.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-12.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-13.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-14.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-2.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-3.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-4.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-5.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-6.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-7.png
+[2019-11-15T19:27:06.451] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-8.png
+[2019-11-15T19:27:06.452] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-9.png
+[2019-11-15T19:27:06.452] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-10.png
+[2019-11-15T19:27:06.452] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-11.png
+[2019-11-15T19:27:06.452] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-12.png
+[2019-11-15T19:27:06.452] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-13.png
+[2019-11-15T19:27:06.452] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-14.png
+[2019-11-15T19:27:06.454] [DEBUG] default - 选择将js合并到html中!
+[2019-11-15T19:27:06.508] [INFO] default - 工程中包含多个页面!
+[2019-11-15T19:27:06.509] [INFO] default - js中的资源处理完毕!
+[2019-11-15T19:27:06.509] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-15T19:27:06.509] [DEBUG] default - 外部脚本数量: 4
+[2019-11-15T19:27:06.509] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-15T19:27:06.509] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-15T19:27:06.509] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-15T19:27:06.509] [INFO] default - 读取文件: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:27:06.509] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-15T19:27:06.509] [INFO] default - 读取文件: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:27:06.509] [DEBUG] default - 处理脚本: main
+[2019-11-15T19:27:06.509] [INFO] default - 读取文件: D:\work\青海视频\src\main.js
+[2019-11-15T19:27:06.509] [DEBUG] default - 输出scriptData
+[2019-11-15T19:27:06.510] [INFO] default - 写文件: D:\work\青海视频\dist\static\css\owo.animate.css
+[2019-11-15T19:27:06.510] [DEBUG] default - 准备输出html!
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/loading.gif
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/title.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/video.mp4
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/show-1.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/press.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/share.jpg
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-2.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/button-3.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-1.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-2.png
+[2019-11-15T19:27:06.511] [DEBUG] default - 忽略文件: D:/work/青海视频/src/resource/badge-3.png
+[2019-11-15T19:27:06.512] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-15T19:27:06.513] [INFO] default - 编译结束!
+[2019-11-15T19:27:06.513] [INFO] default - 发送页面需要刷新命令!
+[2019-11-15T19:27:06.514] [INFO] default - animation文件写出成功!
+[2019-11-15T19:27:06.514] [INFO] default - 读取成功: D:\work\青海视频\src\main.css
+[2019-11-15T19:27:06.514] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-15T19:27:06.514] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\owo.main.css
+[2019-11-15T19:27:06.514] [INFO] default - 读取成功: D:\work\青海视频\src\resource\iphone-inline-video.min.js
+[2019-11-15T19:27:06.514] [INFO] default - 读取成功: D:\work\青海视频\src\main.js
+[2019-11-15T19:27:06.516] [INFO] default - 写入文件: D:\work\青海视频\dist\static\css\main.css
+[2019-11-15T19:27:06.516] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\main.js
+[2019-11-15T19:27:06.516] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\iphone-inline-video.js
+[2019-11-15T19:27:06.526] [INFO] default - 读取成功: D:\work\青海视频\src\resource\lottie.min.js
+[2019-11-15T19:27:06.527] [INFO] default - 写入文件: D:\work\青海视频\dist\static\js\lottie.min.js

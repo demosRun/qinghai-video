@@ -19,16 +19,16 @@
         "@|main-text.png|",
         "@|bg.mp3|",
         "@|bg.jpg|",
-        "@|title.png|",
-        `./static/resource/images/img_288.png`
+        "@|title.png|"
       ]
-      for (let ind = 289; ind > 0; ind--) {
-        imgList.push(`./static/resource/images/img_${ind}.png`)
-      }
+      // for (let ind = 289; ind > 0; ind--) {
+      //   imgList.push(`./static/resource/images/img_${ind}.png`)
+      // }
       this.preloadImages(imgList, (e) => {
+        owo.tool.toast('准备好了吗?和我们一起出发!', null, null, document.getElementById('horizontal-box'))
         setTimeout(() => {
           owo.go('one','' ,'' ,'' ,'' , true)
-        }, 0)
+        }, 600)
       }, (num) => {
         loadingItem.style.left = num + '%'
         mum.innerText = num + '%'

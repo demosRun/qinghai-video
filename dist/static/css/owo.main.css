@@ -199,7 +199,7 @@ li {
   display: none;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  z-index: 22;
+  z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
