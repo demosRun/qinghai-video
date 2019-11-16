@@ -1,4 +1,4 @@
-// Fri Nov 15 2019 23:11:38 GMT+0800 (GMT+08:00)
+// Sat Nov 16 2019 09:41:31 GMT+0800 (GMT+08:00)
 
 /* 方法合集 */
 var _owo = {}
@@ -407,23 +407,6 @@ _owo._event_tap = function (tempDom, callBack) {
     startTime = 0;
     isMove = false
   })
-}
-
-
-// 这是用于代码调试的自动刷新代码，他不应该出现在正式上线版本!
-if ("WebSocket" in window) {
-  // 打开一个 web socket
-  if (!window._owo.ws) window._owo.ws = new WebSocket("ws://" + window.location.host)
-  window._owo.ws.onmessage = function (evt) { 
-    if (evt.data == 'reload') {
-      location.reload()
-    }
-  }
-  window._owo.ws.onclose = function() { 
-    console.info('与服务器断开连接')
-  }
-} else {
-  console.error('浏览器不支持WebSocket')
 }
 
 

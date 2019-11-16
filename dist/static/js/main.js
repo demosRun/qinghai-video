@@ -109,5 +109,15 @@ document.body.addEventListener('touchmove', function (e) {
 }, {passive: false})
 
 const u = navigator.userAgent;
-  const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-  const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+const isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+const isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+
+document.addEventListener("WeixinJSBridgeReady", function () {
+  // ios预加载视频
+  if (isiOS) {
+    if (video.load) video.load()
+    myVid.muted = true
+    video.currentTime = 0.1
+    myVid.muted = false
+  }
+}, false)

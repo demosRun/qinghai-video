@@ -1,0 +1,119 @@
+[2019-11-16T09:41:29.022] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-11-16T09:41:29.025] [INFO] default - 程序运行目录: C:\Users\my\Documents\GitHub\qinghai
+[2019-11-16T09:41:29.025] [INFO] default - 首次启动!
+[2019-11-16T09:41:29.025] [INFO] default - 生成版本号: gqdk4v0329t
+[2019-11-16T09:41:29.037] [INFO] default - 清理资源文件夹: C:\Users\my\Documents\GitHub\qinghai\dist\static
+[2019-11-16T09:41:29.037] [INFO] default - 文件夹不存在: C:\Users\my\Documents\GitHub\qinghai\dist\static
+[2019-11-16T09:41:29.037] [INFO] default - 创建文件夹: C:\Users\my\Documents\GitHub\qinghai\dist\static
+[2019-11-16T09:41:29.037] [INFO] default - 读取模板文件: C:\Users\my\Documents\GitHub\pack\lib\index.html
+[2019-11-16T09:41:29.038] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-11-16T09:41:29.038] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-11-16T09:41:29.039] [INFO] default - 开始处理模块: loading
+[2019-11-16T09:41:29.068] [DEBUG] default - 缓存模板: loading./src/page/loading.owo
+[2019-11-16T09:41:29.117] [DEBUG] default - 页面loading处理用时: 78 毫秒!
+[2019-11-16T09:41:29.117] [INFO] default - 开始处理模块: one
+[2019-11-16T09:41:29.555] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-11-16T09:41:29.579] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-16T09:41:29.579] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-11-16T09:41:29.580] [DEBUG] default - 页面one处理用时: 463 毫秒!
+[2019-11-16T09:41:29.580] [INFO] default - 开始处理模块: three
+[2019-11-16T09:41:29.587] [DEBUG] default - 缓存模板: three./src/page/three.owo
+[2019-11-16T09:41:29.590] [DEBUG] default - 页面three处理用时: 10 毫秒!
+[2019-11-16T09:41:29.592] [INFO] default - 文件夹不存在: C:/Users/my/Documents/GitHub/qinghai/dist/static/resource
+[2019-11-16T09:41:29.592] [INFO] default - 创建文件夹: C:/Users/my/Documents/GitHub/qinghai/dist/static/resource
+[2019-11-16T09:41:29.593] [DEBUG] default - 处理资源:  [ 'C:/Users/my/Documents/GitHub/qinghai/src/resource/bg.jpg',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/main-text.png' ]
+[2019-11-16T09:41:29.594] [DEBUG] default - 资源目录:  C:/Users/my/Documents/GitHub/qinghai/dist/static/resource
+[2019-11-16T09:41:29.595] [DEBUG] default - css中的资源处理完毕!
+[2019-11-16T09:41:30.078] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-11-16T09:41:30.139] [INFO] default - 文件夹不存在: C:\Users\my\Documents\GitHub\qinghai\dist\static\css
+[2019-11-16T09:41:30.139] [INFO] default - 创建文件夹: C:\Users\my\Documents\GitHub\qinghai\dist\static\css
+[2019-11-16T09:41:30.139] [INFO] default - 开始处理附属css中的资源
+[2019-11-16T09:41:30.140] [INFO] default - 附属css中的资源处理完毕!
+[2019-11-16T09:41:30.140] [INFO] default - 处理字体: {}
+[2019-11-16T09:41:30.279] [INFO] default - 使用postcss处理完毕! 用时: 201 毫秒
+[2019-11-16T09:41:30.279] [INFO] default - 正在处理script!
+[2019-11-16T09:41:30.280] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/main-text.png
+[2019-11-16T09:41:30.280] [INFO] default - 读取文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/bg.mp3
+[2019-11-16T09:41:30.280] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/bg.jpg
+[2019-11-16T09:41:30.280] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/bg.mp3
+[2019-11-16T09:41:30.283] [DEBUG] default - 处理资源:  [ 'C:/Users/my/Documents/GitHub/qinghai/src/resource/title.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-1.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-2.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-3.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-4.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-5.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-6.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-7.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-8.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-9.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-10.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-11.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-12.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-13.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-14.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-2.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-3.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-4.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-5.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-6.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-7.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-8.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-9.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-10.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-11.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-12.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-13.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-14.png' ]
+[2019-11-16T09:41:30.283] [DEBUG] default - 资源目录:  C:/Users/my/Documents/GitHub/qinghai/dist/static/resource
+[2019-11-16T09:41:30.288] [DEBUG] default - 选择将js合并到html中!
+[2019-11-16T09:41:31.014] [INFO] default - 工程中包含多个页面!
+[2019-11-16T09:41:31.016] [INFO] default - js中的资源处理完毕!
+[2019-11-16T09:41:31.016] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"iphone-inline-video","src":"./src/resource/iphone-inline-video.min.js"},{"name":"lottie.min","src":"./src/resource/lottie.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-11-16T09:41:31.016] [DEBUG] default - 外部脚本数量: 4
+[2019-11-16T09:41:31.016] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-11-16T09:41:31.016] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-11-16T09:41:31.016] [DEBUG] default - 处理脚本: iphone-inline-video
+[2019-11-16T09:41:31.016] [INFO] default - 读取文件: C:\Users\my\Documents\GitHub\qinghai\src\resource\iphone-inline-video.min.js
+[2019-11-16T09:41:31.017] [DEBUG] default - 处理脚本: lottie.min
+[2019-11-16T09:41:31.017] [INFO] default - 读取文件: C:\Users\my\Documents\GitHub\qinghai\src\resource\lottie.min.js
+[2019-11-16T09:41:31.017] [DEBUG] default - 处理脚本: main
+[2019-11-16T09:41:31.017] [INFO] default - 读取文件: C:\Users\my\Documents\GitHub\qinghai\src\main.js
+[2019-11-16T09:41:31.017] [DEBUG] default - 输出scriptData
+[2019-11-16T09:41:31.018] [INFO] default - 写文件: C:\Users\my\Documents\GitHub\qinghai\dist\static\css\owo.animate.css
+[2019-11-16T09:41:31.018] [DEBUG] default - 准备输出html!
+[2019-11-16T09:41:31.018] [INFO] default - 读取文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/loading.gif
+[2019-11-16T09:41:31.018] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/title.png
+[2019-11-16T09:41:31.018] [INFO] default - 读取文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/video.mp4
+[2019-11-16T09:41:31.018] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-1.png
+[2019-11-16T09:41:31.018] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-2.png
+[2019-11-16T09:41:31.018] [DEBUG] default - 忽略文件: C:/Users/my/Documents/GitHub/qinghai/src/resource/badge-3.png
+[2019-11-16T09:41:31.019] [DEBUG] default - 处理资源:  [ 'C:/Users/my/Documents/GitHub/qinghai/src/resource/button.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/show-1.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/button-2.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/button-3.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/press.png',
+  'C:/Users/my/Documents/GitHub/qinghai/src/resource/share.jpg' ]
+[2019-11-16T09:41:31.019] [DEBUG] default - 资源目录:  C:/Users/my/Documents/GitHub/qinghai/dist/static/resource
+[2019-11-16T09:41:31.020] [INFO] default - 文件夹不存在: C:\Users\my\Documents\GitHub\qinghai\dist\static\js
+[2019-11-16T09:41:31.020] [INFO] default - 创建文件夹: C:\Users\my\Documents\GitHub\qinghai\dist\static\js
+[2019-11-16T09:41:31.021] [DEBUG] default - 页面中不包含切换动画!
+[2019-11-16T09:41:31.021] [INFO] default - 编译结束!
+[2019-11-16T09:41:31.022] [INFO] default - 发送页面需要刷新命令!
+[2019-11-16T09:41:31.042] [INFO] default - 写入文件: C:\Users\my\Documents\GitHub\qinghai\dist\static\css\owo.main.css
+[2019-11-16T09:41:31.042] [INFO] default - animation文件写出成功!
+[2019-11-16T09:41:31.043] [INFO] default - 读取成功: C:\Users\my\Documents\GitHub\qinghai\src\main.css
+[2019-11-16T09:41:31.043] [INFO] default - 读取成功: C:\Users\my\Documents\GitHub\qinghai\src\resource\iphone-inline-video.min.js
+[2019-11-16T09:41:31.043] [INFO] default - 读取成功: C:\Users\my\Documents\GitHub\qinghai\src\main.js
+[2019-11-16T09:41:31.043] [INFO] default - 主要逻辑文件写出成功!
+[2019-11-16T09:41:31.120] [INFO] default - 写入文件: C:\Users\my\Documents\GitHub\qinghai\dist\static\css\main.css
+[2019-11-16T09:41:31.120] [INFO] default - 写入文件: C:\Users\my\Documents\GitHub\qinghai\dist\static\js\iphone-inline-video.js
+[2019-11-16T09:41:31.130] [INFO] default - 读取成功: C:/Users/my/Documents/GitHub/qinghai/src/resource/loading.gif
+[2019-11-16T09:41:31.137] [INFO] default - 写入文件: C:\Users\my\Documents\GitHub\qinghai\dist\static\js\main.js
+[2019-11-16T09:41:31.151] [INFO] default - 写入文件: C:/Users/my/Documents/GitHub/qinghai/dist/static/resource/loading.gif
+[2019-11-16T09:41:31.196] [INFO] default - 读取成功: C:/Users/my/Documents/GitHub/qinghai/src/resource/bg.mp3
+[2019-11-16T09:41:31.196] [INFO] default - 读取成功: C:\Users\my\Documents\GitHub\qinghai\src\resource\lottie.min.js
+[2019-11-16T09:41:31.200] [INFO] default - 写入文件: C:/Users/my/Documents/GitHub/qinghai/dist/static/resource/bg.mp3
+[2019-11-16T09:41:31.200] [INFO] default - 写入文件: C:\Users\my\Documents\GitHub\qinghai\dist\static\js\lottie.min.js
+[2019-11-16T09:41:31.325] [INFO] default - 读取成功: C:/Users/my/Documents/GitHub/qinghai/src/resource/video.mp4
+[2019-11-16T09:41:31.343] [INFO] default - 写入文件: C:/Users/my/Documents/GitHub/qinghai/dist/static/resource/video.mp4

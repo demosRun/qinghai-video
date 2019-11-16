@@ -12,7 +12,7 @@
       const clientHeight = owo.tool.getScreenInfo().clientHeight
       if (ratio > 0.6) {
         console.log(ratio)
-        owo.query('.press')[0].style.top = (0.438 * clientHeight / clientHeight/ 4) * 100 + 'vw'
+        owo.query('.press')[0].style.top = (0.438 * clientHeight / clientHeight/ 4) * 50 + 'vw'
         this.$el.classList.add('mini')
       }
     }

@@ -49,24 +49,11 @@
       shareShow: false,
       // 当前第几步了
       step: 1,
-      ding: null,
       canNext: false,
       stopPoint: 9.8
     },
     created: function () {
-      // var video = document.querySelector('video');
-      // enableInlineVideo(video)
-      this.data.ding = new Map()
-      // var animData = {
-      //   container: owo.query('.video')[0],
-      //   renderer: 'canvas',
-      //   loop: false,
-      //   autoplay: false,
-      //   setSubframe: false,
-      //   path: '@|data.json|'
-      // };
-      // this.data.anim = bodymovin.loadAnimation(animData);
-      // this.data.anim.setSubframe(false)
+
       owo.tool.animate('fadeInDown', owo.query('.title')[0], 10600)
       owo.tool.animate('fadeIn', owo.query('.button')[0], 12000);
       owo.tool.animate('fadeIn', owo.query('.main-text-2')[0], 8000);
@@ -82,6 +69,7 @@
       }, 100)
       var video = document.querySelector('video');
       enableInlineVideo(video)
+      
       // 绘制canvas
       
       const canv = owo.query('canvas')[0]
@@ -136,30 +124,6 @@
         owo.query('.one')[0].style.display = 'none'
       }, 1000)
       
-      // 开始播放
-      // console.log(this.data.anim)
-      // console.log('开始播放第一段!')
-      // this.data.anim.playSegments([307, 560], true)
-      // owo.query('.show-box .show-image')[0].src = '@|show-1.png|'
-      // this.data.anim.onComplete = (e) => {
-      //   // console.log(e)
-      //   this.data.canNext = false
-      //   const pointList = owo.query('.step-' + this.data.step)
-      //   if (pointList.length > 0) {
-      //     owo.query('.badge-bar')[0].style.left = '8%'
-      //     console.log('显示.step-' + this.data.step)
-      //     owo.query('.step-' + this.data.step).forEach(element => {
-      //       element.style.display = 'block'
-      //     })
-      //   }
-      //   if ((this.data.step > 14) && !this.data.showButtomBar) {
-      //     this.data.showButtomBar = true
-      //     owo.query('.button-item-box')[0].style.display = 'block'
-      //     owo.query('.button-item-box')[0].style.opacity = 1
-      //     return
-      //   }
-      //   owo.query('.next')[0].style.display = 'block'
-      // }
       const video = owo.query('video')[0]
       setTimeout(() => {
         video.style.opacity = '1'
@@ -174,7 +138,7 @@
           video.pause()
           this.data.music.play()
           if (pointList.length > 0) {
-            owo.query('.badge-bar')[0].style.left = '8%'
+            owo.query('.badge-bar')[0].style.left = '9.5%'
             console.log('显示.step-' + this.data.step)
             owo.query('.step-' + this.data.step).forEach(element => {
               element.style.display = 'block'

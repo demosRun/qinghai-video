@@ -3,59 +3,119 @@
   <head>
     <title>{TAG_14226_TAG}</title>
     <!-- 页面的元信息 -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    
-      <!-- 页面主样式文件 -->
-      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.main.css">
-      
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="browsermode" content="application" />
+    <meta name="x5-page-mode" content="app" />
+    <!-- 页面主样式文件 -->
+    <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.css">
     <!-- 附属css文件 -->
     <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-      
-    
     <link rel="stylesheet" href="./static/css/owo.animate.css">
   </head>
+  
   <body>
     <!-- 页面区域 -->
     <!-- 页面[loading]-->
     <div class="loading-wrap owo" template="loading" style="display: none;">
-    <div class="loading-text-wrap">
-      <div class="image-box">
-        <img class="loading-img" src="./static/resource/loading.gif">
+      <div class="loading-text-wrap">
+        <!-- 小鹿图片 -->
+        <div class="image-box">
+          <img class="loading-img" src="./static/resource/loading.gif">
+        </div>
+        <!-- 进度，会自动改变 -->
+        <div class="progress-num">1%</div>
       </div>
-      <div class="progress-num">1%</div>
     </div>
-    
-  </div>
     <!-- 页面[one]-->
-    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;"><div class="one"><img class="title" src="./static/resource/title.png"><img class="button" src="./static/resource/button.png" :tap="playVideo"></div><video src="./static/resource/video.mp4" style="object-fit: cover;" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video><div class="show-box" :tap="showPoup"><img class="show-image" src="./static/resource/show-1.png"></div><canvas class="canv"></canvas><div class="button-item-box"><img class="button-2 button-item" src="./static/resource/button-2.png" :tap="owo.go('three','' ,'' ,'' ,'' , true)"><img class="button-3 button-item" src="./static/resource/button-3.png" :tap="location.reload()"></div><div class="main-text"></div><div class="main-text-2">准备好了吗?和我们一起出发!</div><div class="point point-1 step-1" :tap="showPoup('badge-1')"></div><div class="point point-2 step-2" :tap="showPoup('badge-2')"></div><div class="point point-3 step-3" :tap="showPoup('badge-3')"></div><div class="point point-4 step-4" :tap="showPoup('badge-1')" style="left: 46%;top: 41%;"></div><div class="point point-5 step-5" :tap="showPoup('badge-2')" style="left: 51%;top: 34%;"></div><div class="point point-6 step-6" :tap="showPoup('badge-3')" style="left: 43%;top: 77%;"></div><div class="point point-7 step-7" :tap="showPoup('badge-1')" style="left: 44%;top: 41%;"></div><div class="point point-8 step-8" :tap="showPoup('badge-2')" style="left: 36%;top: 73%;"></div><div class="point point-9 step-9" :tap="showPoup('badge-3')" style="left: 61%;top: 62%;"></div><div class="point point-10 step-10" :tap="showPoup('badge-1')" style="left: 41%;top: 41%;"></div><div class="point point-11 step-11" :tap="showPoup('badge-2')" style="left: 50%;top: 66%;"></div><div class="point point-12 step-12" :tap="showPoup('badge-3')" style="left: 60%;top: 64%;"></div><div class="point point-13 step-13" :tap="showPoup('badge-1')" style="left: 47%;top: 47%;"></div><div class="point point-14 step-14" :tap="showPoup('badge-2')" style="left: 43%;top: 64%;"></div><div class="badge-bar"><img class="badge badge-1" src="./static/resource/badge-1.png"><img class="badge badge-2" src="./static/resource/badge-2.png"><img class="badge badge-3" src="./static/resource/badge-3.png"></div></div>
+    <div class="horizontal-box owo" id="horizontal-box" template="one" style="display: none;">
+      <div class="one">
+        <img class="title" src="./static/resource/title.png">
+        <img class="button" src="./static/resource/button.png" :tap="playVideo">
+      </div>
+      <!-- 视频播放 -->
+      <video src="./static/resource/video.mp4" style="object-fit: cover;" height="100%" width="100%" x5-playsinline="true" x5-video-player-fullscreen="true" preload="auto" x5-video-orientation="landscape" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5"></video>
+      <div class="show-box" :tap="showPoup">
+        <img class="show-image" src="./static/resource/show-1.png">
+      </div>
+      <!-- 不可见的canvas，用于生成海报 -->
+      <canvas class="canv"></canvas>
+      <!-- 视频播放完毕出现的两个按钮的容器 -->
+      <div class="button-item-box">
+        <img class="button-2 button-item" src="./static/resource/button-2.png"
+        :tap="owo.go('three','' ,'' ,'' ,'' , true)">
+        <img class="button-3 button-item" src="./static/resource/button-3.png"
+        :tap="location.reload()">
+      </div>
+      <!-- 视频开头的特效文字 -->
+      <div class="main-text"></div>
+      <div class="main-text-2">准备好了吗?和我们一起出发!</div>
+      <!-- 点击点 -->
+      <div class="point point-1 step-1" :tap="showPoup('badge-1')">
+      </div>
+      <div class="point point-2 step-2" :tap="showPoup('badge-2')">
+      </div>
+      <div class="point point-3 step-3" :tap="showPoup('badge-3')">
+      </div>
+      <div class="point point-4 step-4" :tap="showPoup('badge-1')" style="left: 46%;top: 41%;">
+      </div>
+      <div class="point point-5 step-5" :tap="showPoup('badge-2')" style="left: 51%;top: 34%;">
+      </div>
+      <div class="point point-6 step-6" :tap="showPoup('badge-3')" style="left: 43%;top: 77%;">
+      </div>
+      <div class="point point-7 step-7" :tap="showPoup('badge-1')" style="left: 44%;top: 41%;">
+      </div>
+      <div class="point point-8 step-8" :tap="showPoup('badge-2')" style="left: 36%;top: 73%;">
+      </div>
+      <div class="point point-9 step-9" :tap="showPoup('badge-3')" style="left: 61%;top: 62%;">
+      </div>
+      <div class="point point-10 step-10" :tap="showPoup('badge-1')" style="left: 41%;top: 41%;">
+      </div>
+      <div class="point point-11 step-11" :tap="showPoup('badge-2')" style="left: 50%;top: 66%;">
+      </div>
+      <div class="point point-12 step-12" :tap="showPoup('badge-3')" style="left: 60%;top: 64%;">
+      </div>
+      <div class="point point-13 step-13" :tap="showPoup('badge-1')" style="left: 47%;top: 47%;">
+      </div>
+      <div class="point point-14 step-14" :tap="showPoup('badge-2')" style="left: 43%;top: 64%;">
+      </div>
+      <!-- 左侧徽章条 -->
+      <div class="badge-bar">
+        <img class="badge badge-1" src="./static/resource/badge-1.png">
+        <img class="badge badge-2" src="./static/resource/badge-2.png">
+        <img class="badge badge-3" src="./static/resource/badge-3.png">
+      </div>
+    </div>
     <!-- 页面[three]-->
-    <div class="share-box horizontal-box2 owo" id="horizontal-box2" :tap="showShare" template="three" style="display: none;"><div class="share-img"><img class="press" src="./static/resource/press.png"><img class="share" src="./static/resource/share.jpg"></div></div>
-    
-
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/iphone-inline-video.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/lottie.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script><!-- 框架script代码 --><script>// 存储页面基本信息
+    <div class="share-box horizontal-box2 owo" id="horizontal-box2" :tap="showShare" template="three" style="display: none;">
+      <div class="share-img">
+        <img class="press" src="./static/resource/press.png">
+        <img class="share" src="./static/resource/share.jpg">
+      </div>
+    </div>
+    <!-- 引用的一些库 -->
+    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="./static/js/iphone-inline-video.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+<script>
+// 存储页面基本信息
 var owo = {
-  // 手机入口
-  phoneEnter: "loading",
-  // 全局方法变量
-  tool: {},
-  // 框架状态变量
-  state: {}
+    // 手机入口
+    phoneEnter: "loading",
+    // 全局方法变量
+    tool: {},
+    // 框架状态变量
+    state: {}
 };
 /*
   存储每个页面的函数
@@ -64,454 +124,408 @@ var owo = {
 */
 
 owo.script = {
-  "loading": {
-    "created": function created() {
-      var loadingItem = owo.query('.loading-img')[0];
-      var mum = owo.query('.progress-num')[0];
-      var imgList = ["./static/resource/main-text.png", "./static/resource/bg.mp3", "./static/resource/bg.jpg", "./static/resource/title.png"]; // for (let ind = 289; ind > 0; ind--) {
-      //   imgList.push(`./static/resource/images/img_${ind}.png`)
-      // }
+    // loading页面
+    "loading": {
+        "created": function created() {
+            var loadingItem = owo.query('.loading-img')[0];
+            var mum = owo.query('.progress-num')[0];
+            var imgList = ["./static/resource/main-text.png", "./static/resource/bg.mp3", "./static/resource/bg.jpg", "./static/resource/title.png"]; // for (let ind = 289; ind > 0; ind--) {
+            //   imgList.push(`./static/resource/images/img_${ind}.png`)
+            // }
 
-      this.preloadImages(imgList, function (e) {
-        setTimeout(function () {
-          owo.go('one', '', '', '', '', true);
-        }, 600);
-      }, function (num) {
-        loadingItem.style.left = num + '%';
-        mum.innerText = num + '%';
-      });
-    },
-    "preloadImage": function preloadImage(src, successFn) {
-      var image = new Image();
-
-      image.onload = function () {
-        successFn && successFn(src);
-      };
-
-      image.onerror = function (error) {
-        successFn && successFn(src);
-      };
-
-      image.src = src;
-    },
-    "preloadMusic": function preloadMusic(src, successFn) {
-      var music = new Audio(src);
-      if (music && music.load) music.load();
-      successFn && successFn(src);
-    },
-    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
-      var _this = this;
-
-      if (!Array.isArray(srcs)) {
-        console.log('第一个参数只能是一个数组');
-      } else {
-        var allCount = srcs.length;
-        var doneCount = 0;
-        srcs.forEach(function (srcItem) {
-          // 取后缀
-          var fileExtension = srcItem.split('.').pop().toLowerCase(); // console.log(fileExtension)
-          // 判断是否为图片
-          // 判断浏览器是否支持es6
-
-          if (![].includes) alert('浏览器版本过低，建议您使用其它浏览器浏览!');
-
-          if (["png", "jpg", "gif", "jpeg"].includes(fileExtension)) {
-            _this.preloadImage(srcItem, function () {
-              doneCount++;
-              progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-              if (doneCount === allCount) {
-                doneFn && doneFn();
-              }
+            this.preloadImages(imgList, function(e) {
+                setTimeout(function() {
+                    owo.go('one', '', '', '', '', true);
+                }, 600);
+            }, function(num) {
+                loadingItem.style.left = num + '%';
+                mum.innerText = num + '%';
             });
-          } else if (["mp3"].includes(fileExtension)) {
-            _this.preloadMusic(srcItem, function () {
-              doneCount++;
-              progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+        },
+        "preloadImage": function preloadImage(src, successFn) {
+            var image = new Image();
 
-              if (doneCount === allCount) {
-                doneFn && doneFn();
-              }
-            });
-          } else {
-            doneCount++;
-            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+            image.onload = function() {
+                successFn && successFn(src);
+            };
 
-            if (doneCount === allCount) {
-              doneFn && doneFn();
+            image.onerror = function(error) {
+                successFn && successFn(src);
+            };
+
+            image.src = src;
+        },
+        "preloadMusic": function preloadMusic(src, successFn) {
+            var music = new Audio(src);
+            if (music && music.load) music.load();
+            successFn && successFn(src);
+        },
+        "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+            var _this = this;
+
+            if (!Array.isArray(srcs)) {
+                console.log('第一个参数只能是一个数组');
+            } else {
+                var allCount = srcs.length;
+                var doneCount = 0;
+                srcs.forEach(function(srcItem) {
+                    // 取后缀
+                    var fileExtension = srcItem.split('.').pop().toLowerCase(); // console.log(fileExtension)
+                    // 判断是否为图片
+                    // 判断浏览器是否支持es6
+
+                    if (![].includes) alert('浏览器版本过低，建议您使用其它浏览器浏览!');
+
+                    if (["png", "jpg", "gif", "jpeg"].includes(fileExtension)) {
+                        _this.preloadImage(srcItem, function() {
+                            doneCount++;
+                            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+                            if (doneCount === allCount) {
+                                doneFn && doneFn();
+                            }
+                        });
+                    } else if (["mp3"].includes(fileExtension)) {
+                        _this.preloadMusic(srcItem, function() {
+                            doneCount++;
+                            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+                            if (doneCount === allCount) {
+                                doneFn && doneFn();
+                            }
+                        });
+                    } else {
+                        doneCount++;
+                        progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+                        if (doneCount === allCount) {
+                            doneFn && doneFn();
+                        }
+                    }
+                });
             }
-          }
-        });
-      }
-    }
-  },
-  "one": {
-    "data": {
-      "anim": null,
-      "poupShow": false,
-      "showButtomBar": false,
-      "shareShow": false,
-      "step": 1,
-      "ding": null,
-      "canNext": false,
-      "stopPoint": 9.8
-    },
-    "created": function created() {
-      // var video = document.querySelector('video');
-      // enableInlineVideo(video)
-      this.data.ding = new Map(); // var animData = {
-      //   container: owo.query('.video')[0],
-      //   renderer: 'canvas',
-      //   loop: false,
-      //   autoplay: false,
-      //   setSubframe: false,
-      //   path: './static/resource/data.json'
-      // };
-      // this.data.anim = bodymovin.loadAnimation(animData);
-      // this.data.anim.setSubframe(false)
-
-      owo.tool.animate('fadeInDown', owo.query('.title')[0], 10600);
-      owo.tool.animate('fadeIn', owo.query('.button')[0], 12000);
-      owo.tool.animate('fadeIn', owo.query('.main-text-2')[0], 8000);
-      setTimeout(function () {
-        owo.query('.main-text-2')[0].style.display = 'none';
-      }, 9800);
-      setTimeout(function () {
-        owo.query('.main-text')[0].style.width = '353px';
-        setTimeout(function () {
-          owo.query('.main-text')[0].style.display = 'none';
-          owo.query('.main-text')[0].style.width = '0';
-        }, 7000);
-      }, 100);
-      var video = document.querySelector('video');
-      enableInlineVideo(video); // 绘制canvas
-
-      var canv = owo.query('canvas')[0];
-      var screen = owo.tool.getScreenInfo();
-      var clientHeight = screen.clientHeight > screen.clientWidth ? screen.clientWidth : screen.clientHeight; // 设置计数
-
-      this.set(); // 获取计数
-
-      $.ajax({
-        url: 'http://19diaocha.people.cn/20190605/json.php?type=618',
-        dataType: 'jsonp',
-        success: function success(res) {
-          var personCount = 123624;
-
-          if (res[0]) {
-            personCount = res[0].bnum;
-          }
-
-          canv.width = clientHeight * 0.8 * 1.779 * 2;
-          canv.height = clientHeight * 0.8 * 2;
-          canv.style.width = clientHeight * 0.8 * 1.779 + 'px';
-          canv.style.height = clientHeight * 0.8 + 'px';
-          var ctx = canv.getContext("2d");
-          var bgImg = new Image();
-          bgImg.src = './static/resource/share.jpg';
-          ctx.drawImage(bgImg, 0, 0, canv.width, canv.height);
-          ctx.fillStyle = "#0000ff";
-          ctx.font = "30px Verdana";
-          ctx.fillText(personCount, clientHeight * 0.45, clientHeight * 0.86);
-          document.getElementsByClassName('share')[0].src = canv.toDataURL("image/png");
         }
-      });
     },
-    "set": function set() {
-      $.ajax({
-        url: 'http://littlepoll1.people.com.cn/button/index.php/cip/button/618/61008?',
-        dataType: 'jsonp',
-        jsonp: 'jsonCallback',
-        success: function success(res) {
-          console.log(res);
-        }
-      });
-    },
-    "playVideo": function playVideo() {
-      var _this2 = this;
+    "one": {
+        // 存储的一些变量
+        "data": {
+          "anim": null,
+          "poupShow": false,
+          "showButtomBar": false,
+          "shareShow": false,
+          "step": 1,
+          "canNext": false,
+          "stopPoint": 9.8
+        },
+        "created": function created() {
+            // 入场文字动画
+            owo.tool.animate('fadeInDown', owo.query('.title')[0], 10600);
+            owo.tool.animate('fadeIn', owo.query('.button')[0], 12000);
+            owo.tool.animate('fadeIn', owo.query('.main-text-2')[0], 8000);
+            setTimeout(function() {
+                owo.query('.main-text-2')[0].style.display = 'none';
+            }, 9800);
+            setTimeout(function() {
+                owo.query('.main-text')[0].style.width = '353px';
+                setTimeout(function() {
+                    owo.query('.main-text')[0].style.display = 'none';
+                    owo.query('.main-text')[0].style.width = '0';
+                }, 7000);
+            }, 100);
 
-      // 播放音乐
-      if (!this.data.music) {
-        this.data.music = new Audio("./static/resource/bg.mp3");
-        this.data.music.loop = true; // this.data.music.play()
-      }
+            var video = document.querySelector('video');
+            enableInlineVideo(video); 
+            // 绘制canvas
+            var canv = owo.query('canvas')[0];
+            var screen = owo.tool.getScreenInfo();
+            var clientHeight = screen.clientHeight > screen.clientWidth ? screen.clientWidth : screen.clientHeight; 
+            // 获取设置计数
+            this.set(); 
+            // 获取计数并且生成海报
+            $.ajax({
+                url: 'http://19diaocha.people.cn/20190605/json.php?type=618',
+                dataType: 'jsonp',
+                success: function success(res) {
+                    var personCount = 123624;
 
-      owo.query('.one')[0].style.opacity = '0'; // 一秒后销毁one不然挡住下面不能点击
+                    if (res[0]) {
+                        personCount = res[0].bnum;
+                    }
 
-      setTimeout(function () {
-        owo.query('.one')[0].style.display = 'none';
-      }, 1000); // 开始播放
-      // console.log(this.data.anim)
-      // console.log('开始播放第一段!')
-      // this.data.anim.playSegments([307, 560], true)
-      // owo.query('.show-box .show-image')[0].src = './static/resource/show-1.png'
-      // this.data.anim.onComplete = (e) => {
-      //   // console.log(e)
-      //   this.data.canNext = false
-      //   const pointList = owo.query('.step-' + this.data.step)
-      //   if (pointList.length > 0) {
-      //     owo.query('.badge-bar')[0].style.left = '8%'
-      //     console.log('显示.step-' + this.data.step)
-      //     owo.query('.step-' + this.data.step).forEach(element => {
-      //       element.style.display = 'block'
-      //     })
-      //   }
-      //   if ((this.data.step > 14) && !this.data.showButtomBar) {
-      //     this.data.showButtomBar = true
-      //     owo.query('.button-item-box')[0].style.display = 'block'
-      //     owo.query('.button-item-box')[0].style.opacity = 1
-      //     return
-      //   }
-      //   owo.query('.next')[0].style.display = 'block'
-      // }
-
-      var video = owo.query('video')[0];
-      setTimeout(function () {
-        video.style.opacity = '1';
-        video.play();
-        owo.query('.one')[0].style.display = 'none';
-      }, 500);
-      var pointList = owo.query('.step-' + this.data.step);
-
-      video.ontimeupdate = function () {
-        console.log(video.currentTime);
-
-        if (video.currentTime > _this2.data.stopPoint) {
-          _this2.data.canNext = false;
-          video.pause();
-
-          _this2.data.music.play();
-
-          if (pointList.length > 0) {
-            owo.query('.badge-bar')[0].style.left = '8%';
-            console.log('显示.step-' + _this2.data.step);
-            owo.query('.step-' + _this2.data.step).forEach(function (element) {
-              element.style.display = 'block';
+                    canv.width = clientHeight * 0.8 * 1.779 * 2;
+                    canv.height = clientHeight * 0.8 * 2;
+                    canv.style.width = clientHeight * 0.8 * 1.779 + 'px';
+                    canv.style.height = clientHeight * 0.8 + 'px';
+                    var ctx = canv.getContext("2d");
+                    var bgImg = new Image();
+                    bgImg.src = './static/resource/share.jpg';
+                    ctx.drawImage(bgImg, 0, 0, canv.width, canv.height);
+                    ctx.fillStyle = "#0000ff";
+                    ctx.font = "30px Verdana";
+                    ctx.fillText(personCount, clientHeight * 0.45, clientHeight * 0.86);
+                    document.getElementsByClassName('share')[0].src = canv.toDataURL("image/png");
+                }
             });
-          }
+        },
+        // 设置计数
+        "set": function set() {
+            $.ajax({
+                url: 'http://littlepoll1.people.com.cn/button/index.php/cip/button/618/61008?',
+                dataType: 'jsonp',
+                jsonp: 'jsonCallback',
+                success: function success(res) {
+                    console.log(res);
+                }
+            });
+        },
+        "playVideo": function playVideo() {
+            var _this2 = this;
 
-          if (_this2.data.step > 14 && !_this2.data.showButtomBar) {
-            _this2.data.showButtomBar = true;
-            owo.query('.button-item-box')[0].style.display = 'block';
-            owo.query('.button-item-box')[0].style.opacity = 1;
-            return;
-          } // owo.query('.next')[0].style.display = 'block'
+            // 播放音乐
+            if (!this.data.music) {
+                this.data.music = new Audio("./static/resource/bg.mp3");
+                this.data.music.loop = true; // this.data.music.play()
+            }
 
+            owo.query('.one')[0].style.opacity = '0'; // 一秒后销毁one不然挡住下面不能点击
+
+            setTimeout(function() {
+                owo.query('.one')[0].style.display = 'none';
+            }, 1000);
+            var video = owo.query('video')[0];
+            setTimeout(function() {
+                video.style.opacity = '1';
+                video.play();
+                owo.query('.one')[0].style.display = 'none';
+            }, 500);
+            var pointList = owo.query('.step-' + this.data.step);
+            // 视频播放进度监听
+            video.ontimeupdate = function() {
+                console.log(video.currentTime);
+
+                if (video.currentTime > _this2.data.stopPoint) {
+                    _this2.data.canNext = false;
+                    video.pause();
+
+                    _this2.data.music.play();
+
+                    if (pointList.length > 0) {
+                        owo.query('.badge-bar')[0].style.left = '9.5%';
+                        console.log('显示.step-' + _this2.data.step);
+                        owo.query('.step-' + _this2.data.step).forEach(function(element) {
+                            element.style.display = 'block';
+                        });
+                    }
+
+                    if (_this2.data.step > 14 && !_this2.data.showButtomBar) {
+                        _this2.data.showButtomBar = true;
+                        owo.query('.button-item-box')[0].style.display = 'block';
+                        owo.query('.button-item-box')[0].style.opacity = 1;
+                        return;
+                    } // owo.query('.next')[0].style.display = 'block'
+
+                }
+            };
+        },
+        "showPoup": function showPoup(dingClass) {
+            if (dingClass) {
+                this.$target.style.display = 'none';
+                owo.query('.' + dingClass)[0].classList.add('active');
+                this.data.canNext = true;
+            }
+
+            var showBox = owo.query('.show-box')[0];
+
+            if (this.data.poupShow) {
+                this.next();
+                showBox.style.display = 'none';
+                this.data.poupShow = false;
+            } else {
+                this.data.poupShow = true;
+                showBox.style.display = 'block';
+            }
+        },
+        "showShare": function showShare() {
+            if (this.data.shareShow) {
+                owo.query('.share-box')[0].style.display = 'none';
+            } else {
+                owo.query('.share-box')[0].style.display = 'block';
+            }
+
+            this.data.shareShow = !this.data.shareShow;
+        },
+        // 更换并清理徽章激活状态
+        "clearBadge": function clearBadge(index) {
+            // 两秒后再清理，防止被用户看到
+            setTimeout(function() {
+                // 清理徽章
+                var badgeList = owo.query('.badge');
+
+                for (var ind = 0; ind < badgeList.length; ind++) {
+                    index++; // console.log(badgeList[ind].classList)
+
+                    badgeList[ind].classList.remove('active');
+
+                    if (index === 15) {
+                        badgeList[ind].style.display = 'none';
+                    } else {
+                        badgeList[ind].src = "./static/resource/badge-" + index + ".png";
+                    }
+                }
+            }, 1500);
+        },
+        // 打卡完毕下一步
+        "next": function next() {
+            var video = owo.query('video')[0];
+            // 作废了但是防止又想恢复这个功能
+            if (!this.data.canNext) {
+                owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
+                return;
+            } // owo.query('.next')[0].style.display = 'none'
+
+            // 判断是第几个场景了
+            switch (this.data.step) {
+                case 1:
+                    this.data.step = 2;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-2.png';
+                    this.data.stopPoint = 14.4;
+                    this.data.music.pause();
+                    video.play(); // this.data.anim.playSegments([560, 660], true)
+
+                    break;
+
+                case 2:
+                    this.data.step = 3;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-3.png';
+                    this.data.stopPoint = 17.6;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 3:
+                    this.data.step = 4;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-4.png';
+                    this.data.stopPoint = 22.4;
+                    this.data.music.pause();
+                    video.play();
+                    this.clearBadge(3);
+                    break;
+
+                case 4:
+                    this.data.step = 5;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-5.png';
+                    this.data.stopPoint = 28.2;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 5:
+                    this.data.step = 6;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-6.png';
+                    this.data.stopPoint = 34;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 6:
+                    this.data.step = 7;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-7.png';
+                    this.data.stopPoint = 38.4;
+                    this.data.music.pause();
+                    video.play();
+                    this.clearBadge(6);
+                    break;
+
+                case 7:
+                    this.data.step = 8;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-8.png';
+                    this.data.stopPoint = 42;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 8:
+                    this.data.step = 9;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-9.png';
+                    this.data.stopPoint = 47;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 9:
+                    this.data.step = 10;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-10.png';
+                    this.data.stopPoint = 52;
+                    this.data.music.pause();
+                    video.play();
+                    this.clearBadge(9);
+                    break;
+
+                case 10:
+                    this.data.step = 11;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-11.png';
+                    this.data.stopPoint = 59.4;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 11:
+                    this.data.step = 12;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-12.png';
+                    this.data.stopPoint = 64;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 12:
+                    this.data.step = 13;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-13.png';
+                    this.data.stopPoint = 70;
+                    this.data.music.pause();
+                    video.play();
+                    this.clearBadge(12);
+                    break;
+
+                case 13:
+                    this.data.step = 14;
+                    owo.query('.show-box .show-image')[0].src = './static/resource/show-14.png';
+                    this.data.stopPoint = 77;
+                    this.data.music.pause();
+                    video.play();
+                    break;
+
+                case 14:
+                    this.data.step = 15;
+                    this.data.stopPoint = 98;
+                    owo.query('.badge-bar')[0].style.display = 'none';
+                    this.data.music.pause();
+                    video.play();
+                    break;
+            } // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
+            // 开车隐藏徽章
+            setTimeout(function() {
+                owo.query('.badge-bar')[0].style.left = '-10%';
+            }, 500);
         }
-      };
     },
-    "showPoup": function showPoup(dingClass) {
-      if (dingClass) {
-        this.$target.style.display = 'none';
-        owo.query('.' + dingClass)[0].classList.add('active');
-        this.data.canNext = true;
-      }
+    // 分享页面
+    "three": {
+      // 分享页面创建执行的方法
+        "created": function created() {
+            // 判断窗口大小太窄的话以宽适配
+            var ratio = owo.tool.getScreenInfo().ratio;
+            var clientHeight = owo.tool.getScreenInfo().clientHeight;
 
-      var showBox = owo.query('.show-box')[0];
-
-      if (this.data.poupShow) {
-        this.next();
-        showBox.style.display = 'none';
-        this.data.poupShow = false;
-      } else {
-        this.data.poupShow = true;
-        showBox.style.display = 'block';
-      }
-    },
-    "showShare": function showShare() {
-      if (this.data.shareShow) {
-        owo.query('.share-box')[0].style.display = 'none';
-      } else {
-        owo.query('.share-box')[0].style.display = 'block';
-      }
-
-      this.data.shareShow = !this.data.shareShow;
-    },
-    "clearBadge": function clearBadge(index) {
-      // 两秒后再清理，防止被用户看到
-      setTimeout(function () {
-        // 清理徽章
-        var badgeList = owo.query('.badge');
-
-        for (var ind = 0; ind < badgeList.length; ind++) {
-          index++; // console.log(badgeList[ind].classList)
-
-          badgeList[ind].classList.remove('active'); // ```
-          // ./static/resource/badge-1.png
-          // ./static/resource/badge-2.png
-          // ./static/resource/badge-3.png
-          // ./static/resource/badge-4.png
-          // ./static/resource/badge-5.png
-          // ./static/resource/badge-6.png
-          // ./static/resource/badge-7.png
-          // ./static/resource/badge-8.png
-          // ./static/resource/badge-9.png
-          // ./static/resource/badge-10.png
-          // ./static/resource/badge-11.png
-          // ./static/resource/badge-12.png
-          // ./static/resource/badge-13.png
-          // ./static/resource/badge-14.png
-          // ```
-
-          if (index === 15) {
-            badgeList[ind].style.display = 'none';
-          } else {
-            badgeList[ind].src = "./static/resource/badge-" + index + ".png";
-          }
+            if (ratio > 0.6) {
+                owo.query('.press')[0].style.top = 0.438 * clientHeight / clientHeight / 4 * 50 + 'vw';
+                this.$el.classList.add('mini');
+            }
         }
-      }, 1500);
-    },
-    "next": function next() {
-      var video = owo.query('video')[0];
-
-      if (!this.data.canNext) {
-        owo.tool.toast('当前景点还没有进行打卡哦!', null, null, document.getElementById('horizontal-box'));
-        return;
-      } // owo.query('.next')[0].style.display = 'none'
-
-
-      var start = 307; // alert(this.data.step)
-
-      switch (this.data.step) {
-        case 1:
-          this.data.step = 2;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-2.png';
-          this.data.stopPoint = 14.4;
-          this.data.music.pause();
-          video.play(); // this.data.anim.playSegments([560, 660], true)
-
-          break;
-
-        case 2:
-          this.data.step = 3;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-3.png';
-          this.data.stopPoint = 17.6;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 3:
-          this.data.step = 4;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-4.png';
-          this.data.stopPoint = 22.4;
-          this.data.music.pause();
-          video.play();
-          this.clearBadge(3);
-          break;
-
-        case 4:
-          this.data.step = 5;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-5.png';
-          this.data.stopPoint = 28.2;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 5:
-          this.data.step = 6;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-6.png';
-          this.data.stopPoint = 34;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 6:
-          this.data.step = 7;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-7.png';
-          this.data.stopPoint = 38.4;
-          this.data.music.pause();
-          video.play();
-          this.clearBadge(6);
-          break;
-
-        case 7:
-          this.data.step = 8;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-8.png';
-          this.data.stopPoint = 42;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 8:
-          this.data.step = 9;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-9.png';
-          this.data.stopPoint = 47;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 9:
-          this.data.step = 10;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-10.png';
-          this.data.stopPoint = 52;
-          this.data.music.pause();
-          video.play();
-          this.clearBadge(9);
-          break;
-
-        case 10:
-          this.data.step = 11;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-11.png';
-          this.data.stopPoint = 59.4;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 11:
-          this.data.step = 12;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-12.png';
-          this.data.stopPoint = 64;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 12:
-          this.data.step = 13;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-13.png';
-          this.data.stopPoint = 70;
-          this.data.music.pause();
-          video.play();
-          this.clearBadge(12);
-          break;
-
-        case 13:
-          this.data.step = 14;
-          owo.query('.show-box .show-image')[0].src = './static/resource/show-14.png';
-          this.data.stopPoint = 77;
-          this.data.music.pause();
-          video.play();
-          break;
-
-        case 14:
-          this.data.step = 15;
-          this.data.stopPoint = 98;
-          owo.query('.badge-bar')[0].style.display = 'none';
-          this.data.music.pause();
-          video.play();
-          break;
-      } // owo.query('.badge-' + (this.data.step - 1))[0].classList.add('active')
-      // 开车隐藏徽章
-
-
-      setTimeout(function () {
-        owo.query('.badge-bar')[0].style.left = '-10%';
-      }, 500);
     }
-  },
-  "three": {
-    "created": function created() {
-      var ratio = owo.tool.getScreenInfo().ratio;
-      var clientHeight = owo.tool.getScreenInfo().clientHeight;
-
-      if (ratio > 0.6) {
-        console.log(ratio);
-        owo.query('.press')[0].style.top = 0.438 * clientHeight / clientHeight / 4 * 100 + 'vw';
-        this.$el.classList.add('mini');
-      }
-    }
-  }
-};</script>
-<!-- 框架script文件 -->
-<script src="./static/js/owo.main.js" type="text/javascript" charset="UTF-8"></script>
+};
+</script>
+    <!-- 框架script文件 -->
+    <script src="./static/js/owo.main.js" type="text/javascript" charset="UTF-8"></script>
   </body>
+
 </html>
