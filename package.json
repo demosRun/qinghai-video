@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "less": "^3.9.0",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   },
   "name": "ozzx-example",
   "version": "1.0.0",
